@@ -1,0 +1,908 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualiza tus datos en R con ggplot y gganimate &#8212; Open Science Labs</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Open Science Labs" href="../../intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/osl.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open Science Labs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Open Science Labs
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  blog
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Visualiza tus datos en R con ggplot y gganimate
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/articles/r-ggplot-bo/ArticuloGgplotenR.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comenzando">
+   Comenzando 🚀
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instalacion-de-pre-requisitos">
+     Instalación de pre-requisitos 🔧 📋
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preparacion-de-los-datos-para-graficar">
+   Preparación de los datos para graficar ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafica-estatica">
+   Gráfica estática ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#insertar-rplot-png">
+   <strong>
+    Insertar Rplot.png
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafica-animada">
+   Gráfica Animada ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#insertar-datosimportpandemia-gif">
+   <strong>
+    Insertar datosimportpandemia.gif
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#autores">
+   Autores ✒️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#licencia">
+   Licencia 📄
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias">
+   Referencias 📄
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Visualiza tus datos en R con ggplot y gganimate</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comenzando">
+   Comenzando 🚀
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instalacion-de-pre-requisitos">
+     Instalación de pre-requisitos 🔧 📋
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preparacion-de-los-datos-para-graficar">
+   Preparación de los datos para graficar ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafica-estatica">
+   Gráfica estática ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#insertar-rplot-png">
+   <strong>
+    Insertar Rplot.png
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafica-animada">
+   Gráfica Animada ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#insertar-datosimportpandemia-gif">
+   <strong>
+    Insertar datosimportpandemia.gif
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#autores">
+   Autores ✒️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#licencia">
+   Licencia 📄
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias">
+   Referencias 📄
+  </a>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="visualiza-tus-datos-en-r-con-ggplot-y-gganimate">
+<h1>Visualiza tus datos en R con ggplot y gganimate<a class="headerlink" href="#visualiza-tus-datos-en-r-con-ggplot-y-gganimate" title="Permalink to this headline">¶</a></h1>
+<p><em>Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los análizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R</em></p>
+<div class="section" id="comenzando">
+<h2>Comenzando 🚀<a class="headerlink" href="#comenzando" title="Permalink to this headline">¶</a></h2>
+<p><em>Usamos R por ser un lenguaje especializado para ciencia datos, además de tener una gran Comunidad. Antes de comenzar recomendamos tener las versiones actualizadas de R y su IDE RStudio.</em></p>
+<p><em>Puedes desde sus páginas web:</em></p>
+<p><a class="reference external" href="https://cran.r-project.org/">cran.r-project.org</a></p>
+<p><a class="reference external" href="https://www.rstudio.com/">rstudio.org</a></p>
+<div class="section" id="instalacion-de-pre-requisitos">
+<h3>Instalación de pre-requisitos 🔧 📋<a class="headerlink" href="#instalacion-de-pre-requisitos" title="Permalink to this headline">¶</a></h3>
+<p><em>Para este ejemplo se usan las librerías de rio, dplyr, ggplot y gganimate. Para instalaras en R se ejecutan los siguientes líneas de código en R</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>        <span class="c1">#librería para importar archivos csv</span>
+<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>      <span class="c1">#librería para filtrar datos</span>
+<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>    <span class="c1">#librería para realizar las gráficas</span>
+<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>  <span class="c1">#librería para realizar la animación</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="preparacion-de-los-datos-para-graficar">
+<h2>Preparación de los datos para graficar ⚙️<a class="headerlink" href="#preparacion-de-los-datos-para-graficar" title="Permalink to this headline">¶</a></h2>
+<p><em>En este caso usaremos la base de datos del INE “Importaciones de Productos y Artículos de Bolivia 1992-2021p”</em>
+Abrimos nuestras librearías con:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Importamos los datos a un objeto llamado libro con (Recuerde que para ejecutar una linea de Comando en el Editor de RStudio Es con Ctrl+Enter o puede escribirlo directamento en la Consola):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">libro</span><span class="o">&lt;-</span><span class="n">import</span><span class="p">(</span><span class="s2">&quot;E:/OpenScience/DatosImportacionBolivia1992-2021.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Para ver la cabecera del libro y para ver el libro</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Ver la cabecera del libro</span>
+<span class="n">head</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+<span class="c1">#Ver la estructura del objeto libro</span>
+<span class="nb">str</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ejecutando</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">head</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+       <span class="n">Fecha</span> <span class="n">ALIMENTOS</span> <span class="n">Y</span> <span class="n">BEBIDAS</span> <span class="n">SUMINISTROS</span> <span class="n">INDUSTRIALES</span> <span class="n">COMBUSTIBLES</span> <span class="n">Y</span> <span class="n">LUBRICANTES</span>
+<span class="mi">1</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span>           <span class="mf">12.686477</span>                 <span class="mf">30.38827</span>                   <span class="mf">1.738607</span>
+<span class="mi">2</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">9.139570</span>                 <span class="mf">32.57593</span>                   <span class="mf">1.822906</span>
+<span class="mi">3</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">6.150201</span>                 <span class="mf">21.37546</span>                   <span class="mf">2.000110</span>
+<span class="mi">4</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">9.225652</span>                 <span class="mf">28.34524</span>                   <span class="mf">1.455245</span>
+<span class="mi">5</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span>           <span class="mf">14.503611</span>                 <span class="mf">22.06801</span>                   <span class="mf">2.168646</span>
+<span class="mi">6</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">5.875804</span>                 <span class="mf">25.43617</span>                   <span class="mf">3.084602</span>
+  <span class="n">BIENES</span> <span class="n">DE</span> <span class="n">CAPITAL</span> <span class="n">EQUIPO</span> <span class="n">DE</span> <span class="n">TRANSPORTE</span> <span class="n">Y</span> <span class="n">SUS</span> <span class="n">PIEZAS</span> <span class="n">Y</span> <span class="n">ACCESORIOS</span> <span class="n">ARTÍCULOS</span> <span class="n">DE</span> <span class="n">CONSUMO</span>
+<span class="mi">1</span>          <span class="mf">25.66374</span>                                       <span class="mf">22.20454</span>             <span class="mf">5.585219</span>
+<span class="mi">2</span>          <span class="mf">22.00027</span>                                       <span class="mf">18.68626</span>             <span class="mf">6.528652</span>
+<span class="mi">3</span>          <span class="mf">22.92478</span>                                       <span class="mf">17.40578</span>             <span class="mf">6.196415</span>
+<span class="mi">4</span>          <span class="mf">31.14429</span>                                       <span class="mf">16.77957</span>             <span class="mf">5.422824</span>
+<span class="mi">5</span>          <span class="mf">26.82719</span>                                       <span class="mf">22.79343</span>             <span class="mf">5.458318</span>
+<span class="mi">6</span>          <span class="mf">23.47011</span>                                       <span class="mf">16.00698</span>             <span class="mf">5.647866</span><span class="n">_</span>
+
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>&gt; str(libro)
+&#39;data.frame&#39;:	358 obs. of  7 variables:
+ $ Fecha                                         : IDate, format: &quot;1992-01-01&quot; &quot;1992-02-01&quot; ...
+ $ ALIMENTOS Y BEBIDAS                           : num  12.69 9.14 6.15 9.23 14.5 ...
+ $ SUMINISTROS INDUSTRIALES                      : num  30.4 32.6 21.4 28.3 22.1 ...
+ $ COMBUSTIBLES Y LUBRICANTES                    : num  1.74 1.82 2 1.46 2.17 ...
+ $ BIENES DE CAPITAL                             : num  25.7 22 22.9 31.1 26.8 ...
+ $ EQUIPO DE TRANSPORTE Y SUS PIEZAS Y ACCESORIOS: num  22.2 18.7 17.4 16.8 22.8 ...
+ $ ARTÍCULOS DE CONSUMO                          : num  5.59 6.53 6.2 5.42 5.46 ...
+</pre></div>
+</div>
+<p>Es importante verificar el tipo de dato antes de graficar, en este caso nos importa que la fecha tenga formato de fecha y los demás sean datos numéricos.</p>
+<p>Con las siguientes lineas de código se compacta el número de columnas de nuestro libro en un nuevo objeto llamado datos(Notese que solamente utilizaremos las primeras 4 columnas del objeto libro). Es decir una columna para la fecha, una columna para su valor y otra columna que los clasifica.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>#Simplificando nuestra tabla para realizar las gráficas
+#Cuando se escribe el nombre del objeto libro$.. en RStudio el autocomplado con los nombres de la columnas del libro
+datos &lt;- data.frame(Fecha = c(libro$Fecha,libro$Fecha,libro$Fecha,libro$Fecha),
+                   Valor = c(libro$`ALIMENTOS Y BEBIDAS`,
+                             libro$`SUMINISTROS INDUSTRIALES`,
+                             libro$`COMBUSTIBLES Y LUBRICANTES`,
+                             libro$`EQUIPO DE TRANSPORTE Y SUS PIEZAS Y ACCESORIOS`),
+                    Clasificacion=c(rep(&quot;Alimentos y Bebidas&quot;,nrow(libro)),
+                               rep(&quot;Suministros Industriales&quot;,nrow(libro)),
+                               rep(&quot;Combustibles y Lubricantes&quot;,nrow(libro)),
+                               rep(&quot;Equipo de Transporte&quot;,nrow(libro))
+</pre></div>
+</div>
+<p>Notesé que se utilizaron las siguientes funciones auxiliares:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>libro$columna
+    Para acceder al columna del libro
+
+data.frame(columna1, columna2 ...)
+    Para crear una nuevo objeto de Datos.
+
+c(elemento1, elemento2, ...)
+    Para juntar elementos en un vector.
+
+rep(elemento, n_veces)    
+    Para generar un vector con el elemento repetido n_veces.
+</pre></div>
+</div>
+<p>Para ver el resultado se ejecuta head(datos)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">head</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+       <span class="n">Fecha</span>    <span class="n">Valor</span>       <span class="n">Clasificacion</span>
+<span class="mi">1</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span> <span class="mf">56.34888</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">2</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">01</span> <span class="mf">47.42231</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">3</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">01</span> <span class="mf">59.54501</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">4</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span> <span class="mf">56.08808</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">5</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span> <span class="mf">51.86330</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">6</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span> <span class="mf">43.84668</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="grafica-estatica">
+<h2>Gráfica estática ⚙️<a class="headerlink" href="#grafica-estatica" title="Permalink to this headline">¶</a></h2>
+<p><em>Para hacer gráficas con ggplot2 es conveniente entender que esta librería añade sus componentes con layers (capas) estos layers o capas son objetos a los cuales se le puede modifcar su apariencia y especificar de donde extraer sus valores.</em></p>
+<p>Asignamos a un objeto ggplot llamado p1 los que vamos a graficar</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Modificando el theme</span>
+<span class="n">theme_set</span><span class="p">(</span><span class="n">theme_bw</span><span class="p">())</span>
+
+<span class="n">p1</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">datos</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Valor</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Fecha&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Valor en MM Bs&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+       <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Datos de Importación de Bolivia 1991-2021p&quot;</span><span class="p">,</span>
+       <span class="n">subtitle</span> <span class="o">=</span> <span class="s2">&quot;Expresado en Millones de Bolivianos&quot;</span><span class="p">)</span>
+<span class="n">p1</span>
+</pre></div>
+</div>
+<p>Funciones utilizadas</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+  <span class="n">Esta</span> <span class="n">es</span> <span class="n">la</span> <span class="n">primera</span> <span class="n">capa</span> <span class="n">a</span> <span class="n">utilizarse</span> <span class="n">inicialmente</span> <span class="n">le</span> <span class="n">asignamos</span>
+  <span class="n">nuestos</span> <span class="n">datos</span> <span class="n">para</span> <span class="n">que</span> <span class="n">cree</span> <span class="n">las</span> <span class="n">dimensiones</span> <span class="n">de</span> <span class="n">las</span> <span class="n">coordenadas</span>
+
+<span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="p">),</span> <span class="n">size</span><span class="p">)</span>
+  <span class="n">Esta</span> <span class="n">capa</span> <span class="n">hereda</span> <span class="n">los</span> <span class="n">datos</span> <span class="n">de</span> <span class="n">ggplot</span><span class="p">()</span> <span class="n">y</span> <span class="n">se</span> <span class="n">los</span> <span class="n">puede</span> <span class="n">usar</span>
+  <span class="n">directamente</span> <span class="n">con</span> <span class="n">el</span> <span class="n">nombre</span> <span class="n">de</span> <span class="n">sus</span> <span class="n">columnas</span><span class="p">,</span> <span class="n">grafica</span> <span class="n">los</span> <span class="n">datos</span> <span class="s2">&quot;x&quot;</span>
+  <span class="n">e</span> <span class="s2">&quot;y&quot;</span> <span class="n">como</span> <span class="n">líneas</span> <span class="n">y</span> <span class="n">las</span> <span class="n">clasifica</span> <span class="n">deacuerdo</span> <span class="n">al</span> <span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="n">size</span>
+  <span class="n">determina</span> <span class="n">el</span> <span class="n">grosor</span> <span class="n">de</span> <span class="n">las</span> <span class="n">líneas</span> <span class="n">a</span> <span class="n">graficarse</span><span class="o">.</span>
+
+<span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+  <span class="n">Capa</span> <span class="n">que</span> <span class="n">modifica</span> <span class="n">la</span> <span class="n">posición</span> <span class="n">de</span> <span class="n">la</span> <span class="n">leyenda</span> <span class="n">dentro</span> <span class="k">del</span> <span class="n">gráfico</span>
+  <span class="n">con</span> <span class="s2">&quot;legend.position&quot;</span><span class="p">,</span> <span class="n">esta</span> <span class="n">puede</span> <span class="n">adquirir</span> <span class="n">valores</span> <span class="n">de</span> <span class="s2">&quot;top&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span>
+
+<span class="n">labs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">subtitle</span><span class="p">)</span>
+  <span class="n">Capa</span> <span class="n">que</span> <span class="n">pone</span> <span class="n">los</span> <span class="n">nombres</span> <span class="n">a</span> <span class="n">eje</span> <span class="s2">&quot;x&quot;</span> <span class="n">y</span> <span class="n">al</span> <span class="n">eje</span> <span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">además</span> <span class="n">de</span> <span class="n">poner</span>
+  <span class="n">el</span> <span class="n">nombre</span> <span class="n">encima</span> <span class="n">de</span> <span class="n">las</span> <span class="n">leyendas</span> <span class="n">con</span> <span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="n">el</span> <span class="n">nombre</span> <span class="k">del</span>
+  <span class="n">título</span> <span class="n">y</span> <span class="n">subtítulo</span> <span class="n">con</span> <span class="s2">&quot;title&quot;</span> <span class="n">y</span> <span class="s2">&quot;subtitle&quot;</span> <span class="n">respectivamente</span><span class="o">.</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="insertar-rplot-png">
+<h2><strong>Insertar Rplot.png</strong><a class="headerlink" href="#insertar-rplot-png" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="grafica-animada">
+<h2>Gráfica Animada ⚙️<a class="headerlink" href="#grafica-animada" title="Permalink to this headline">¶</a></h2>
+<p>Ya teniendo nuestra nuestra gráfica estática vamos a realizar algunas modificaciones para que se resalte los datos de nuestro interés.</p>
+<p>Filtrando datos con fecha mayor al año 2019</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>datos&lt;-filter(datos,datos$Fecha&gt;=as.Date(&quot;2019-01-01&quot;))
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">filter</span><span class="p">(</span><span class="n">datos</span><span class="p">,</span> <span class="n">condicion</span><span class="p">)</span>
+    <span class="n">Evalua</span> <span class="n">cada</span> <span class="n">fila</span> <span class="n">de</span> <span class="n">datos</span> <span class="n">y</span> <span class="n">filtra</span> <span class="n">de</span> <span class="n">acuerdo</span> <span class="n">a</span> <span class="n">la</span> <span class="n">condicion</span><span class="o">.</span>
+<span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+    <span class="n">Convierte</span> <span class="n">var</span> <span class="n">a</span> <span class="n">un</span> <span class="n">formato</span> <span class="n">de</span> <span class="n">fecha</span> <span class="n">Date</span>
+</pre></div>
+</div>
+<p>Agregando un nuevo data frame periodos para resaltar las fechas de confinamiento por Covid19</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">periodos</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">.</span><span class="n">frame</span><span class="p">(</span><span class="n">xmin</span> <span class="o">=</span> <span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;2020-03-22&quot;</span><span class="p">),</span> <span class="n">xmax</span> <span class="o">=</span> <span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;2020-08-31&quot;</span><span class="p">),</span>
+                     <span class="n">ymin</span> <span class="o">=</span> <span class="o">-</span><span class="n">Inf</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="n">Inf</span><span class="p">,</span> <span class="n">Periodo</span> <span class="o">=</span> <span class="s2">&quot;Confinamiento por COVID19&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Creando un nuevo objeto ggplot2 para incluir las nuevas modificaciones.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">p2</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">datos</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Valor</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_rect</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">periodos</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+            <span class="n">aes</span><span class="p">(</span><span class="n">xmin</span><span class="o">=</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="o">=</span><span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="o">=</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="n">ymax</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">Periodo</span><span class="p">))</span><span class="o">+</span>
+  <span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Fecha&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Valor en MM Bs&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+       <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Datos de Importación Bolivia 2019-2021p&quot;</span><span class="p">,</span>
+       <span class="n">subtitle</span> <span class="o">=</span> <span class="s2">&quot;Expresado en Millones de Bolivianos&quot;</span><span class="p">)</span>
+<span class="n">p2</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">geom_rect</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">fill</span><span class="p">))</span>
+    <span class="n">Dibuja</span> <span class="n">un</span> <span class="n">rectangulo</span> <span class="n">a</span> <span class="n">partir</span> <span class="n">de</span> <span class="n">los</span> <span class="n">datos</span> <span class="n">en</span> <span class="s2">&quot;Data&quot;</span><span class="p">,</span>
+    <span class="n">modifica</span> <span class="n">su</span> <span class="n">opacidad</span> <span class="n">de</span> <span class="n">acuerdo</span> <span class="n">a</span> <span class="s2">&quot;alpha&quot;</span><span class="p">,</span>
+    <span class="n">extrae</span> <span class="n">los</span> <span class="n">datos</span> <span class="n">deacuerdo</span> <span class="n">a</span> <span class="s2">&quot;xmin, xmax, ymin, ymax&quot;</span><span class="p">,</span>
+    <span class="n">y</span> <span class="n">los</span> <span class="n">clasifica</span> <span class="n">de</span> <span class="n">acuerdo</span> <span class="n">a</span> <span class="s2">&quot;fill&quot;</span><span class="o">.</span>
+
+<span class="n">lab</span><span class="p">(</span><span class="n">fill</span><span class="p">)</span>
+    <span class="n">Pone</span> <span class="n">el</span> <span class="n">nombre</span> <span class="n">encima</span> <span class="n">de</span> <span class="n">la</span> <span class="n">leyenda</span> <span class="n">de</span> <span class="n">los</span> <span class="n">rectángulos</span> <span class="n">dibujados</span>
+</pre></div>
+</div>
+<p>Con las modificaciones ya hechas con en p2, creamos el objeto anim el cuál contendrá nuestra grafico a animar.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>anim &lt;- p2 + transition_reveal(Fecha) +
+  geom_label(aes(x=as.Date(&quot;2019-06-01&quot;), y=280, label=format(datos$Fecha,&quot;%Y&quot;)), col = &quot;gray&quot;, size = 15)
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">transition_reveal</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+  <span class="n">Añade</span> <span class="n">la</span> <span class="n">animacion</span> <span class="n">de</span> <span class="n">relevar</span> <span class="n">gráfico</span> <span class="n">de</span> <span class="n">acuerdo</span> <span class="n">a</span> <span class="n">la</span> <span class="n">variable</span> <span class="n">var</span><span class="o">.</span>
+
+<span class="n">geom_label</span><span class="p">((</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">label</span><span class="p">))</span> <span class="n">col</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+  <span class="n">Añade</span> <span class="n">la</span> <span class="n">la</span> <span class="n">etiqueta</span> <span class="k">del</span> <span class="n">año</span> <span class="n">dentro</span> <span class="n">de</span> <span class="n">la</span> <span class="n">gráfica</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span> <span class="s2">&quot;x&quot;</span> <span class="n">e</span> <span class="s2">&quot;y&quot;</span> <span class="n">son</span> <span class="n">las</span> <span class="n">coordenadas</span> <span class="n">donde</span> <span class="n">se</span> <span class="n">grafica</span> <span class="n">la</span> <span class="n">etiqueta</span> <span class="s2">&quot;label&quot;</span><span class="p">,</span> <span class="n">con</span> <span class="s2">&quot;col&quot;</span> <span class="n">seleccionamos</span> <span class="n">un</span> <span class="n">color</span> <span class="n">y</span> <span class="n">con</span> <span class="s2">&quot;size&quot;</span> <span class="n">el</span> <span class="n">tamaño</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><em>Nota: geom_label() fué diseñado para graficar etiquetas que acompañen a la gráfica. En este ejemplo en específico fué usado como una etiqueta estática fijando sus coordenadas “x” e “y” en un sólo punto. Se optó por esta opción ya que genera un buen impacto visual</em></p>
+<p>Con el objeto anim creato podemos invocar la función animate de gganimate, una vez ejecutado la función animate() se abrira una ventana con el resultado en formato gif.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">end_pause</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">end_pause</span><span class="p">)</span>
+    <span class="s2">&quot;anim&quot;</span> <span class="n">objeto</span> <span class="n">a</span> <span class="n">animarse</span>
+    <span class="s2">&quot;fps&quot;</span> <span class="n">cantidad</span> <span class="n">de</span> <span class="n">frames</span> <span class="n">por</span> <span class="n">segundo</span><span class="p">,</span>
+    <span class="s2">&quot;duration&quot;</span> <span class="n">duración</span> <span class="n">de</span> <span class="n">la</span> <span class="n">animación</span> <span class="n">en</span> <span class="n">segundos</span><span class="p">,</span>
+    <span class="s2">&quot;with&quot;</span> <span class="s2">&quot;height&quot;</span> <span class="n">ancho</span> <span class="n">y</span> <span class="n">alto</span> <span class="n">de</span> <span class="n">la</span> <span class="n">animación</span> <span class="n">respectivamente</span> <span class="n">en</span> <span class="n">pixeles</span><span class="p">,</span>
+    <span class="s2">&quot;end_pause&quot;</span> <span class="n">cantidad</span> <span class="n">de</span> <span class="n">veces</span> <span class="n">a</span> <span class="n">repetirse</span> <span class="n">el</span> <span class="n">último</span> <span class="n">frame</span> <span class="n">para</span> <span class="n">la</span> <span class="n">animación</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="insertar-datosimportpandemia-gif">
+<h2><strong>Insertar datosimportpandemia.gif</strong><a class="headerlink" href="#insertar-datosimportpandemia-gif" title="Permalink to this headline">¶</a></h2>
+<p>Despues de ver la animación podemos guardarla haciendo</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span><span class="o">&lt;-</span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">end_pause</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">)</span>
+<span class="n">anim_save</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;datosexportpandemia.gif&quot;</span><span class="p">,</span> <span class="n">animation</span> <span class="o">=</span> <span class="n">archivo</span><span class="p">,</span> <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;E:/OpenScience/&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">anim_save</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">animation</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+    <span class="n">Guarda</span> <span class="n">el</span> <span class="n">renderizado</span> <span class="n">de</span> <span class="s2">&quot;animation&quot;</span> <span class="n">con</span> <span class="n">el</span> <span class="n">nombre</span> <span class="s2">&quot;filename&quot;</span> <span class="n">en</span> <span class="n">la</span> <span class="n">ruta</span> <span class="s2">&quot;path&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="autores">
+<h2>Autores ✒️<a class="headerlink" href="#autores" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Ever Vino</strong> - ** - <a class="reference external" href="https://github.com/EverVino">EverVino</a></p></li>
+</ul>
+</div>
+<div class="section" id="licencia">
+<h2>Licencia 📄<a class="headerlink" href="#licencia" title="Permalink to this headline">¶</a></h2>
+<p>Este proyecto está bajo la Licencia (CC BY SA 4.0)</p>
+</div>
+<div class="section" id="referencias">
+<h2>Referencias 📄<a class="headerlink" href="#referencias" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.ine.gob.bo">Instituto Nacional de Estadística Bolivia</a> 📢</p></li>
+<li><p><a class="reference external" href="https://www.rdocumentation.org">Documentacion de R</a></p></li>
+</ul>
+<hr class="docutils" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./articles/r-ggplot-bo"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="visualiza-tus-datos-en-r-con-ggplot-y-gganimate">
+<h1>Visualiza tus datos en R con ggplot y gganimate<a class="headerlink" href="#visualiza-tus-datos-en-r-con-ggplot-y-gganimate" title="Permalink to this headline">¶</a></h1>
+<p><em>Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los análizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R</em></p>
+<div class="section" id="comenzando">
+<h2>Comenzando 🚀<a class="headerlink" href="#comenzando" title="Permalink to this headline">¶</a></h2>
+<p><em>Usamos R por ser un lenguaje especializado para ciencia datos, además de tener una gran Comunidad. Antes de comenzar recomendamos tener las versiones actualizadas de R y su IDE RStudio.</em></p>
+<p><em>Puedes desde sus páginas web:</em></p>
+<p><a class="reference external" href="https://cran.r-project.org/">cran.r-project.org</a></p>
+<p><a class="reference external" href="https://www.rstudio.com/">rstudio.org</a></p>
+<div class="section" id="instalacion-de-pre-requisitos">
+<h3>Instalación de pre-requisitos 🔧 📋<a class="headerlink" href="#instalacion-de-pre-requisitos" title="Permalink to this headline">¶</a></h3>
+<p><em>Para este ejemplo se usan las librerías de rio, dplyr, ggplot y gganimate. Para instalaras en R se ejecutan los siguientes líneas de código en R</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>        <span class="c1">#librería para importar archivos csv</span>
+<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>      <span class="c1">#librería para filtrar datos</span>
+<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>    <span class="c1">#librería para realizar las gráficas</span>
+<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>  <span class="c1">#librería para realizar la animación</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="preparacion-de-los-datos-para-graficar">
+<h2>Preparación de los datos para graficar ⚙️<a class="headerlink" href="#preparacion-de-los-datos-para-graficar" title="Permalink to this headline">¶</a></h2>
+<p><em>En este caso usaremos la base de datos del INE “Importaciones de Productos y Artículos de Bolivia 1992-2021p”</em>
+Abrimos nuestras librearías con:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Importamos los datos a un objeto llamado libro con (Recuerde que para ejecutar una linea de Comando en el Editor de RStudio Es con Ctrl+Enter o puede escribirlo directamento en la Consola):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">libro</span><span class="o">&lt;-</span><span class="n">import</span><span class="p">(</span><span class="s2">&quot;E:/OpenScience/DatosImportacionBolivia1992-2021.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Para ver la cabecera del libro y para ver el libro</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Ver la cabecera del libro</span>
+<span class="n">head</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+<span class="c1">#Ver la estructura del objeto libro</span>
+<span class="nb">str</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ejecutando</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">head</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+       <span class="n">Fecha</span> <span class="n">ALIMENTOS</span> <span class="n">Y</span> <span class="n">BEBIDAS</span> <span class="n">SUMINISTROS</span> <span class="n">INDUSTRIALES</span> <span class="n">COMBUSTIBLES</span> <span class="n">Y</span> <span class="n">LUBRICANTES</span>
+<span class="mi">1</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span>           <span class="mf">12.686477</span>                 <span class="mf">30.38827</span>                   <span class="mf">1.738607</span>
+<span class="mi">2</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">9.139570</span>                 <span class="mf">32.57593</span>                   <span class="mf">1.822906</span>
+<span class="mi">3</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">6.150201</span>                 <span class="mf">21.37546</span>                   <span class="mf">2.000110</span>
+<span class="mi">4</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">9.225652</span>                 <span class="mf">28.34524</span>                   <span class="mf">1.455245</span>
+<span class="mi">5</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span>           <span class="mf">14.503611</span>                 <span class="mf">22.06801</span>                   <span class="mf">2.168646</span>
+<span class="mi">6</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">5.875804</span>                 <span class="mf">25.43617</span>                   <span class="mf">3.084602</span>
+  <span class="n">BIENES</span> <span class="n">DE</span> <span class="n">CAPITAL</span> <span class="n">EQUIPO</span> <span class="n">DE</span> <span class="n">TRANSPORTE</span> <span class="n">Y</span> <span class="n">SUS</span> <span class="n">PIEZAS</span> <span class="n">Y</span> <span class="n">ACCESORIOS</span> <span class="n">ARTÍCULOS</span> <span class="n">DE</span> <span class="n">CONSUMO</span>
+<span class="mi">1</span>          <span class="mf">25.66374</span>                                       <span class="mf">22.20454</span>             <span class="mf">5.585219</span>
+<span class="mi">2</span>          <span class="mf">22.00027</span>                                       <span class="mf">18.68626</span>             <span class="mf">6.528652</span>
+<span class="mi">3</span>          <span class="mf">22.92478</span>                                       <span class="mf">17.40578</span>             <span class="mf">6.196415</span>
+<span class="mi">4</span>          <span class="mf">31.14429</span>                                       <span class="mf">16.77957</span>             <span class="mf">5.422824</span>
+<span class="mi">5</span>          <span class="mf">26.82719</span>                                       <span class="mf">22.79343</span>             <span class="mf">5.458318</span>
+<span class="mi">6</span>          <span class="mf">23.47011</span>                                       <span class="mf">16.00698</span>             <span class="mf">5.647866</span><span class="n">_</span>
+
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>&gt; str(libro)
+&#39;data.frame&#39;:	358 obs. of  7 variables:
+ $ Fecha                                         : IDate, format: &quot;1992-01-01&quot; &quot;1992-02-01&quot; ...
+ $ ALIMENTOS Y BEBIDAS                           : num  12.69 9.14 6.15 9.23 14.5 ...
+ $ SUMINISTROS INDUSTRIALES                      : num  30.4 32.6 21.4 28.3 22.1 ...
+ $ COMBUSTIBLES Y LUBRICANTES                    : num  1.74 1.82 2 1.46 2.17 ...
+ $ BIENES DE CAPITAL                             : num  25.7 22 22.9 31.1 26.8 ...
+ $ EQUIPO DE TRANSPORTE Y SUS PIEZAS Y ACCESORIOS: num  22.2 18.7 17.4 16.8 22.8 ...
+ $ ARTÍCULOS DE CONSUMO                          : num  5.59 6.53 6.2 5.42 5.46 ...
+</pre></div>
+</div>
+<p>Es importante verificar el tipo de dato antes de graficar, en este caso nos importa que la fecha tenga formato de fecha y los demás sean datos numéricos.</p>
+<p>Con las siguientes lineas de código se compacta el número de columnas de nuestro libro en un nuevo objeto llamado datos(Notese que solamente utilizaremos las primeras 4 columnas del objeto libro). Es decir una columna para la fecha, una columna para su valor y otra columna que los clasifica.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>#Simplificando nuestra tabla para realizar las gráficas
+#Cuando se escribe el nombre del objeto libro$.. en RStudio el autocomplado con los nombres de la columnas del libro
+datos &lt;- data.frame(Fecha = c(libro$Fecha,libro$Fecha,libro$Fecha,libro$Fecha),
+                   Valor = c(libro$`ALIMENTOS Y BEBIDAS`,
+                             libro$`SUMINISTROS INDUSTRIALES`,
+                             libro$`COMBUSTIBLES Y LUBRICANTES`,
+                             libro$`EQUIPO DE TRANSPORTE Y SUS PIEZAS Y ACCESORIOS`),
+                    Clasificacion=c(rep(&quot;Alimentos y Bebidas&quot;,nrow(libro)),
+                               rep(&quot;Suministros Industriales&quot;,nrow(libro)),
+                               rep(&quot;Combustibles y Lubricantes&quot;,nrow(libro)),
+                               rep(&quot;Equipo de Transporte&quot;,nrow(libro))
+</pre></div>
+</div>
+<p>Notesé que se utilizaron las siguientes funciones auxiliares:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>libro$columna
+    Para acceder al columna del libro
+
+data.frame(columna1, columna2 ...)
+    Para crear una nuevo objeto de Datos.
+
+c(elemento1, elemento2, ...)
+    Para juntar elementos en un vector.
+
+rep(elemento, n_veces)    
+    Para generar un vector con el elemento repetido n_veces.
+</pre></div>
+</div>
+<p>Para ver el resultado se ejecuta head(datos)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">head</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+       <span class="n">Fecha</span>    <span class="n">Valor</span>       <span class="n">Clasificacion</span>
+<span class="mi">1</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span> <span class="mf">56.34888</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">2</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">01</span> <span class="mf">47.42231</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">3</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">01</span> <span class="mf">59.54501</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">4</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span> <span class="mf">56.08808</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">5</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span> <span class="mf">51.86330</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">6</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span> <span class="mf">43.84668</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="grafica-estatica">
+<h2>Gráfica estática ⚙️<a class="headerlink" href="#grafica-estatica" title="Permalink to this headline">¶</a></h2>
+<p><em>Para hacer gráficas con ggplot2 es conveniente entender que esta librería añade sus componentes con layers (capas) estos layers o capas son objetos a los cuales se le puede modifcar su apariencia y especificar de donde extraer sus valores.</em></p>
+<p>Asignamos a un objeto ggplot llamado p1 los que vamos a graficar</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Modificando el theme</span>
+<span class="n">theme_set</span><span class="p">(</span><span class="n">theme_bw</span><span class="p">())</span>
+
+<span class="n">p1</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">datos</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Valor</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Fecha&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Valor en MM Bs&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+       <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Datos de Importación de Bolivia 1991-2021p&quot;</span><span class="p">,</span>
+       <span class="n">subtitle</span> <span class="o">=</span> <span class="s2">&quot;Expresado en Millones de Bolivianos&quot;</span><span class="p">)</span>
+<span class="n">p1</span>
+</pre></div>
+</div>
+<p>Funciones utilizadas</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+  <span class="n">Esta</span> <span class="n">es</span> <span class="n">la</span> <span class="n">primera</span> <span class="n">capa</span> <span class="n">a</span> <span class="n">utilizarse</span> <span class="n">inicialmente</span> <span class="n">le</span> <span class="n">asignamos</span>
+  <span class="n">nuestos</span> <span class="n">datos</span> <span class="n">para</span> <span class="n">que</span> <span class="n">cree</span> <span class="n">las</span> <span class="n">dimensiones</span> <span class="n">de</span> <span class="n">las</span> <span class="n">coordenadas</span>
+
+<span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="p">),</span> <span class="n">size</span><span class="p">)</span>
+  <span class="n">Esta</span> <span class="n">capa</span> <span class="n">hereda</span> <span class="n">los</span> <span class="n">datos</span> <span class="n">de</span> <span class="n">ggplot</span><span class="p">()</span> <span class="n">y</span> <span class="n">se</span> <span class="n">los</span> <span class="n">puede</span> <span class="n">usar</span>
+  <span class="n">directamente</span> <span class="n">con</span> <span class="n">el</span> <span class="n">nombre</span> <span class="n">de</span> <span class="n">sus</span> <span class="n">columnas</span><span class="p">,</span> <span class="n">grafica</span> <span class="n">los</span> <span class="n">datos</span> <span class="s2">&quot;x&quot;</span>
+  <span class="n">e</span> <span class="s2">&quot;y&quot;</span> <span class="n">como</span> <span class="n">líneas</span> <span class="n">y</span> <span class="n">las</span> <span class="n">clasifica</span> <span class="n">deacuerdo</span> <span class="n">al</span> <span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="n">size</span>
+  <span class="n">determina</span> <span class="n">el</span> <span class="n">grosor</span> <span class="n">de</span> <span class="n">las</span> <span class="n">líneas</span> <span class="n">a</span> <span class="n">graficarse</span><span class="o">.</span>
+
+<span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+  <span class="n">Capa</span> <span class="n">que</span> <span class="n">modifica</span> <span class="n">la</span> <span class="n">posición</span> <span class="n">de</span> <span class="n">la</span> <span class="n">leyenda</span> <span class="n">dentro</span> <span class="k">del</span> <span class="n">gráfico</span>
+  <span class="n">con</span> <span class="s2">&quot;legend.position&quot;</span><span class="p">,</span> <span class="n">esta</span> <span class="n">puede</span> <span class="n">adquirir</span> <span class="n">valores</span> <span class="n">de</span> <span class="s2">&quot;top&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span>
+
+<span class="n">labs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">subtitle</span><span class="p">)</span>
+  <span class="n">Capa</span> <span class="n">que</span> <span class="n">pone</span> <span class="n">los</span> <span class="n">nombres</span> <span class="n">a</span> <span class="n">eje</span> <span class="s2">&quot;x&quot;</span> <span class="n">y</span> <span class="n">al</span> <span class="n">eje</span> <span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">además</span> <span class="n">de</span> <span class="n">poner</span>
+  <span class="n">el</span> <span class="n">nombre</span> <span class="n">encima</span> <span class="n">de</span> <span class="n">las</span> <span class="n">leyendas</span> <span class="n">con</span> <span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="n">el</span> <span class="n">nombre</span> <span class="k">del</span>
+  <span class="n">título</span> <span class="n">y</span> <span class="n">subtítulo</span> <span class="n">con</span> <span class="s2">&quot;title&quot;</span> <span class="n">y</span> <span class="s2">&quot;subtitle&quot;</span> <span class="n">respectivamente</span><span class="o">.</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="insertar-rplot-png">
+<h2><strong>Insertar Rplot.png</strong><a class="headerlink" href="#insertar-rplot-png" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="grafica-animada">
+<h2>Gráfica Animada ⚙️<a class="headerlink" href="#grafica-animada" title="Permalink to this headline">¶</a></h2>
+<p>Ya teniendo nuestra nuestra gráfica estática vamos a realizar algunas modificaciones para que se resalte los datos de nuestro interés.</p>
+<p>Filtrando datos con fecha mayor al año 2019</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>datos&lt;-filter(datos,datos$Fecha&gt;=as.Date(&quot;2019-01-01&quot;))
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">filter</span><span class="p">(</span><span class="n">datos</span><span class="p">,</span> <span class="n">condicion</span><span class="p">)</span>
+    <span class="n">Evalua</span> <span class="n">cada</span> <span class="n">fila</span> <span class="n">de</span> <span class="n">datos</span> <span class="n">y</span> <span class="n">filtra</span> <span class="n">de</span> <span class="n">acuerdo</span> <span class="n">a</span> <span class="n">la</span> <span class="n">condicion</span><span class="o">.</span>
+<span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+    <span class="n">Convierte</span> <span class="n">var</span> <span class="n">a</span> <span class="n">un</span> <span class="n">formato</span> <span class="n">de</span> <span class="n">fecha</span> <span class="n">Date</span>
+</pre></div>
+</div>
+<p>Agregando un nuevo data frame periodos para resaltar las fechas de confinamiento por Covid19</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">periodos</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">.</span><span class="n">frame</span><span class="p">(</span><span class="n">xmin</span> <span class="o">=</span> <span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;2020-03-22&quot;</span><span class="p">),</span> <span class="n">xmax</span> <span class="o">=</span> <span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;2020-08-31&quot;</span><span class="p">),</span>
+                     <span class="n">ymin</span> <span class="o">=</span> <span class="o">-</span><span class="n">Inf</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="n">Inf</span><span class="p">,</span> <span class="n">Periodo</span> <span class="o">=</span> <span class="s2">&quot;Confinamiento por COVID19&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Creando un nuevo objeto ggplot2 para incluir las nuevas modificaciones.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">p2</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">datos</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Valor</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_rect</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">periodos</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+            <span class="n">aes</span><span class="p">(</span><span class="n">xmin</span><span class="o">=</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="o">=</span><span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="o">=</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="n">ymax</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">Periodo</span><span class="p">))</span><span class="o">+</span>
+  <span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Fecha&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Valor en MM Bs&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+       <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Datos de Importación Bolivia 2019-2021p&quot;</span><span class="p">,</span>
+       <span class="n">subtitle</span> <span class="o">=</span> <span class="s2">&quot;Expresado en Millones de Bolivianos&quot;</span><span class="p">)</span>
+<span class="n">p2</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">geom_rect</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">fill</span><span class="p">))</span>
+    <span class="n">Dibuja</span> <span class="n">un</span> <span class="n">rectangulo</span> <span class="n">a</span> <span class="n">partir</span> <span class="n">de</span> <span class="n">los</span> <span class="n">datos</span> <span class="n">en</span> <span class="s2">&quot;Data&quot;</span><span class="p">,</span>
+    <span class="n">modifica</span> <span class="n">su</span> <span class="n">opacidad</span> <span class="n">de</span> <span class="n">acuerdo</span> <span class="n">a</span> <span class="s2">&quot;alpha&quot;</span><span class="p">,</span>
+    <span class="n">extrae</span> <span class="n">los</span> <span class="n">datos</span> <span class="n">deacuerdo</span> <span class="n">a</span> <span class="s2">&quot;xmin, xmax, ymin, ymax&quot;</span><span class="p">,</span>
+    <span class="n">y</span> <span class="n">los</span> <span class="n">clasifica</span> <span class="n">de</span> <span class="n">acuerdo</span> <span class="n">a</span> <span class="s2">&quot;fill&quot;</span><span class="o">.</span>
+
+<span class="n">lab</span><span class="p">(</span><span class="n">fill</span><span class="p">)</span>
+    <span class="n">Pone</span> <span class="n">el</span> <span class="n">nombre</span> <span class="n">encima</span> <span class="n">de</span> <span class="n">la</span> <span class="n">leyenda</span> <span class="n">de</span> <span class="n">los</span> <span class="n">rectángulos</span> <span class="n">dibujados</span>
+</pre></div>
+</div>
+<p>Con las modificaciones ya hechas con en p2, creamos el objeto anim el cuál contendrá nuestra grafico a animar.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>anim &lt;- p2 + transition_reveal(Fecha) +
+  geom_label(aes(x=as.Date(&quot;2019-06-01&quot;), y=280, label=format(datos$Fecha,&quot;%Y&quot;)), col = &quot;gray&quot;, size = 15)
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">transition_reveal</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+  <span class="n">Añade</span> <span class="n">la</span> <span class="n">animacion</span> <span class="n">de</span> <span class="n">relevar</span> <span class="n">gráfico</span> <span class="n">de</span> <span class="n">acuerdo</span> <span class="n">a</span> <span class="n">la</span> <span class="n">variable</span> <span class="n">var</span><span class="o">.</span>
+
+<span class="n">geom_label</span><span class="p">((</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">label</span><span class="p">))</span> <span class="n">col</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+  <span class="n">Añade</span> <span class="n">la</span> <span class="n">la</span> <span class="n">etiqueta</span> <span class="k">del</span> <span class="n">año</span> <span class="n">dentro</span> <span class="n">de</span> <span class="n">la</span> <span class="n">gráfica</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span> <span class="s2">&quot;x&quot;</span> <span class="n">e</span> <span class="s2">&quot;y&quot;</span> <span class="n">son</span> <span class="n">las</span> <span class="n">coordenadas</span> <span class="n">donde</span> <span class="n">se</span> <span class="n">grafica</span> <span class="n">la</span> <span class="n">etiqueta</span> <span class="s2">&quot;label&quot;</span><span class="p">,</span> <span class="n">con</span> <span class="s2">&quot;col&quot;</span> <span class="n">seleccionamos</span> <span class="n">un</span> <span class="n">color</span> <span class="n">y</span> <span class="n">con</span> <span class="s2">&quot;size&quot;</span> <span class="n">el</span> <span class="n">tamaño</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><em>Nota: geom_label() fué diseñado para graficar etiquetas que acompañen a la gráfica. En este ejemplo en específico fué usado como una etiqueta estática fijando sus coordenadas “x” e “y” en un sólo punto. Se optó por esta opción ya que genera un buen impacto visual</em></p>
+<p>Con el objeto anim creato podemos invocar la función animate de gganimate, una vez ejecutado la función animate() se abrira una ventana con el resultado en formato gif.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">end_pause</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">end_pause</span><span class="p">)</span>
+    <span class="s2">&quot;anim&quot;</span> <span class="n">objeto</span> <span class="n">a</span> <span class="n">animarse</span>
+    <span class="s2">&quot;fps&quot;</span> <span class="n">cantidad</span> <span class="n">de</span> <span class="n">frames</span> <span class="n">por</span> <span class="n">segundo</span><span class="p">,</span>
+    <span class="s2">&quot;duration&quot;</span> <span class="n">duración</span> <span class="n">de</span> <span class="n">la</span> <span class="n">animación</span> <span class="n">en</span> <span class="n">segundos</span><span class="p">,</span>
+    <span class="s2">&quot;with&quot;</span> <span class="s2">&quot;height&quot;</span> <span class="n">ancho</span> <span class="n">y</span> <span class="n">alto</span> <span class="n">de</span> <span class="n">la</span> <span class="n">animación</span> <span class="n">respectivamente</span> <span class="n">en</span> <span class="n">pixeles</span><span class="p">,</span>
+    <span class="s2">&quot;end_pause&quot;</span> <span class="n">cantidad</span> <span class="n">de</span> <span class="n">veces</span> <span class="n">a</span> <span class="n">repetirse</span> <span class="n">el</span> <span class="n">último</span> <span class="n">frame</span> <span class="n">para</span> <span class="n">la</span> <span class="n">animación</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="insertar-datosimportpandemia-gif">
+<h2><strong>Insertar datosimportpandemia.gif</strong><a class="headerlink" href="#insertar-datosimportpandemia-gif" title="Permalink to this headline">¶</a></h2>
+<p>Despues de ver la animación podemos guardarla haciendo</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span><span class="o">&lt;-</span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">end_pause</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">)</span>
+<span class="n">anim_save</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;datosexportpandemia.gif&quot;</span><span class="p">,</span> <span class="n">animation</span> <span class="o">=</span> <span class="n">archivo</span><span class="p">,</span> <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;E:/OpenScience/&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">anim_save</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">animation</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+    <span class="n">Guarda</span> <span class="n">el</span> <span class="n">renderizado</span> <span class="n">de</span> <span class="s2">&quot;animation&quot;</span> <span class="n">con</span> <span class="n">el</span> <span class="n">nombre</span> <span class="s2">&quot;filename&quot;</span> <span class="n">en</span> <span class="n">la</span> <span class="n">ruta</span> <span class="s2">&quot;path&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="autores">
+<h2>Autores ✒️<a class="headerlink" href="#autores" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Ever Vino</strong> - ** - <a class="reference external" href="https://github.com/EverVino">EverVino</a></p></li>
+</ul>
+</div>
+<div class="section" id="licencia">
+<h2>Licencia 📄<a class="headerlink" href="#licencia" title="Permalink to this headline">¶</a></h2>
+<p>Este proyecto está bajo la Licencia (CC BY SA 4.0)</p>
+</div>
+<div class="section" id="referencias">
+<h2>Referencias 📄<a class="headerlink" href="#referencias" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.ine.gob.bo">Instituto Nacional de Estadística Bolivia</a> 📢</p></li>
+<li><p><a class="reference external" href="https://www.rdocumentation.org">Documentacion de R</a></p></li>
+</ul>
+<hr class="docutils" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./articles/r-ggplot-bo"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../../intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Open Science Labs</p>
+        </div>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By OpenScienceLabs Team<br/>
+    
+        &copy; Copyright 2020.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
