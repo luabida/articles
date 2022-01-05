@@ -1,12 +1,12 @@
 # Anima tus datos con gganimate y ggplot en R
 
-_Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los análizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R_
+_Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los análizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R._
 
 ## Comenzando 🚀
 
-Usamos R por ser un lenguaje especializado para ciencia datos, además de tener una gran Comunidad. Antes de comenzar recomendamos tener las versiones actualizadas de R y su IDE RStudio.
+Usamos R por ser un lenguaje especializado para ciencia de datos y tener una gran Comunidad Open Source. Antes de comenzar recomendamos tener las versiones actualizadas de R y su IDE RStudio.
 
-_Puedes desde sus páginas web:_
+_Puedes descargar R y RStudio desde sus páginas web oficiales:_
 
 [cran.r-project.org](https://cran.r-project.org/)
 
@@ -26,8 +26,8 @@ install.package(gganimate)  #librería para realizar la animación
 
 ## Preparación de los datos para graficar ⚙️
 
-En este caso usaremos la base de datos del INE "Importaciones de Productos y Artículos de Bolivia 1992-2021p"
-Abrimos nuestras librearías con:
+En nuestro ejemplo usaremos la base de datos del INE "Importaciones de Productos y Artículos de Bolivia 1992-2021p"
+Abrimos nuestras librerías con:
 ```python
 library(rio)
 library(ggplot2)
