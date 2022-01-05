@@ -1,4 +1,4 @@
-# Anima tus datos con gganimate y ggplot en R
+# Visualiza tus datos en R con ggplot2 y gganimate
 
 _Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los análizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R._
 
@@ -191,7 +191,7 @@ Con las modificaciones ya hechas con en p2, creamos el objeto ```gganimate``` an
 anim <- p2 + transition_reveal(Fecha) +
   geom_label(aes(x=as.Date("2019-06-01"), y=280, label=format(datos$Fecha,"%Y")), col = "gray", size = 15)
 ```
-* ```transition_reveal(var)``` Añade la animacion de relevar gráfico de acuerdo a la variable var.
+* ```transition_reveal(var)``` Añade la animacion transition_reveal() usando como referencia la variable "var".
 
 * ```geom_label((aes(x,y,label)) col, size)```
   Añade la la etiqueta del año dentro de la gráfica
