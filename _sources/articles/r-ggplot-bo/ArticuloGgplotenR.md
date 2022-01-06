@@ -1,6 +1,6 @@
 # Visualiza tus datos en R con ggplot2 y gganimate
 
-_Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los análizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R._
+_Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los analizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R._
 
 ## Comenzando 🚀
 
@@ -15,10 +15,11 @@ _Puedes descargar R y RStudio desde sus páginas web oficiales:_
 
 ### Instalación de pre-requisitos 🔧 📋
 
-Para este ejemplo se usan las librerías de ```rio```, ```dplyr```, ```ggplot2``` y ```gganimate```. Para instalarlas en R se ejecutan los siguientes líneas de código en R
+Para este ejemplo se usan las librerías de ```rio```, ```dplyr```, ```ggplot2``` y ```gganimate```. Para instalarlas se ejecutan las siguientes líneas de código en R
+_(Recuerde que para ejecutar una linea de Comando en el Editor de RStudio Es con Ctrl+Enter o puede escribirlo directamento en la Consola)_
 
 ```python
-install.package(rio)        #librería para importar archivos csv
+install.package(rio)        #librería para importar archivos csv o xlsx
 install.package(dplyr)      #librería para filtrar datos
 install.package(ggplot2)    #librería para realizar las gráficas
 install.package(gganimate)  #librería para realizar la animación
@@ -34,7 +35,6 @@ library(ggplot2)
 library(gganimate)
 library(dplyr)
 ```
-_(Recuerde que para ejecutar una linea de Comando en el Editor de RStudio Es con Ctrl+Enter o puede escribirlo directamento en la Consola)_
 
 Importamos los datos a un objeto llamado libro con:
 
@@ -75,7 +75,7 @@ Para ver la cabecera del libro y para ver la estructura del libro libro ejecutam
 ```
 Es importante verificar el tipo de dato antes de graficar, en este caso nos importa que la fecha tenga formato de IDate y los demás sean tengan formato de num.
 
-Con las siguientes lineas de código se compacta el número de columnas de nuestro libro en un nuevo objeto llamado datos _(Notese que solamente utilizaremos las primeras 4 columnas del objeto libro)._ Es decir una columna para la fecha, una columna para su valor y otra columna que muestre su clasificación.
+Con las siguientes lineas de código se compactamos el número de columnas de nuestro libro en un nuevo objeto llamado datos _(Notese que solamente utilizaremos las primeras 4 columnas del objeto libro)._ Es decir una columna para la fecha, una columna para su valor y otra columna que muestre su clasificación.
 
 ```python
 #Simplificando nuestra tabla para realizar las gráficas
@@ -90,9 +90,9 @@ datos <- data.frame(Fecha = c(libro$Fecha,libro$Fecha,libro$Fecha,libro$Fecha),
                                rep("Combustibles y Lubricantes",nrow(libro)),
                                rep("Equipo de Transporte",nrow(libro))
 ```
-Se utilizaron las siguientes funciones auxiliares:
+Funciones auxiliares usadas:
 
-* ```libro$columna``` para acceder al columna del libro
+* ```libro$columna``` para acceder al columna del libro.
 
 * ```data.frame(columna1, columna2 ...)``` para crear una nuevo objeto de Datos.
 
@@ -102,7 +102,7 @@ Se utilizaron las siguientes funciones auxiliares:
 
 * ```nrow(tabla)``` para obtener el número de filas de tabla.
 
-Veamos nuestra cabecera usando ```head(datos)``` :
+Veamos la cabecera de nuestro obejto datos con ```head(datos)``` :
 
 ```python
 > head(datos)
@@ -115,7 +115,7 @@ Veamos nuestra cabecera usando ```head(datos)``` :
 6 2018-06-01 43.84668 Alimentos y Bebidas
 ```
 ## Gráfica estática ⚙️
-Para hacer gráficas con ```ggplot2``` es conveniente entender que esta librería añade sus componentes con layer (capas) estos layers son objetos a los cuales se le puede modificar su apariencia y especificar de donde extraer sus valores.
+Para graficar con ```ggplot2``` es conveniente entender que esta librería añade sus componentes en layers (capas), estos layers son objetos a los cuales se le puede modificar su apariencia y especificar de donde extraer sus valores.
 
 Asignamos a un objeto ggplot llamado p1 lo que vamos a graficar
 
@@ -138,7 +138,7 @@ Modifica el conjunto de colores usado en el tema para realizar la gráfica.
 
 * ```ggplot(data)```Esta es la primera capa a utilizarse inicialmente le asignamos nuestos datos para que cree las dimensiones de las coordenadas.
 
-* ```geom_line(aes(x, y, color), size)```Esta capa hereda los datos de ggplot() y se los puede usar  directamente con el nombre de sus columnas, grafica los datos "x" e "y" como líneas y las clasifica deacuerdo al "color" y "size" determina el grosor de sus líneas.
+* ```geom_line(aes(x, y, color), size)``` Capa que hereda los datos de ggplot() y se los puede usar  directamente con el nombre de sus columnas, grafica los datos "x" e "y" como líneas y las clasifica deacuerdo al "color" y "size" determina el grosor de sus líneas.
 
 * ```theme(legend.position)```Capa que modifica la posición de la leyenda dentro gráfico con "legend.position", esta puede adquirir valores de "top", "left", etc.
 
@@ -199,7 +199,7 @@ anim <- p2 + transition_reveal(Fecha) +
 
 _Nota: geom_label() fué diseñado para graficar etiquetas que acompañen a la gráfica. En este ejemplo en específico fué usado como una etiqueta estática fijando sus coordenadas "x" e "y" en un sólo punto. Se optó por esta opción ya que genera un buen impacto visual._
 
-Con el objeto anim creato podemos invocar la función animate de ```gganimate```. Una vez ejecutada la función animate() se abrirá una ventana con el resultado en formato gif.
+Con el objeto anim creato podemos invocar la función animate de ```gganimate```. Una vez ejecutada la función animate() se abrirá una ventana con el resultado en formato .gif.
 
 ```python
 animate(anim, fps = 25, duration = 15, width=800, height=500, end_pause = 30 )
