@@ -217,7 +217,7 @@ Despues de ver la animación podemos guardarla haciendo:
 
 ```python
 archivo<-animate(anim, fps = 25, duration = 15, width=800, height=500, end_pause = 30 )
-anim_save(filename="datosimportpandemia.gif", animation = archivo, path = "E:/OpenScience/")
+anim_save(filename="datosimportpandemia.gif", animation = archivo, path = ".my/path/save/")
 ```
 ```anim_save(filename, animation, path)```
     Guarda el renderizado de "animation" con el nombre "filename" en la ruta "path".
