@@ -4,5 +4,5 @@ parts:
 
   - caption: blog
     chapters:
-    - file: articles/r-ggplot-bo/ArticuloGgplotenR.md
+    - file: articles/ever/r-ggplot-bo/ArticuloGgplotenR.md
 
