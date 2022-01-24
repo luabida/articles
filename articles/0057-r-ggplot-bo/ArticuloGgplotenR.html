@@ -1,0 +1,848 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualiza tus datos en R con ggplot2 y gganimate &#8212; Open Science Labs</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Que es el Open Science Framework?" href="../0056-openscienceframework/openscienceframework.html" />
+    <link rel="prev" title="Open Science Labs" href="../../intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/osl.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open Science Labs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Open Science Labs
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  blog
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   #0057: Visualiza tus datos en R con ggplot2 y gganimate
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0056-openscienceframework/openscienceframework.html">
+   0056: ¿Qué es el Open Science Framework?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0055-Rstudio/Rstudio.html">
+   0055: Primeros pasos con RStudio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0054-dvc/dvc.html">
+   0054: ¿Qué es el Data Version Control (DVC) y por qué es necesario que tu equipo sepa cómo utilizarlo?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0053-spyder/spyder.html">
+   0053: Primeros pasos con Spyder
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0052-carpentries/carpentries.html">
+   0052: ¿Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0051-5proyectosdeinteligenciaartificial/5proyectosdeinteligenciaartificial.html">
+   0051: 5 proyectos de inteligencia artificial que te sorprenderan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0050-10herramientasgestionequipos/10herramientasgestionequipos.html">
+   #0050: 10 Plataformas que te ayudarán en la gestión de tu grupo de trabajo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0049-figshare/figshare.html">
+   #0049: Todas las posibilidades que te ofrece utilizar figshare en tus proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0048-tipsconda/tipsconda.html">
+   #0048: Características y tips útiles que te ayudarán a sacar el máximo provecho de CONDA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0047-conda/conda.html">
+   #0047: ¿Cómo instalar y comenzar a utilizar Conda?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0046-tensorflow/tensorflow.html">
+   #0046: ¿Cómo instalar y comenzar a utilizar Tensorflow?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0045-rOpenSci/rOpenSci.html">
+   #0045: Te contamos sobre la comunidad rOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0044-dataverse/dataverse.html">
+   #0044: Dataverse y su potencial para proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0043-PyOpenSci/PyOpenSci.html">
+   #0043: pyOpenSci: un promotor de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0042-LaboratoriosCovid/LaboratoriosCovid.html">
+   #0042: Los laboratorios sociales y el manejo del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0041-algunosproyectoscodigoabierto/algunosproyectoscodigoabierto.html">
+   #0041: Algunos proyectos entretenidos de código abierto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0040-4lugarescienciaabierta/4lugarescienciaabierta.html">
+   #0040: Te enseñamos 4 lugares para aprender los fundamentos de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0039-bibliotecas_visualizacion/bibliotecas_visualizacion.html">
+   #0039: Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0038-bash/bash.html">
+   Automatización de tareas vía bash
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0037-visualizacion_python/visualizacion_python.html">
+   #0037: Herramientas de visualización en Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0036-cienciaabiertapandemias/cienciaabiertapandemias.html">
+   #0036: ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0035-automatizaciondecitasyreferencias/automatizaciondecitasyreferencias.html">
+   #0035: Si has pensado en cómo automatizar la construcción de citas en tu proyecto, te contamos cómo hacerlo posible.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0034-dashboard_integridad/dashboard_integridad.html">
+   #0034: La importancia de la integridad en los datos manejados en los dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0033-licenciascienciaabierta/licenciascienciaabierta.html">
+   #0033: Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0032-visualizacionR/visualizacionR.html">
+   #0032: Herramientas de visualización en R
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0031-documentaci%C3%B3n_cienciaabierta/documentaci%C3%B3n_cienciaabierta.html">
+   #0031: ¿Cómo documentar tu proyecto de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0030-ciudadanaCOVID19/ciudadanaCOVID19.html">
+   #0030: Algunos proyectos de ciencia e inteligencia ciudadana para atender la pandemia del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0029-principios_acceso_abierto/principios_acceso_abierto.html">
+   #0029: ¿Cómo aplicar los principios de acceso abierto en tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0028-coronavirus/coronavirus.html">
+   #0028: Te mostramos algunos repositorios con datos sobre el COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0027-dashboards-visualizacion-datos/dashboards-visualizacion-datos.html">
+   #0027: Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0026-inv_reproducible_codigoabierto/inv_reproducible_codigoabierto.html">
+   #0026: ¿Cómo aplicar la investigación reproducible a proyectos de código abierto?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0025-comopresentartucodigo/comopresentartucodigo.html">
+   #0025: ¿Cómo presentar tu código como un artículo científico?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0024-5_datos_abiertos/5_datos_abiertos.html">
+   #0024: Cinco cosas que no debes olvidar al trabajar con datos abiertos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0023-documentacioncodigoabierto/documentacioncodigoabierto.html">
+   #0023: Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0022-Investigacion_abierta_rep_vers/Investigacion_abierta_rep_vers.html">
+   #0022: La investigación abierta, el manejo de repositorios y control de versiones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0021-mentor%C3%ADas/mentor%C3%ADas.html">
+   #0021: ¿Qué son las mentorías y cómo potencian los proyectos de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0020-codigo_abierto/codigo_abierto.html">
+   #0020: ¿Qué es el código abierto y cómo puede ayudarte?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0019-tres_proyectos_ciencia_ciudadana/tres_proyectos_ciencia_ciudadana.html">
+   #0019: Tres proyectos de ciencia ciudadana que te sorprenderán
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0018-quesonlaboratoriossociales/quesonlaboratoriossociales.html">
+   #0018: ¿Qué son los laboratorios sociales y cómo pueden ayudar a los equipos de investigación?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0017-5ProductividadGit/5ProductividadGit.html">
+   #0017: Cinco tips para aumentar tu productividad con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0016-queescienciaciudadana/queescienciaciudadana.html">
+   #0016: ¿Qué es ciencia ciudadana?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0015-investigacionreproducible/investigacionreproducible.html">
+   #0015: ¿Cuáles son los principios de la investigación reproducible?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0014-5Markdown/5Markdown.html">
+   #0014: Cinco cosas que no debes olvidar al trabajar con Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0013-acceso_abierto/acceso_abierto.html">
+   #0013: ¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0012-5Repositorios/5Repositorios.html">
+   #0012: Te hablamos de cinco repositorios con datos abiertos sobre países
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0011-10razonesparausarpython/10razonesparausarpython.html">
+   #0011: 10 razones para usar Python en tu proximo proyecto de investigación
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0010-manejodecienciaabierta/manejodecienciaabierta.html">
+   #0010: Aspectos clave en el manejo de equipos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.html">
+   #0009: Investigación Colaborativa con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0008-5gestion_datos/5gestion_datos.html">
+   #0008: Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0007-datosabiertos/datosabiertos.html">
+   #0007: Que son los datos abiertos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0006-LenguajeR/LenguajeR.html">
+   #0006: ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0005-investigacion_abierta_ciencias/investigacion_abierta_ciencias.html">
+   #0005: La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0004-que-es-jupyter/que-es-jupyter.html">
+   #0004: ¿Ya has probado los Cuadernos de Jupyter? Te explicamos qué son y cómo te ayudarán en tu próxima investigación.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0003-investigacion_colaborativa/investigacion_colaborativa.html">
+   #0003: Todo lo que debes saber sobre la investigación colaborativa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0002-GitCeroACien/GitCeroACien.html">
+   #0002: Git de 0 a 100 en diez sencillos pasos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0001-ciencia_abierta/ciencia_abierta.html">
+   #0001: ¿Qué es la ciencia abierta?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/articles/0057-r-ggplot-bo/ArticuloGgplotenR.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comenzando">
+   Comenzando 🚀
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instalacion-de-pre-requisitos">
+     Instalación de pre-requisitos 🔧 📋
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preparacion-de-los-datos-para-graficar">
+   Preparación de los datos para graficar ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafica-estatica">
+   Gráfica estática ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafica-animada">
+   Gráfica Animada ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#autores">
+   Autores ✒️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#licencia">
+   Licencia 📄
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias">
+   Referencias 📄
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Visualiza tus datos en R con ggplot2 y gganimate</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comenzando">
+   Comenzando 🚀
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instalacion-de-pre-requisitos">
+     Instalación de pre-requisitos 🔧 📋
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preparacion-de-los-datos-para-graficar">
+   Preparación de los datos para graficar ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafica-estatica">
+   Gráfica estática ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grafica-animada">
+   Gráfica Animada ⚙️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#autores">
+   Autores ✒️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#licencia">
+   Licencia 📄
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias">
+   Referencias 📄
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="visualiza-tus-datos-en-r-con-ggplot2-y-gganimate">
+<h1>Visualiza tus datos en R con ggplot2 y gganimate<a class="headerlink" href="#visualiza-tus-datos-en-r-con-ggplot2-y-gganimate" title="Permalink to this headline">¶</a></h1>
+<p><img alt="header" src="../../_images/header7.png" /></p>
+<p>Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los analizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R.</p>
+<div class="section" id="comenzando">
+<h2>Comenzando 🚀<a class="headerlink" href="#comenzando" title="Permalink to this headline">¶</a></h2>
+<p>Usamos R por ser un lenguaje especializado para ciencia de datos y tener una gran Comunidad Open Source. Antes de comenzar recomendamos tener las versiones actualizadas de R y su IDE RStudio.</p>
+<p><em>Puedes descargar R y RStudio desde sus páginas web oficiales:</em></p>
+<p><a class="reference external" href="https://cran.r-project.org/">cran.r-project.org</a></p>
+<p><a class="reference external" href="https://www.rstudio.com/">rstudio.org</a></p>
+<div class="section" id="instalacion-de-pre-requisitos">
+<h3>Instalación de pre-requisitos 🔧 📋<a class="headerlink" href="#instalacion-de-pre-requisitos" title="Permalink to this headline">¶</a></h3>
+<p>Para este ejemplo se usan las librerías de <code class="docutils literal notranslate"><span class="pre">rio</span></code>, <code class="docutils literal notranslate"><span class="pre">dplyr</span></code>, <code class="docutils literal notranslate"><span class="pre">ggplot2</span></code> y <code class="docutils literal notranslate"><span class="pre">gganimate</span></code>. Para instalarlas se ejecutan las siguientes líneas de código en R
+<em>(Recuerde que para ejecutar una linea de Comando en el Editor de RStudio Es con Ctrl+Enter o puede escribirlo directamento en la Consola)</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>        <span class="c1">#librería para importar archivos csv o xlsx</span>
+<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>      <span class="c1">#librería para filtrar datos</span>
+<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>    <span class="c1">#librería para realizar las gráficas</span>
+<span class="n">install</span><span class="o">.</span><span class="n">package</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>  <span class="c1">#librería para realizar la animación</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="preparacion-de-los-datos-para-graficar">
+<h2>Preparación de los datos para graficar ⚙️<a class="headerlink" href="#preparacion-de-los-datos-para-graficar" title="Permalink to this headline">¶</a></h2>
+<p>En nuestro ejemplo usaremos la base de datos del INE “Importaciones de Productos y Artículos de Bolivia 1992-2021p”
+Abrimos nuestras librerías con:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">rio</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Importamos los datos a un objeto llamado libro con:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">libro</span><span class="o">&lt;-</span><span class="n">import</span><span class="p">(</span><span class="s2">&quot;.my/path/DatosImportacionBolivia1992-2021.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Para ver la cabecera del libro y para ver la estructura del libro libro ejecutamos respectivamente <code class="docutils literal notranslate"><span class="pre">head(libro)</span></code> y <code class="docutils literal notranslate"> <span class="pre">str(libro)</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">head</span><span class="p">(</span><span class="n">libro</span><span class="p">)</span>
+       <span class="n">Fecha</span> <span class="n">ALIMENTOS</span> <span class="n">Y</span> <span class="n">BEBIDAS</span> <span class="n">SUMINISTROS</span> <span class="n">INDUSTRIALES</span> <span class="n">COMBUSTIBLES</span> <span class="n">Y</span> <span class="n">LUBRICANTES</span>
+<span class="mi">1</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span>           <span class="mf">12.686477</span>                 <span class="mf">30.38827</span>                   <span class="mf">1.738607</span>
+<span class="mi">2</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">9.139570</span>                 <span class="mf">32.57593</span>                   <span class="mf">1.822906</span>
+<span class="mi">3</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">6.150201</span>                 <span class="mf">21.37546</span>                   <span class="mf">2.000110</span>
+<span class="mi">4</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">9.225652</span>                 <span class="mf">28.34524</span>                   <span class="mf">1.455245</span>
+<span class="mi">5</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span>           <span class="mf">14.503611</span>                 <span class="mf">22.06801</span>                   <span class="mf">2.168646</span>
+<span class="mi">6</span> <span class="mi">1992</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span>            <span class="mf">5.875804</span>                 <span class="mf">25.43617</span>                   <span class="mf">3.084602</span>
+  <span class="n">BIENES</span> <span class="n">DE</span> <span class="n">CAPITAL</span> <span class="n">EQUIPO</span> <span class="n">DE</span> <span class="n">TRANSPORTE</span> <span class="n">Y</span> <span class="n">SUS</span> <span class="n">PIEZAS</span> <span class="n">Y</span> <span class="n">ACCESORIOS</span> <span class="n">ARTÍCULOS</span> <span class="n">DE</span> <span class="n">CONSUMO</span>
+<span class="mi">1</span>          <span class="mf">25.66374</span>                                       <span class="mf">22.20454</span>             <span class="mf">5.585219</span>
+<span class="mi">2</span>          <span class="mf">22.00027</span>                                       <span class="mf">18.68626</span>             <span class="mf">6.528652</span>
+<span class="mi">3</span>          <span class="mf">22.92478</span>                                       <span class="mf">17.40578</span>             <span class="mf">6.196415</span>
+<span class="mi">4</span>          <span class="mf">31.14429</span>                                       <span class="mf">16.77957</span>             <span class="mf">5.422824</span>
+<span class="mi">5</span>          <span class="mf">26.82719</span>                                       <span class="mf">22.79343</span>             <span class="mf">5.458318</span>
+<span class="mi">6</span>          <span class="mf">23.47011</span>                                       <span class="mf">16.00698</span>             <span class="mf">5.647866</span><span class="n">_</span>
+
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>&gt; str(libro)
+&#39;data.frame&#39;:	358 obs. of  7 variables:
+ $ Fecha                                         : IDate, format: &quot;1992-01-01&quot; &quot;1992-02-01&quot; ...
+ $ ALIMENTOS Y BEBIDAS                           : num  12.69 9.14 6.15 9.23 14.5 ...
+ $ SUMINISTROS INDUSTRIALES                      : num  30.4 32.6 21.4 28.3 22.1 ...
+ $ COMBUSTIBLES Y LUBRICANTES                    : num  1.74 1.82 2 1.46 2.17 ...
+ $ BIENES DE CAPITAL                             : num  25.7 22 22.9 31.1 26.8 ...
+ $ EQUIPO DE TRANSPORTE Y SUS PIEZAS Y ACCESORIOS: num  22.2 18.7 17.4 16.8 22.8 ...
+ $ ARTÍCULOS DE CONSUMO                          : num  5.59 6.53 6.2 5.42 5.46 ...
+</pre></div>
+</div>
+<p>Es importante verificar el tipo de dato antes de graficar, en este caso nos importa que la fecha tenga formato de IDate y los demás sean tengan formato de num.</p>
+<p>Con las siguientes lineas de código se compactamos el número de columnas de nuestro libro en un nuevo objeto llamado datos <em>(Notese que solamente utilizaremos las primeras 4 columnas del objeto libro).</em> Es decir una columna para la fecha, una columna para su valor y otra columna que muestre su clasificación.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>#Simplificando nuestra tabla para realizar las gráficas
+#Cuando se escribe el nombre del objeto libro$.. en RStudio el autocomplado con los nombres de la columnas del libro
+datos &lt;- data.frame(Fecha = c(libro$Fecha,libro$Fecha,libro$Fecha,libro$Fecha),
+                   Valor = c(libro$`ALIMENTOS Y BEBIDAS`,
+                             libro$`SUMINISTROS INDUSTRIALES`,
+                             libro$`COMBUSTIBLES Y LUBRICANTES`,
+                             libro$`EQUIPO DE TRANSPORTE Y SUS PIEZAS Y ACCESORIOS`),
+                    Clasificacion=c(rep(&quot;Alimentos y Bebidas&quot;,nrow(libro)),
+                               rep(&quot;Suministros Industriales&quot;,nrow(libro)),
+                               rep(&quot;Combustibles y Lubricantes&quot;,nrow(libro)),
+                               rep(&quot;Equipo de Transporte&quot;,nrow(libro))
+</pre></div>
+</div>
+<p>Funciones auxiliares usadas:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">libro$columna</span></code> para acceder al columna del libro.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data.frame(columna1,</span> <span class="pre">columna2</span> <span class="pre">...)</span></code> para crear una nuevo objeto de Datos.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">c(elemento1,</span> <span class="pre">elemento2,</span> <span class="pre">...)</span></code> para juntar elementos en un vector.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rep(elemento,</span> <span class="pre">n_veces)</span></code> para generar un vector con el elemento repetido n_veces.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nrow(tabla)</span></code> para obtener el número de filas de tabla.</p></li>
+</ul>
+<p>Veamos la cabecera de nuestro obejto datos con <code class="docutils literal notranslate"><span class="pre">head(datos)</span></code> :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">head</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+       <span class="n">Fecha</span>    <span class="n">Valor</span>       <span class="n">Clasificacion</span>
+<span class="mi">1</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span> <span class="mf">56.34888</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">2</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">01</span> <span class="mf">47.42231</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">3</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">03</span><span class="o">-</span><span class="mi">01</span> <span class="mf">59.54501</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">4</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span> <span class="mf">56.08808</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">5</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span> <span class="mf">51.86330</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+<span class="mi">6</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">01</span> <span class="mf">43.84668</span> <span class="n">Alimentos</span> <span class="n">y</span> <span class="n">Bebidas</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="grafica-estatica">
+<h2>Gráfica estática ⚙️<a class="headerlink" href="#grafica-estatica" title="Permalink to this headline">¶</a></h2>
+<p>Para graficar con <code class="docutils literal notranslate"><span class="pre">ggplot2</span></code> es conveniente entender que esta librería añade sus componentes en layers (capas), estos layers son objetos a los cuales se le puede modificar su apariencia y especificar de donde extraer sus valores.</p>
+<p>Asignamos a un objeto ggplot llamado p1 lo que vamos a graficar</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Modificando el theme</span>
+<span class="n">theme_set</span><span class="p">(</span><span class="n">theme_bw</span><span class="p">())</span>
+
+<span class="n">p1</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">datos</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Valor</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Fecha&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Valor en MM Bs&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+       <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Datos de Importación de Bolivia 1991-2021p&quot;</span><span class="p">,</span>
+       <span class="n">subtitle</span> <span class="o">=</span> <span class="s2">&quot;Expresado en Millones de Bolivianos&quot;</span><span class="p">)</span>
+<span class="n">p1</span>
+</pre></div>
+</div>
+<p>Funciones utilizadas</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">theme_set(theme_bw())</span></code>
+Modifica el conjunto de colores usado en el tema para realizar la gráfica.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ggplot(data)</span></code>Esta es la primera capa a utilizarse inicialmente le asignamos nuestos datos para que cree las dimensiones de las coordenadas.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">geom_line(aes(x,</span> <span class="pre">y,</span> <span class="pre">color),</span> <span class="pre">size)</span></code> Capa que hereda los datos de ggplot() y se los puede usar  directamente con el nombre de sus columnas, grafica los datos “x” e “y” como líneas y las clasifica deacuerdo al “color” y “size” determina el grosor de sus líneas.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">theme(legend.position)</span></code>Capa que modifica la posición de la leyenda dentro gráfico con “legend.position”, esta puede adquirir valores de “top”, “left”, etc.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">labs(x,</span> <span class="pre">y,</span> <span class="pre">color,</span> <span class="pre">title,</span> <span class="pre">subtitle)</span></code>Capa que pone los nombres a eje “x” y al eje “y”, además de poner el nombre encima de las leyendas con “color”, el nombre título y subtítulo con “title” y “subtitle” respectivamente.</p></li>
+</ul>
+<p><img alt="alt text" src="https://github.com/OpenScienceLabs/articles/blob/main/articles/r-ggplot-bo/Rplot.png?raw=true" /></p>
+</div>
+<div class="section" id="grafica-animada">
+<h2>Gráfica Animada ⚙️<a class="headerlink" href="#grafica-animada" title="Permalink to this headline">¶</a></h2>
+<p>Ya teniendo nuestra nuestra gráfica estática vamos a realizar algunas modificaciones para que se resalte los datos de nuestro interés.</p>
+<p>Filtrando datos con fecha mayor al año 2019.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>datos&lt;-filter(datos,datos$Fecha&gt;=as.Date(&quot;2019-01-01&quot;))
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">filter(datos,</span> <span class="pre">condicion)</span></code> evalua cada fila de datos y filtra de acuerdo a la condicion.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">as.Date(var)</span></code> convierte var a un formato de fecha Date</p></li>
+</ul>
+<p>Agregando un nuevo data frame periodos para resaltar las fechas de confinamiento por Covid19.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">periodos</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">.</span><span class="n">frame</span><span class="p">(</span><span class="n">xmin</span> <span class="o">=</span> <span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;2020-03-22&quot;</span><span class="p">),</span> <span class="n">xmax</span> <span class="o">=</span> <span class="k">as</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;2020-08-31&quot;</span><span class="p">),</span>
+                     <span class="n">ymin</span> <span class="o">=</span> <span class="o">-</span><span class="n">Inf</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="n">Inf</span><span class="p">,</span> <span class="n">Periodo</span> <span class="o">=</span> <span class="s2">&quot;Confinamiento por COVID19&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Creando un nuevo objeto <code class="docutils literal notranslate"><span class="pre">ggplot2</span></code> p2 para incluir las nuevas modificaciones.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">p2</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">datos</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">geom_line</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Fecha</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Valor</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">Clasificacion</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_rect</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">periodos</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+            <span class="n">aes</span><span class="p">(</span><span class="n">xmin</span><span class="o">=</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="o">=</span><span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="o">=</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="n">ymax</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">Periodo</span><span class="p">))</span><span class="o">+</span>
+  <span class="n">theme</span><span class="p">(</span><span class="n">legend</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span><span class="p">)</span><span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Fecha&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Valor en MM Bs&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+       <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Datos de Importación Bolivia 2019-2021p&quot;</span><span class="p">,</span>
+       <span class="n">subtitle</span> <span class="o">=</span> <span class="s2">&quot;Expresado en Millones de Bolivianos&quot;</span><span class="p">)</span>
+<span class="n">p2</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">geom_rect(data,</span> <span class="pre">alpha,</span> <span class="pre">aes(xmin,</span> <span class="pre">xmax,</span> <span class="pre">ymin,</span> <span class="pre">ymax,</span> <span class="pre">fill))</span></code> dibuja un rectangulo a partir de los datos en “Data”,
+modifica su opacidad de acuerdo a “alpha”,
+extrae los datos de acuerdo a “xmin, xmax, ymin, ymax”,
+y los clasifica de acuerdo a “fill”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lab(fill)</span></code> pone el nombre encima de la leyenda de los rectángulos dibujados.</p></li>
+</ul>
+<p>Con las modificaciones ya hechas con en p2, creamos el objeto <code class="docutils literal notranslate"><span class="pre">gganimate</span></code> anim el cuál contendrá nuestra grafico a animar.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>anim &lt;- p2 + transition_reveal(Fecha) +
+  geom_label(aes(x=as.Date(&quot;2019-06-01&quot;), y=280, label=format(datos$Fecha,&quot;%Y&quot;)), col = &quot;gray&quot;, size = 15)
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">transition_reveal(var)</span></code> Añade la animacion transition_reveal() usando como referencia la variable “var”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">geom_label((aes(x,y,label))</span> <span class="pre">col,</span> <span class="pre">size)</span></code>
+Añade la la etiqueta del año dentro de la gráfica
+aes(x, y, label) “x” e “y” son las coordenadas donde se grafica la etiqueta “label”, con “col” seleccionamos un color y con “size” el tamaño.</p></li>
+</ul>
+<p><em>Nota: geom_label() fué diseñado para graficar etiquetas que acompañen a la gráfica. En este ejemplo en específico fué usado como una etiqueta estática fijando sus coordenadas “x” e “y” en un sólo punto. Se optó por esta opción ya que genera un buen impacto visual.</em></p>
+<p>Con el objeto anim creato podemos invocar la función animate de <code class="docutils literal notranslate"><span class="pre">gganimate</span></code>. Una vez ejecutada la función animate() se abrirá una ventana con el resultado en formato .gif.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">end_pause</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"> <span class="pre">animate(anim,</span> <span class="pre">fps,</span> <span class="pre">duration,</span> <span class="pre">width,</span> <span class="pre">height,</span> <span class="pre">end_pause)</span></code> de la función “anim” objeto a animarse
+“fps” cantidad de frames por segundo,
+“duration” duración de la animación en segundos,
+“with” “height” ancho y alto de la animación respectivamente en pixeles,
+“end_pause” cantidad de veces a repetirse el último frame para la animación.</p></li>
+</ul>
+<p><img alt="alt text" src="https://github.com/OpenScienceLabs/articles/blob/main/articles/r-ggplot-bo/datosimportpandemia.gif?raw=true" /></p>
+<p>Despues de ver la animación podemos guardarla haciendo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span><span class="o">&lt;-</span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">end_pause</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">)</span>
+<span class="n">anim_save</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;datosimportpandemia.gif&quot;</span><span class="p">,</span> <span class="n">animation</span> <span class="o">=</span> <span class="n">archivo</span><span class="p">,</span> <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;.my/path/save/&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">anim_save(filename,</span> <span class="pre">animation,</span> <span class="pre">path)</span></code>
+Guarda el renderizado de “animation” con el nombre “filename” en la ruta “path”.</p>
+</div>
+<div class="section" id="autores">
+<h2>Autores ✒️<a class="headerlink" href="#autores" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Ever Vino</strong> - ** - <a class="reference external" href="https://github.com/EverVino">EverVino</a></p></li>
+</ul>
+</div>
+<div class="section" id="licencia">
+<h2>Licencia 📄<a class="headerlink" href="#licencia" title="Permalink to this headline">¶</a></h2>
+<p>Este proyecto está bajo la Licencia (CC BY SA 4.0)</p>
+</div>
+<div class="section" id="referencias">
+<h2>Referencias 📄<a class="headerlink" href="#referencias" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.ine.gob.bo">Instituto Nacional de Estadística Bolivia</a> 📢</p></li>
+<li><p><a class="reference external" href="https://www.rdocumentation.org">Documentacion de R</a></p></li>
+</ul>
+<hr class="docutils" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./articles/0057-r-ggplot-bo"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../../intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Open Science Labs</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../0056-openscienceframework/openscienceframework.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Que es el Open Science Framework?</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By OpenScienceLabs Team<br/>
+    
+        &copy; Copyright 2020.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

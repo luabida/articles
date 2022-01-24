@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinco cosas que no debes olvidar al trabajar con datos abiertos &#8212; Open Science Labs</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)" href="../0023-documentacioncodigoabierto/documentacioncodigoabierto.html" />
+    <link rel="prev" title="¿Cómo presentar tu código como un artículo científico?" href="../0025-comopresentartucodigo/comopresentartucodigo.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/osl.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open Science Labs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Open Science Labs
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  blog
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0057-r-ggplot-bo/ArticuloGgplotenR.html">
+   #0057: Visualiza tus datos en R con ggplot2 y gganimate
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0056-openscienceframework/openscienceframework.html">
+   0056: ¿Qué es el Open Science Framework?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0055-Rstudio/Rstudio.html">
+   0055: Primeros pasos con RStudio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0054-dvc/dvc.html">
+   0054: ¿Qué es el Data Version Control (DVC) y por qué es necesario que tu equipo sepa cómo utilizarlo?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0053-spyder/spyder.html">
+   0053: Primeros pasos con Spyder
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0052-carpentries/carpentries.html">
+   0052: ¿Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0051-5proyectosdeinteligenciaartificial/5proyectosdeinteligenciaartificial.html">
+   0051: 5 proyectos de inteligencia artificial que te sorprenderan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0050-10herramientasgestionequipos/10herramientasgestionequipos.html">
+   #0050: 10 Plataformas que te ayudarán en la gestión de tu grupo de trabajo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0049-figshare/figshare.html">
+   #0049: Todas las posibilidades que te ofrece utilizar figshare en tus proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0048-tipsconda/tipsconda.html">
+   #0048: Características y tips útiles que te ayudarán a sacar el máximo provecho de CONDA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0047-conda/conda.html">
+   #0047: ¿Cómo instalar y comenzar a utilizar Conda?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0046-tensorflow/tensorflow.html">
+   #0046: ¿Cómo instalar y comenzar a utilizar Tensorflow?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0045-rOpenSci/rOpenSci.html">
+   #0045: Te contamos sobre la comunidad rOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0044-dataverse/dataverse.html">
+   #0044: Dataverse y su potencial para proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0043-PyOpenSci/PyOpenSci.html">
+   #0043: pyOpenSci: un promotor de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0042-LaboratoriosCovid/LaboratoriosCovid.html">
+   #0042: Los laboratorios sociales y el manejo del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0041-algunosproyectoscodigoabierto/algunosproyectoscodigoabierto.html">
+   #0041: Algunos proyectos entretenidos de código abierto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0040-4lugarescienciaabierta/4lugarescienciaabierta.html">
+   #0040: Te enseñamos 4 lugares para aprender los fundamentos de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0039-bibliotecas_visualizacion/bibliotecas_visualizacion.html">
+   #0039: Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0038-bash/bash.html">
+   Automatización de tareas vía bash
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0037-visualizacion_python/visualizacion_python.html">
+   #0037: Herramientas de visualización en Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0036-cienciaabiertapandemias/cienciaabiertapandemias.html">
+   #0036: ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0035-automatizaciondecitasyreferencias/automatizaciondecitasyreferencias.html">
+   #0035: Si has pensado en cómo automatizar la construcción de citas en tu proyecto, te contamos cómo hacerlo posible.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0034-dashboard_integridad/dashboard_integridad.html">
+   #0034: La importancia de la integridad en los datos manejados en los dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0033-licenciascienciaabierta/licenciascienciaabierta.html">
+   #0033: Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0032-visualizacionR/visualizacionR.html">
+   #0032: Herramientas de visualización en R
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0031-documentaci%C3%B3n_cienciaabierta/documentaci%C3%B3n_cienciaabierta.html">
+   #0031: ¿Cómo documentar tu proyecto de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0030-ciudadanaCOVID19/ciudadanaCOVID19.html">
+   #0030: Algunos proyectos de ciencia e inteligencia ciudadana para atender la pandemia del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0029-principios_acceso_abierto/principios_acceso_abierto.html">
+   #0029: ¿Cómo aplicar los principios de acceso abierto en tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0028-coronavirus/coronavirus.html">
+   #0028: Te mostramos algunos repositorios con datos sobre el COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0027-dashboards-visualizacion-datos/dashboards-visualizacion-datos.html">
+   #0027: Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0026-inv_reproducible_codigoabierto/inv_reproducible_codigoabierto.html">
+   #0026: ¿Cómo aplicar la investigación reproducible a proyectos de código abierto?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0025-comopresentartucodigo/comopresentartucodigo.html">
+   #0025: ¿Cómo presentar tu código como un artículo científico?
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   #0024: Cinco cosas que no debes olvidar al trabajar con datos abiertos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0023-documentacioncodigoabierto/documentacioncodigoabierto.html">
+   #0023: Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0022-Investigacion_abierta_rep_vers/Investigacion_abierta_rep_vers.html">
+   #0022: La investigación abierta, el manejo de repositorios y control de versiones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0021-mentor%C3%ADas/mentor%C3%ADas.html">
+   #0021: ¿Qué son las mentorías y cómo potencian los proyectos de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0020-codigo_abierto/codigo_abierto.html">
+   #0020: ¿Qué es el código abierto y cómo puede ayudarte?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0019-tres_proyectos_ciencia_ciudadana/tres_proyectos_ciencia_ciudadana.html">
+   #0019: Tres proyectos de ciencia ciudadana que te sorprenderán
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0018-quesonlaboratoriossociales/quesonlaboratoriossociales.html">
+   #0018: ¿Qué son los laboratorios sociales y cómo pueden ayudar a los equipos de investigación?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0017-5ProductividadGit/5ProductividadGit.html">
+   #0017: Cinco tips para aumentar tu productividad con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0016-queescienciaciudadana/queescienciaciudadana.html">
+   #0016: ¿Qué es ciencia ciudadana?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0015-investigacionreproducible/investigacionreproducible.html">
+   #0015: ¿Cuáles son los principios de la investigación reproducible?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0014-5Markdown/5Markdown.html">
+   #0014: Cinco cosas que no debes olvidar al trabajar con Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0013-acceso_abierto/acceso_abierto.html">
+   #0013: ¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0012-5Repositorios/5Repositorios.html">
+   #0012: Te hablamos de cinco repositorios con datos abiertos sobre países
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0011-10razonesparausarpython/10razonesparausarpython.html">
+   #0011: 10 razones para usar Python en tu proximo proyecto de investigación
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0010-manejodecienciaabierta/manejodecienciaabierta.html">
+   #0010: Aspectos clave en el manejo de equipos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.html">
+   #0009: Investigación Colaborativa con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0008-5gestion_datos/5gestion_datos.html">
+   #0008: Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0007-datosabiertos/datosabiertos.html">
+   #0007: Que son los datos abiertos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0006-LenguajeR/LenguajeR.html">
+   #0006: ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0005-investigacion_abierta_ciencias/investigacion_abierta_ciencias.html">
+   #0005: La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0004-que-es-jupyter/que-es-jupyter.html">
+   #0004: ¿Ya has probado los Cuadernos de Jupyter? Te explicamos qué son y cómo te ayudarán en tu próxima investigación.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0003-investigacion_colaborativa/investigacion_colaborativa.html">
+   #0003: Todo lo que debes saber sobre la investigación colaborativa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0002-GitCeroACien/GitCeroACien.html">
+   #0002: Git de 0 a 100 en diez sencillos pasos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0001-ciencia_abierta/ciencia_abierta.html">
+   #0001: ¿Qué es la ciencia abierta?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/articles/0024-5_datos_abiertos/5_datos_abiertos.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Cinco cosas que no debes olvidar al trabajar con datos abiertos</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="cinco-cosas-que-no-debes-olvidar-al-trabajar-con-datos-abiertos">
+<h1>Cinco cosas que no debes olvidar al trabajar con datos abiertos<a class="headerlink" href="#cinco-cosas-que-no-debes-olvidar-al-trabajar-con-datos-abiertos" title="Permalink to this headline">¶</a></h1>
+<p>Por Anavelyz Perez</p>
+<p>Cada vez es más común leer o escuchar sobre datos abiertos pero puede que no
+sepamos del todo lo que esto significa. Por ello, vamos a revisar inicialmente
+este concepto.</p>
+<p>Los datos abiertos son aquellos que no sólo están disponibles a cualquier persona (liberados) sino que
+también están disponibles en distintos formatos de manera que pueden ser
+recibidos y procesados por una computadora. Además de ello, los datos abiertos se disponen bajo una licencia
+‘abierta’, es decir, que mínimo permita su uso, modificación, y reproducción
+universal (sin restricción en cuanto a quien lo puede ver), y que según sea
+apropiado, permita además uso comercial.</p>
+<p>Esto deriva en tres particularidades que los datos deben cumplir para que sean
+abiertos:</p>
+<p><a class="reference external" href="https://ceweb.br/guias/dados-abertos/es/capitulo-2/">https://ceweb.br/guias/dados-abertos/es/capitulo-2/</a></p>
+<ul class="simple">
+<li><p>Disponibilidad y acceso: los datos deben estar disponibles de manera integral
+y en una forma en que no genere costos exhorbitantes para la parte interesada en
+copiarlos. El escenario más favorable es poner los datos a disposición para
+que sean descargados a través de Internet. Asimismo, los datos deben ofrecerse
+en un formato conveniente y modificable.</p></li>
+<li><p>Reutilización y redistribución: los datos deben ponerse a disposición bajo
+términos de uso que permitan su reutilización y redistribución, e incluso que
+permitan su mezcla y entrecruzamiento con otros obtenidos de distintas bases.</p></li>
+<li><p>Participación universal: cualquier persona debe poder usar, reutilizar y
+redistribuir los datos. No debe existir ningún tipo de discriminación contra
+campos de actuación, individuos o grupos. Por ejemplo, restricciones “no
+comerciales” que impidieren el uso “comercial” de los datos, o bien
+restricciones de utilización para determinados fines específicos (por ejemplo,
+sólo para averiguación personal), no están permitidas.</p></li>
+</ul>
+<p>Con lo anterior tenemos una noción más clara de lo que significa que los datos
+estén o sean abiertos. Existen diversos repositorios y paginas web que nos
+permiten acceder a datos abiertos. Por ejemplo, si estamos interesados en
+estudiar los cultivos de Colombia podemos ingresar al sitio web en el que se
+publican datos del gobierno Colombiano [<a class="reference external" href="https://www.datos.gov.co">https://www.datos.gov.co</a>], allí
+encontraremos una gama de conjuntos de datos referentes al tema, si escogemos
+uno en especifico, veremos sus detalles y si deseamos tener la data en un
+directorio de nuestro equipo tenemos la opción de descargarlo en formato csv.</p>
+<p>Otra página web que nos brinda una serie de conjuntos de datos es la
+correspondiente al gobierno de España <a class="reference external" href="https://datos.gob.es">https://datos.gob.es</a> en el cual podemos
+acceder a datos que abarcan el ámbito social, estos datos los podemos descargar
+en diversos formatos como csv o JSON.</p>
+<p>Ahora, si nos planteamos realizar proyectos en los cuales se tenga como materia
+de estudio datos que no sean de adquisición propia sino provenientes de otras
+fuentes, específicamente datos abiertos, no debemos olvidar que:</p>
+<ol class="simple">
+<li><p>Los datos abiertos poseen una documentación, esta permite que se tenga una
+mejor noción de los datos, su contenido y estructura. Además de que en ella
+se menciona la procedencia, las técnicas utilizadas para su obtención y los
+metadatos. Estos últimos son datos de los datos, permiten describir los datos
+de manera detallada.</p></li>
+<li><p>Todos los elementos de acceso abierto tienen la particularidad de que se
+muestra de manera explicita sus propietarios, autores y las personas
+involucradas en el trabajo, es importante que si utilizamos o reutlizamos
+alguno de sus trabajos no pasemos desapercibidos estos nombres y los
+mencionemos en nuestros proyectos. Además, si tenemos cualquier duda sobre
+los datos y no encontramos información en la documentación podemos
+contactarlos.</p></li>
+<li><p>Los conjuntos datos poseen una estructura predeterminada que puede ser
+descargada en distintos formatos, lo debemos tener en cuenta para realizar un
+análisis óptimo. Esto es porque muchas veces nuestro equipo esta configurado
+de alguna manera en especifico y los archivos son leídos de manera
+equivocada. Por ejemplo, descargamos un archivo csv delimitado por comas y
+tenemos configurado en nuestro equipo la aplicación para la lectura de los
+datos con separador decimal coma(,). Entonces resulta que en la aplicación se
+mostrarán los datos de la columnas en una única columna. Para solucionar esto
+se puede cambiar la configuración o indicarle en el proceso de lectura el
+tipo de separador.</p></li>
+<li><p>Los datos abiertos pueden reutilizarse, si hacemos esto de manera que unamos
+uno o más conjuntos de datos debemos tener cuidado y verificar que la
+estructura de los datos sea la misma. Esto evitaría que la información se
+confunda obteniendo una mezcla homogénea de los datos.</p></li>
+<li><p>Los resultados obtenidos según sea el carácter de la investigación debieren
+ser compartidos a través de un paper o artículo científico de manera que vaya
+de la mano con el acceso abierto. Esto permitirá una retroalimentación
+constante y si es el caso brindaría otro enfoque para el análisis de estos
+datos.</p></li>
+</ol>
+<p>En resumen, los datos abiertos son una iniciativa que permite a los
+investigadores y ciudadanos en general tener una visión más amplia y sustentada
+de lo que ocurre a su alrededor, proponer maneras de analizar y contrastar datos
+y resultados. ¡Por eso te animamos a que consideres el uso de datos abiertos en tus próximos proyectos!</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./articles/0024-5_datos_abiertos"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../0025-comopresentartucodigo/comopresentartucodigo.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">¿Cómo presentar tu código como un artículo científico?</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../0023-documentacioncodigoabierto/documentacioncodigoabierto.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By OpenScienceLabs Team<br/>
+    
+        &copy; Copyright 2020.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

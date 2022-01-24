@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git de 0 a 100 en diez sencillos pasos &#8212; Open Science Labs</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="¿Qué es la ciencia abierta?" href="../0001-ciencia_abierta/ciencia_abierta.html" />
+    <link rel="prev" title="Todo lo que debes saber sobre la investigación colaborativa" href="../0003-investigacion_colaborativa/investigacion_colaborativa.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/osl.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open Science Labs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Open Science Labs
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  blog
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0057-r-ggplot-bo/ArticuloGgplotenR.html">
+   #0057: Visualiza tus datos en R con ggplot2 y gganimate
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0056-openscienceframework/openscienceframework.html">
+   0056: ¿Qué es el Open Science Framework?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0055-Rstudio/Rstudio.html">
+   0055: Primeros pasos con RStudio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0054-dvc/dvc.html">
+   0054: ¿Qué es el Data Version Control (DVC) y por qué es necesario que tu equipo sepa cómo utilizarlo?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0053-spyder/spyder.html">
+   0053: Primeros pasos con Spyder
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0052-carpentries/carpentries.html">
+   0052: ¿Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0051-5proyectosdeinteligenciaartificial/5proyectosdeinteligenciaartificial.html">
+   0051: 5 proyectos de inteligencia artificial que te sorprenderan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0050-10herramientasgestionequipos/10herramientasgestionequipos.html">
+   #0050: 10 Plataformas que te ayudarán en la gestión de tu grupo de trabajo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0049-figshare/figshare.html">
+   #0049: Todas las posibilidades que te ofrece utilizar figshare en tus proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0048-tipsconda/tipsconda.html">
+   #0048: Características y tips útiles que te ayudarán a sacar el máximo provecho de CONDA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0047-conda/conda.html">
+   #0047: ¿Cómo instalar y comenzar a utilizar Conda?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0046-tensorflow/tensorflow.html">
+   #0046: ¿Cómo instalar y comenzar a utilizar Tensorflow?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0045-rOpenSci/rOpenSci.html">
+   #0045: Te contamos sobre la comunidad rOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0044-dataverse/dataverse.html">
+   #0044: Dataverse y su potencial para proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0043-PyOpenSci/PyOpenSci.html">
+   #0043: pyOpenSci: un promotor de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0042-LaboratoriosCovid/LaboratoriosCovid.html">
+   #0042: Los laboratorios sociales y el manejo del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0041-algunosproyectoscodigoabierto/algunosproyectoscodigoabierto.html">
+   #0041: Algunos proyectos entretenidos de código abierto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0040-4lugarescienciaabierta/4lugarescienciaabierta.html">
+   #0040: Te enseñamos 4 lugares para aprender los fundamentos de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0039-bibliotecas_visualizacion/bibliotecas_visualizacion.html">
+   #0039: Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0038-bash/bash.html">
+   Automatización de tareas vía bash
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0037-visualizacion_python/visualizacion_python.html">
+   #0037: Herramientas de visualización en Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0036-cienciaabiertapandemias/cienciaabiertapandemias.html">
+   #0036: ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0035-automatizaciondecitasyreferencias/automatizaciondecitasyreferencias.html">
+   #0035: Si has pensado en cómo automatizar la construcción de citas en tu proyecto, te contamos cómo hacerlo posible.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0034-dashboard_integridad/dashboard_integridad.html">
+   #0034: La importancia de la integridad en los datos manejados en los dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0033-licenciascienciaabierta/licenciascienciaabierta.html">
+   #0033: Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0032-visualizacionR/visualizacionR.html">
+   #0032: Herramientas de visualización en R
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0031-documentaci%C3%B3n_cienciaabierta/documentaci%C3%B3n_cienciaabierta.html">
+   #0031: ¿Cómo documentar tu proyecto de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0030-ciudadanaCOVID19/ciudadanaCOVID19.html">
+   #0030: Algunos proyectos de ciencia e inteligencia ciudadana para atender la pandemia del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0029-principios_acceso_abierto/principios_acceso_abierto.html">
+   #0029: ¿Cómo aplicar los principios de acceso abierto en tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0028-coronavirus/coronavirus.html">
+   #0028: Te mostramos algunos repositorios con datos sobre el COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0027-dashboards-visualizacion-datos/dashboards-visualizacion-datos.html">
+   #0027: Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0026-inv_reproducible_codigoabierto/inv_reproducible_codigoabierto.html">
+   #0026: ¿Cómo aplicar la investigación reproducible a proyectos de código abierto?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0025-comopresentartucodigo/comopresentartucodigo.html">
+   #0025: ¿Cómo presentar tu código como un artículo científico?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0024-5_datos_abiertos/5_datos_abiertos.html">
+   #0024: Cinco cosas que no debes olvidar al trabajar con datos abiertos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0023-documentacioncodigoabierto/documentacioncodigoabierto.html">
+   #0023: Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0022-Investigacion_abierta_rep_vers/Investigacion_abierta_rep_vers.html">
+   #0022: La investigación abierta, el manejo de repositorios y control de versiones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0021-mentor%C3%ADas/mentor%C3%ADas.html">
+   #0021: ¿Qué son las mentorías y cómo potencian los proyectos de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0020-codigo_abierto/codigo_abierto.html">
+   #0020: ¿Qué es el código abierto y cómo puede ayudarte?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0019-tres_proyectos_ciencia_ciudadana/tres_proyectos_ciencia_ciudadana.html">
+   #0019: Tres proyectos de ciencia ciudadana que te sorprenderán
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0018-quesonlaboratoriossociales/quesonlaboratoriossociales.html">
+   #0018: ¿Qué son los laboratorios sociales y cómo pueden ayudar a los equipos de investigación?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0017-5ProductividadGit/5ProductividadGit.html">
+   #0017: Cinco tips para aumentar tu productividad con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0016-queescienciaciudadana/queescienciaciudadana.html">
+   #0016: ¿Qué es ciencia ciudadana?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0015-investigacionreproducible/investigacionreproducible.html">
+   #0015: ¿Cuáles son los principios de la investigación reproducible?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0014-5Markdown/5Markdown.html">
+   #0014: Cinco cosas que no debes olvidar al trabajar con Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0013-acceso_abierto/acceso_abierto.html">
+   #0013: ¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0012-5Repositorios/5Repositorios.html">
+   #0012: Te hablamos de cinco repositorios con datos abiertos sobre países
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0011-10razonesparausarpython/10razonesparausarpython.html">
+   #0011: 10 razones para usar Python en tu proximo proyecto de investigación
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0010-manejodecienciaabierta/manejodecienciaabierta.html">
+   #0010: Aspectos clave en el manejo de equipos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.html">
+   #0009: Investigación Colaborativa con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0008-5gestion_datos/5gestion_datos.html">
+   #0008: Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0007-datosabiertos/datosabiertos.html">
+   #0007: Que son los datos abiertos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0006-LenguajeR/LenguajeR.html">
+   #0006: ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0005-investigacion_abierta_ciencias/investigacion_abierta_ciencias.html">
+   #0005: La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0004-que-es-jupyter/que-es-jupyter.html">
+   #0004: ¿Ya has probado los Cuadernos de Jupyter? Te explicamos qué son y cómo te ayudarán en tu próxima investigación.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0003-investigacion_colaborativa/investigacion_colaborativa.html">
+   #0003: Todo lo que debes saber sobre la investigación colaborativa
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   #0002: Git de 0 a 100 en diez sencillos pasos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0001-ciencia_abierta/ciencia_abierta.html">
+   #0001: ¿Qué es la ciencia abierta?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/articles/0002-GitCeroACien/GitCeroACien.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creacion-de-tu-cuenta-github">
+   1. Creación de tu cuenta Github
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creacion-de-tu-primer-repositorio">
+   2. Creación de tu primer repositorio
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalar-git-en-tu-computadora">
+   3. Instalar Git en tu computadora
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clonando-un-repositorio-a-tu-computadora">
+   4. Clonando un repositorio a tu computadora
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agrega-archivos-a-tu-repositorio-y-haz-tu-primer-commit">
+   5. Agrega archivos a tu repositorio y haz tu primer commit
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#maneja-distintas-ramas-de-tu-repositorio">
+   6. Maneja distintas ramas de tu repositorio
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#realiza-un-merge">
+   7. Realiza un merge
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verificar-cambios-con-tu-copia-local">
+   8. Verificar cambios con tu copia local
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proponer-cambios-a-los-repositorios-de-los-demas">
+   9. Proponer cambios a los repositorios de los demás
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aceptar-o-negar-cambios-propuestos">
+   10. Aceptar o negar cambios propuestos
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Git de 0 a 100 en diez sencillos pasos</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creacion-de-tu-cuenta-github">
+   1. Creación de tu cuenta Github
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creacion-de-tu-primer-repositorio">
+   2. Creación de tu primer repositorio
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalar-git-en-tu-computadora">
+   3. Instalar Git en tu computadora
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clonando-un-repositorio-a-tu-computadora">
+   4. Clonando un repositorio a tu computadora
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agrega-archivos-a-tu-repositorio-y-haz-tu-primer-commit">
+   5. Agrega archivos a tu repositorio y haz tu primer commit
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#maneja-distintas-ramas-de-tu-repositorio">
+   6. Maneja distintas ramas de tu repositorio
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#realiza-un-merge">
+   7. Realiza un merge
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verificar-cambios-con-tu-copia-local">
+   8. Verificar cambios con tu copia local
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proponer-cambios-a-los-repositorios-de-los-demas">
+   9. Proponer cambios a los repositorios de los demás
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aceptar-o-negar-cambios-propuestos">
+   10. Aceptar o negar cambios propuestos
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="git-de-0-a-100-en-diez-sencillos-pasos">
+<h1>Git de 0 a 100 en diez sencillos pasos<a class="headerlink" href="#git-de-0-a-100-en-diez-sencillos-pasos" title="Permalink to this headline">¶</a></h1>
+<p><strong>Por Rainer Palm</strong></p>
+<p>¿Necesitas aprender <a class="reference external" href="http://git.io">Git</a> para manejar con mayor eficiencia y control tus projectos y trabajos? Ya sea para desarrollo de software, creación de paginas web, investigaciones científicas, o para manejar tus escritos, te podría ser muy util aprovechar la seguridad que te da Git con su control de versiones, o la facilidad con la que te deja colaborar con tus colegas. Ademas, podría serte de mucha ayuda a la hora de buscar empleo en tu area de trabajo, ya que los proyectos y contribuciones que tengas subidos a Git te servirán como parte de tu curriculo.
+Sin embargo, puede parecerte algo intimidante debido a la gran diversidad de opciones que te proporciona, además del uso requerido de la línea de comandos en la aplicación Git. Pero si sigues los 10 pasos que presentamos a continuación, te darás cuenta de lo sencillo que puede resultar subir y manejar archivos en tu primer repositorio, crear varias ramas en el mismo y compartir archivos con colaboradores.</p>
+<div class="section" id="creacion-de-tu-cuenta-github">
+<h2>1. Creación de tu cuenta Github<a class="headerlink" href="#creacion-de-tu-cuenta-github" title="Permalink to this headline">¶</a></h2>
+<p>Aunque es posible utilizar git a nivel local, es preferible que utilizes una plataforma que te permita alojar repositorios en la nube, tal como Github or Gitlab para difundir mas fácilmente tu trabajo. Podrás registrar una cuenta <a class="reference external" href="https://github.com/join">Github</a>, donde simplemente tendrás que proporcionar tus datos y seguir los pasos de creación de cuenta. Tras registrarla, podrás seleccionar un plan de pago cuando quieras, o simplemente usarlo de forma gratuita.</p>
+</div>
+<div class="section" id="creacion-de-tu-primer-repositorio">
+<h2>2. Creación de tu primer repositorio<a class="headerlink" href="#creacion-de-tu-primer-repositorio" title="Permalink to this headline">¶</a></h2>
+<p>Inmediatamente después de crear tu primera cuenta, Github te guiará hacia la creación de tu primer repositorio, a través de <a class="reference external" href="https://github.com/new">https://github.com/new</a>, donde tendrás que ponerle un nombre y una descripción. Github automáticamente crea el repositorio con un archivo <a class="reference external" href="http://README.md">README.md</a>, el cual es un simple archivo de texto que será visto al entrar en la pagina del repositorio. Este archivo tiene información importante acerca del repositorio, el propósito de los archivos que están allí y de cómo está organizado el repositorio. También puedes aprovechar de colocar allí algún enlace a la página web del proyecto (si la tienes), o un correo para contactos e información.</p>
+</div>
+<div class="section" id="instalar-git-en-tu-computadora">
+<h2>3. Instalar Git en tu computadora<a class="headerlink" href="#instalar-git-en-tu-computadora" title="Permalink to this headline">¶</a></h2>
+<p>Para poder subir archivos a tu repositorio desde tu disco duro, tendrás que instalar Git en tu computadora. Simplemente descárgalo desde <a class="reference external" href="https://git-scm.com/">https://git-scm.com/</a>, o, si estas usando Linux, instálalo mediante el gestor de paquetes de tu distribución buscando por el paquete git. Después podrás usarlo mediante la línea de comandos. Verífica si fue correctamente instalado ejecutando
+git –-help</p>
+</div>
+<div class="section" id="clonando-un-repositorio-a-tu-computadora">
+<h2>4. Clonando un repositorio a tu computadora<a class="headerlink" href="#clonando-un-repositorio-a-tu-computadora" title="Permalink to this headline">¶</a></h2>
+<p>Cuando creas un repositorio Git, automáticamente se crea una carpeta oculta .git la cual contiene información respecto a los archivos y ramas de tu repositorio, los cambios a éstos y el último commit del repositorio. Tu repositorio en Github también contiene esta carpeta, asi que, para ahorrarte un dolor de cabeza, deberías clonarlo (copiarlo en tu ordenador), ya sea descárgandolo desde su página o mediante la línea de comandos escribiendo:
+git clone <a class="reference external" href="https://github.com/">https://github.com/</a>(tu usuario)/(nombre del repositorio).git. También puedes copiar la URL del repositorio desde la página.</p>
+</div>
+<div class="section" id="agrega-archivos-a-tu-repositorio-y-haz-tu-primer-commit">
+<h2>5. Agrega archivos a tu repositorio y haz tu primer commit<a class="headerlink" href="#agrega-archivos-a-tu-repositorio-y-haz-tu-primer-commit" title="Permalink to this headline">¶</a></h2>
+<p>Cada vez que realizas cambios en tu repositorio (ya sea modificando, agregando o borrando archivos), deberás sincronizar el conjunto de cambios con tu repositorio, haciendo lo que se conoce como un commit. Puedes utilizar los comandos:</p>
+<ul class="simple">
+<li><p>git add {nombre de tu archivo}</p></li>
+<li><p>git rm {nombre de tu archivo}</p></li>
+</ul>
+<p>para hacer cambios en la copia local de tu repositorio, ya sea añadir y modificar o quitar archivos, respectivamente. Antes de sincronizar los cambios, debes ‘empaquetarlos’ en un commit, mediante el comando
+git commit -m “{descripción de los cambios}”</p>
+<p>Después podrás sincronizar ese commit con el servidor de Github utilizando el comando git push origin master
+Con aplicaciones gráficas como Github Desktop u otra similar, podrás realizar estos cambios de una forma mucho más intuitiva.</p>
+</div>
+<div class="section" id="maneja-distintas-ramas-de-tu-repositorio">
+<h2>6. Maneja distintas ramas de tu repositorio<a class="headerlink" href="#maneja-distintas-ramas-de-tu-repositorio" title="Permalink to this headline">¶</a></h2>
+<p>Cuando creas tu repositorio con git, sólo cuenta con la rama principal, o “default”, la cual se denomina master. En git la rama es una especie de ‘apuntador’ el cual señala hacia una serie especifica de commits. Cuando quieras hacer cambios en tus archivos, para realizar pruebas sin afectar el funcionamiento del código que ya sabes que funciona, puedes crear otra rama. Si los resultados son de tu agrado, podrás sincronizar ambas ramas más tarde.
+Para crear otra rama, simplemente ejecuta:
+git checkout -b {nombre de tu rama}
+Esto hará que, a partir de ahora, todos los cambios que realices a tus archivos sean parte de la rama que has creado. Si deseas sincronizar tu nueva rama con el servidor de Github, ejecutas:
+git push origin {nombre de tu rama}
+Igual que para hacer cambios en master, deberás hacer un commit para sincronizar los cambios locales con el repositorio de Github.</p>
+</div>
+<div class="section" id="realiza-un-merge">
+<h2>7. Realiza un merge<a class="headerlink" href="#realiza-un-merge" title="Permalink to this headline">¶</a></h2>
+<p>El comando git checkout nos permite cambiar de rama dentro del repositorio. Puedes usarlo para volver a hacer cambios en la rama master con el siguiente comando:
+git checkout master
+Si los cambios que has hecho en la rama te resultan de tu agrado, puedes hacer un merge, lo que quiere decir que se fusionan los cambios hechos en la rama secundaria con los de la rama en la que estas ubicado actualmente (en este caso, master).
+git merge {rama con cambios}
+Git intentará hacer este proceso automáticamente, pero puede ser que hayan conflictos entre ramas con los cambios hechos. En este caso, tendrás que editar los archivos que te muestra Git, y agregarlos manualmente con
+git add {nombre de archivo}</p>
+</div>
+<div class="section" id="verificar-cambios-con-tu-copia-local">
+<h2>8. Verificar cambios con tu copia local<a class="headerlink" href="#verificar-cambios-con-tu-copia-local" title="Permalink to this headline">¶</a></h2>
+<p>En caso de que tu copia local del repositorio no tenga los cambios hechos hasta el último commit en la rama que estás trabajando, puedes actualizarla con el comando
+git pull
+Si quieres ver que cambios han habido entre las distintas ramas del repositorio, puedes hacerlo con el comando
+git diff {rama fuente} {rama a comparar}
+También puedes ver la historia del repositorio (los commits hechos a lo largo del tiempo) usando el comando
+git log
+Recomendamos que primero ejecutes git log –help para ver como puedes aprovechar mejor esta herramienta.</p>
+</div>
+<div class="section" id="proponer-cambios-a-los-repositorios-de-los-demas">
+<h2>9. Proponer cambios a los repositorios de los demás<a class="headerlink" href="#proponer-cambios-a-los-repositorios-de-los-demas" title="Permalink to this headline">¶</a></h2>
+<p>En caso de que quieras hacer un commit a un repositorio que sea de otra persona, simplemente tendras que ir a la pagina del repositorio en Github, hacer un fork (una copia personal de ese repositorio, como un puente hacia el original), y clonarlo en tu computadora.
+Luego de crear los commit deseados, y subirlos a tu fork, podras dirigirte a la pagina en la que reside tu fork y darle click a ‘New pull request’ (o solicitud de extracción). Esto te llevara a una pagina donde puedes evaluar los cambios que has hecho y crear una solicitud para que los propietarios del repositorio los fusionen con la rama master del repositorio.</p>
+</div>
+<div class="section" id="aceptar-o-negar-cambios-propuestos">
+<h2>10. Aceptar o negar cambios propuestos<a class="headerlink" href="#aceptar-o-negar-cambios-propuestos" title="Permalink to this headline">¶</a></h2>
+<p>Cuando un colaborador siga los pasos descritos anteriormente y haga una solicitud de extracción, podrás verificar los cambios que se han realizado en el commit de su fork, ademas de ver la descripción de este y las sugerencias que han dado. Podrás entonces conversar con ellos en los comentarios de la solicitud de extracción, y dependiendo de lo que consideres apropiado, aceptar o negar los commit propuestos, y fusionar su fork con la rama master.
+En caso de que quieras que un colaborador pueda contribuir al proyecto sin necesidad de aprobar sus commit, podrás invitarlos mediante la pagina de Parámetros (accesible mediante la pagina del repositorio), simplemente dandole clic a Colaboradores en la barra lateral izquierda y añadiendo su nombre de usuario.</p>
+<p>Si has seguido todos los pasos hasta ahora, felicidades, ya puedes considerarte oficialmente un usuario de git! Mantener y actualizar tus propios repositorios y colaborar con los demás usuarios de Github es mas sencillo de lo que parece. Si así lo deseas, puedes seguir buscando información acerca de como aprovechar git al maximo, ya sea a través del libro <a class="reference external" href="https://git-scm.com/book/es/v2/">Pro Git</a>, o documentación de <a class="reference external" href="https://help.github.com/en/github">Github</a>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./articles/0002-GitCeroACien"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../0003-investigacion_colaborativa/investigacion_colaborativa.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Todo lo que debes saber sobre la investigación colaborativa</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../0001-ciencia_abierta/ciencia_abierta.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">¿Qué es la ciencia abierta?</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By OpenScienceLabs Team<br/>
+    
+        &copy; Copyright 2020.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

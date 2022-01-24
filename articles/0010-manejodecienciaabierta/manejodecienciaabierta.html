@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aspectos clave en el manejo de equipos de ciencia abierta &#8212; Open Science Labs</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Investigación Colaborativa con Git" href="../0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.html" />
+    <link rel="prev" title="10 razones para usar Python en tu proximo proyecto de investigación" href="../0011-10razonesparausarpython/10razonesparausarpython.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/osl.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open Science Labs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Open Science Labs
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  blog
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0057-r-ggplot-bo/ArticuloGgplotenR.html">
+   #0057: Visualiza tus datos en R con ggplot2 y gganimate
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0056-openscienceframework/openscienceframework.html">
+   0056: ¿Qué es el Open Science Framework?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0055-Rstudio/Rstudio.html">
+   0055: Primeros pasos con RStudio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0054-dvc/dvc.html">
+   0054: ¿Qué es el Data Version Control (DVC) y por qué es necesario que tu equipo sepa cómo utilizarlo?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0053-spyder/spyder.html">
+   0053: Primeros pasos con Spyder
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0052-carpentries/carpentries.html">
+   0052: ¿Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0051-5proyectosdeinteligenciaartificial/5proyectosdeinteligenciaartificial.html">
+   0051: 5 proyectos de inteligencia artificial que te sorprenderan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0050-10herramientasgestionequipos/10herramientasgestionequipos.html">
+   #0050: 10 Plataformas que te ayudarán en la gestión de tu grupo de trabajo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0049-figshare/figshare.html">
+   #0049: Todas las posibilidades que te ofrece utilizar figshare en tus proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0048-tipsconda/tipsconda.html">
+   #0048: Características y tips útiles que te ayudarán a sacar el máximo provecho de CONDA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0047-conda/conda.html">
+   #0047: ¿Cómo instalar y comenzar a utilizar Conda?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0046-tensorflow/tensorflow.html">
+   #0046: ¿Cómo instalar y comenzar a utilizar Tensorflow?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0045-rOpenSci/rOpenSci.html">
+   #0045: Te contamos sobre la comunidad rOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0044-dataverse/dataverse.html">
+   #0044: Dataverse y su potencial para proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0043-PyOpenSci/PyOpenSci.html">
+   #0043: pyOpenSci: un promotor de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0042-LaboratoriosCovid/LaboratoriosCovid.html">
+   #0042: Los laboratorios sociales y el manejo del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0041-algunosproyectoscodigoabierto/algunosproyectoscodigoabierto.html">
+   #0041: Algunos proyectos entretenidos de código abierto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0040-4lugarescienciaabierta/4lugarescienciaabierta.html">
+   #0040: Te enseñamos 4 lugares para aprender los fundamentos de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0039-bibliotecas_visualizacion/bibliotecas_visualizacion.html">
+   #0039: Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0038-bash/bash.html">
+   Automatización de tareas vía bash
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0037-visualizacion_python/visualizacion_python.html">
+   #0037: Herramientas de visualización en Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0036-cienciaabiertapandemias/cienciaabiertapandemias.html">
+   #0036: ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0035-automatizaciondecitasyreferencias/automatizaciondecitasyreferencias.html">
+   #0035: Si has pensado en cómo automatizar la construcción de citas en tu proyecto, te contamos cómo hacerlo posible.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0034-dashboard_integridad/dashboard_integridad.html">
+   #0034: La importancia de la integridad en los datos manejados en los dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0033-licenciascienciaabierta/licenciascienciaabierta.html">
+   #0033: Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0032-visualizacionR/visualizacionR.html">
+   #0032: Herramientas de visualización en R
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0031-documentaci%C3%B3n_cienciaabierta/documentaci%C3%B3n_cienciaabierta.html">
+   #0031: ¿Cómo documentar tu proyecto de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0030-ciudadanaCOVID19/ciudadanaCOVID19.html">
+   #0030: Algunos proyectos de ciencia e inteligencia ciudadana para atender la pandemia del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0029-principios_acceso_abierto/principios_acceso_abierto.html">
+   #0029: ¿Cómo aplicar los principios de acceso abierto en tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0028-coronavirus/coronavirus.html">
+   #0028: Te mostramos algunos repositorios con datos sobre el COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0027-dashboards-visualizacion-datos/dashboards-visualizacion-datos.html">
+   #0027: Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0026-inv_reproducible_codigoabierto/inv_reproducible_codigoabierto.html">
+   #0026: ¿Cómo aplicar la investigación reproducible a proyectos de código abierto?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0025-comopresentartucodigo/comopresentartucodigo.html">
+   #0025: ¿Cómo presentar tu código como un artículo científico?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0024-5_datos_abiertos/5_datos_abiertos.html">
+   #0024: Cinco cosas que no debes olvidar al trabajar con datos abiertos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0023-documentacioncodigoabierto/documentacioncodigoabierto.html">
+   #0023: Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0022-Investigacion_abierta_rep_vers/Investigacion_abierta_rep_vers.html">
+   #0022: La investigación abierta, el manejo de repositorios y control de versiones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0021-mentor%C3%ADas/mentor%C3%ADas.html">
+   #0021: ¿Qué son las mentorías y cómo potencian los proyectos de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0020-codigo_abierto/codigo_abierto.html">
+   #0020: ¿Qué es el código abierto y cómo puede ayudarte?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0019-tres_proyectos_ciencia_ciudadana/tres_proyectos_ciencia_ciudadana.html">
+   #0019: Tres proyectos de ciencia ciudadana que te sorprenderán
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0018-quesonlaboratoriossociales/quesonlaboratoriossociales.html">
+   #0018: ¿Qué son los laboratorios sociales y cómo pueden ayudar a los equipos de investigación?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0017-5ProductividadGit/5ProductividadGit.html">
+   #0017: Cinco tips para aumentar tu productividad con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0016-queescienciaciudadana/queescienciaciudadana.html">
+   #0016: ¿Qué es ciencia ciudadana?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0015-investigacionreproducible/investigacionreproducible.html">
+   #0015: ¿Cuáles son los principios de la investigación reproducible?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0014-5Markdown/5Markdown.html">
+   #0014: Cinco cosas que no debes olvidar al trabajar con Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0013-acceso_abierto/acceso_abierto.html">
+   #0013: ¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0012-5Repositorios/5Repositorios.html">
+   #0012: Te hablamos de cinco repositorios con datos abiertos sobre países
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0011-10razonesparausarpython/10razonesparausarpython.html">
+   #0011: 10 razones para usar Python en tu proximo proyecto de investigación
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   #0010: Aspectos clave en el manejo de equipos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.html">
+   #0009: Investigación Colaborativa con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0008-5gestion_datos/5gestion_datos.html">
+   #0008: Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0007-datosabiertos/datosabiertos.html">
+   #0007: Que son los datos abiertos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0006-LenguajeR/LenguajeR.html">
+   #0006: ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0005-investigacion_abierta_ciencias/investigacion_abierta_ciencias.html">
+   #0005: La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0004-que-es-jupyter/que-es-jupyter.html">
+   #0004: ¿Ya has probado los Cuadernos de Jupyter? Te explicamos qué son y cómo te ayudarán en tu próxima investigación.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0003-investigacion_colaborativa/investigacion_colaborativa.html">
+   #0003: Todo lo que debes saber sobre la investigación colaborativa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0002-GitCeroACien/GitCeroACien.html">
+   #0002: Git de 0 a 100 en diez sencillos pasos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0001-ciencia_abierta/ciencia_abierta.html">
+   #0001: ¿Qué es la ciencia abierta?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/articles/0010-manejodecienciaabierta/manejodecienciaabierta.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#control-de-versiones">
+   Control de versiones
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manejo-de-equipos-en-tus-repositorios">
+   Manejo de equipos en tus repositorios
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metodologia-agil">
+   Metodología ágil
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entrenamiento-en-politicas-de-ciencia-abierta">
+   Entrenamiento en políticas de ciencia abierta
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#incentivo-a-la-ciencia-abierta">
+   Incentivo a la ciencia abierta
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Aspectos clave en el manejo de equipos de ciencia abierta</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#control-de-versiones">
+   Control de versiones
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manejo-de-equipos-en-tus-repositorios">
+   Manejo de equipos en tus repositorios
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metodologia-agil">
+   Metodología ágil
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entrenamiento-en-politicas-de-ciencia-abierta">
+   Entrenamiento en políticas de ciencia abierta
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#incentivo-a-la-ciencia-abierta">
+   Incentivo a la ciencia abierta
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="aspectos-clave-en-el-manejo-de-equipos-de-ciencia-abierta">
+<h1>Aspectos clave en el manejo de equipos de ciencia abierta<a class="headerlink" href="#aspectos-clave-en-el-manejo-de-equipos-de-ciencia-abierta" title="Permalink to this headline">¶</a></h1>
+<p>Por: Rainer Palm</p>
+<p>Ya sea por temas de financiamiento, el uso de tecnologías de comunicación más avanzadas, o la necesidad de realizar proyectos interdisciplinarios, la investigación colaborativa es una práctica bastante frecuente. A pesar de el enfoque historico y el tratamiento en medios de comunicación, hacia descubrimientos individuales, y pese a la presencia de ciertos personajes carismáticos, la realidad hoy en dia es otra: la gran mayoría de los científicos trabajan dentro de grupos donde los involucrados aportan al resultado final gracias a la retroalimentación constante, a pesar de que muchas veces ni siquiera comparten la misma disciplina entre los investigadores involucrados. La eficiencia de la cooperación se hace notar por si sola, y la necesidad de dar resultados rápidos en proyectos cada vez más grandes, requiere de la creación de grupos con flujos de trabajos disciplinados y metodologías ágiles.</p>
+<p>Las prácticas de ciencia abierta (libre distribución de la información, disponibilidad de métodos, datos y herramientas usadas, colaboración abierta), son atractivas no solo por cuestiones éticas, sino también porque sirven de maravilla para el problema de organización de equipos. No solamente es bastante útil el uso de herramientas como Git para compartir codigo fuente y demás información dentro de un grupo pequeño de investigadores para que todos puedan trabajar desde lo mismo partiendo del mismo punto, sino que también el uso de los recursos compartidos libremente por otros y los posibles aportes o sugerencias de gente interesada en tu investigación puede resultar bastante significativo para tus proyectos.</p>
+<p>¿Cuales son, entonces, las principales herramientas de una investigación colaborativa de ciencia abierta? Tomando en cuenta que necesitamos rapidez, disciplina, coordinación, y libre disponibilidad y colaboración entre todos los posibles integrantes de nuestro grupo, podemos afirmar que, por lo general, debemos usar las siguientes:</p>
+<div class="section" id="control-de-versiones">
+<h2>Control de versiones<a class="headerlink" href="#control-de-versiones" title="Permalink to this headline">¶</a></h2>
+<p>El uso de software de control de versiones y de plataformas que alojen sus respectivos repositorios en la nube (como Github, Gitlab, Docker, etc.) se ha vuelto bastante esencial no solamente para cuestiones de ciencia abierta, sino para desarollo de todo tipo de software, desde scripts pequeños de procesamiento de archivos hasta videojuegos o modelado 3D. La seguridad que te otorga el sistema de respaldo, el alojar tus archivos en la nube, y la facilidad con la que te deja colaborar con tus colegas, añadiendo juntos archivos y revisiones al repositorio de una forma organica, lo hace una herramienta indispensable para todo tipo de proyecto que utilize codigo.</p>
+<p>El libre acceso a tus proyectos mediante sus repositorios facilita también la tareas de divulgación de tu trabajo, localización de  colaboradores, corregir errores en tu procedimiento, reproducir tu investigación, y añadir tus proyectos a tu curriculum.</p>
+</div>
+<div class="section" id="manejo-de-equipos-en-tus-repositorios">
+<h2>Manejo de equipos en tus repositorios<a class="headerlink" href="#manejo-de-equipos-en-tus-repositorios" title="Permalink to this headline">¶</a></h2>
+<p>Muchas plataformas que utilizan control de versiones, suelen ofrecer también herramientas para el manejo de equipos como la creacion de cuentas, permitiendo restringir acceso a ciertas carpetas del repositorio, requerir que los cambios que hagan otros necesiten aprobación, la asignación de ciertos miembros del equipo para que revisen estos cambios, etc. Inclusive si no la poseen de manera explicita, organizar tu equipo de esta forma puede resultarte bastante beneficioso, especialmente si trabajas con colegas en distintas disciplinas. Sitios como Github también permiten anexar grupos, establecer una jerarquía clara entre grupos, administrar automáticamente la membresía del equipo de Github mediante un proveedor de identidad (o IdP, tal como Azure AD), además de ofrecer una plataforma donde pueden debatir y discutir. Aprovechar estas herramientas al maximo es crucial a la hora de organizar grupos que no puedan verse en persona.</p>
+</div>
+<div class="section" id="metodologia-agil">
+<h2>Metodología ágil<a class="headerlink" href="#metodologia-agil" title="Permalink to this headline">¶</a></h2>
+<p>El método ágil se refiere principalmente a un conjunto de prácticas que implementan los principios descritos en el manifiesto ágil<a class="reference external" href="http://agilemanifesto.org/iso/es/manifesto.html">1</a>, creado en el 2001 por personas que querian innovar en los modos tradicionales de gestionar proyectos de software. En términos generales, estas metodologías intentan enfocar el desarollo del software hacia las necesidades de las personas y las interacciones cliente-desarollador, apuntando hacia la ‘entrega temprana y continua de software con valor’. De esta forma, se logra mantener un desarollo constante, funcional y transparente, entregando software funcional regularmente mediante un flujo de trabajo sencillo y eficaz.</p>
+<p>Existen múltiples implementaciones de este método, una de las más populares siendo Scrum<a class="reference external" href="https://www.scrum.org/">2</a>, un framework de procesos ágiles diseñado para manejar problemas complejos y adaptativos sin sacrificar valor, creatividad o productividad. Principalmente pensado para equipos pequeños de 10 miembros o menos, reemplaza un acercamiento algorítmico preprogramado, por uno heurístico que valora la capacidad de las personas de adaptarse y auto-organizarse en torno a problemas complejos emergentes. Para este objetivo, busca girar el proceso de trabajo en torno a ‘sprints’ que duren alrededor de un mes, donde, tras un proceso de planificación, se crea un producto usable (llamado un ‘incremento’) y se realiza una revisión del sprint. Se trata de una de las mas famosas implementaciones gracias a que su efectividad ha sido comprobada empiricamente<a class="reference external" href="https://34slpa7u66f159hfp1fhl9aur1-wpengine.netdna-ssl.com/wp-content/uploads/2014/05/Scrum-CMMI-Going-from-Good-to-GreatAgile.pdf">3</a>, y a pesar de que es comúnmente utilizado en empresas que desarollen software su uso en investigaciones científicas ya esta siendo explorado.</p>
+</div>
+<div class="section" id="entrenamiento-en-politicas-de-ciencia-abierta">
+<h2>Entrenamiento en políticas de ciencia abierta<a class="headerlink" href="#entrenamiento-en-politicas-de-ciencia-abierta" title="Permalink to this headline">¶</a></h2>
+<p>Uno de los principales problemas a la hora de realizar proyectos de ciencia abierta es que, debido a su relativa novedad, muchas empresas e instituciones no tienen un esquema de trabajo o de políticas orientadas hacia su logro, mucho menos personas capacitadas en el área que puedan ayudar. Además, muchos científicos consideran que la forma más práctica de aprender a usar estas herramientas es trabajando con ellas.</p>
+<p>Por lo tanto, es crucial para los proyectos de ciencia abierta capacitar a sus integrantes para desarollar implementaciones de estas políticas mientras trabajan, basándose en cómo se realizan en otras<a class="reference external" href="https://www.openaire.eu/member-states-overview">4</a> instituciones<a class="reference external" href="https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-pilot-guide_en.pdf">5</a> (ya sean empresas o gobiernos). Revisando temas de derechos de autor, propiedad intelectual, acceso abierto, o datos de investigación, aclarando la disponibilidad tanto de la investigación como los datos y métodos utilizados.</p>
+</div>
+<div class="section" id="incentivo-a-la-ciencia-abierta">
+<h2>Incentivo a la ciencia abierta<a class="headerlink" href="#incentivo-a-la-ciencia-abierta" title="Permalink to this headline">¶</a></h2>
+<p>Muchos científicos pueden tener dudas respecto a los métodos de remuneración o el financiamiento que pueden recibir por una investigación que se ate a principios de ciencia abierta. Actualmente buena parte de la comunidad científica no conoce en detalle el concepto de ciencia abierta<a class="reference external" href="https://www.zbw-mediatalk.eu/2017/08/report-wie-bekommen-forschende-die-qualifikationen-fur-open-science/">6</a>, y por lo general se toma el libre acceso a publicaciones como principal requerimiento para que una investigación sea ‘abierta’. También, por lo general, desconocen si las instituciones de investigación y cuerpos de financiamiento tienen lineamientos y directrices en cuanto a acceso libre a las publicaciones se refiere.</p>
+<p>Por lo tanto, es necesario para todo grupo o organización interesado en la realización de ciencia abierta establecer reglas y políticas claras, y altamente recomendado que establezcan incentivos (tales como criterios de contratación que busquen individuos anteriormente involucrados en investigaciones abiertas o incorporación de ciencia abierta en el desarollo, apoyo y evaluación de personal científico, que son recomendaciones de una organización danesa, National Platform Open Science<a class="reference external" href="https://www.openscience.nl/files/openscience/2019-02/notitie-erkennen-en-waarderen-van-onderzoekers_en-gb.pdf">7</a>) para integrar mas investigadores dentro de esta esfera.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./articles/0010-manejodecienciaabierta"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../0011-10razonesparausarpython/10razonesparausarpython.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">10 razones para usar Python en tu proximo proyecto de investigación</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Investigación Colaborativa con Git</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By OpenScienceLabs Team<br/>
+    
+        &copy; Copyright 2020.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
