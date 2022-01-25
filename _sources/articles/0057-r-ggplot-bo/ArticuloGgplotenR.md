@@ -222,6 +222,8 @@ anim_save(filename="datosimportpandemia.gif", animation = archivo, path = ".my/p
 ```
 ```anim_save(filename, animation, path)```
     Guarda el renderizado de "animation" con el nombre "filename" en la ruta "path".
+    
+[Descarga los archivos de este ejemplo](https://github.com/OpenScienceLabs/articles/tree/main/articles/0057-r-ggplot-bo) 
 
 ## Autores ✒️
 
@@ -229,7 +231,7 @@ anim_save(filename="datosimportpandemia.gif", animation = archivo, path = ".my/p
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (CC BY SA 4.0)
+Bajo la Licencia (CC BY SA 4.0)
 
 ## Referencias 📄
 
