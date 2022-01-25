@@ -693,7 +693,7 @@ Modifica el conjunto de colores usado en el tema para realizar la gráfica.</p><
 <li><p><code class="docutils literal notranslate"><span class="pre">theme(legend.position)</span></code>Capa que modifica la posición de la leyenda dentro gráfico con “legend.position”, esta puede adquirir valores de “top”, “left”, etc.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">labs(x,</span> <span class="pre">y,</span> <span class="pre">color,</span> <span class="pre">title,</span> <span class="pre">subtitle)</span></code>Capa que pone los nombres a eje “x” y al eje “y”, además de poner el nombre encima de las leyendas con “color”, el nombre título y subtítulo con “title” y “subtitle” respectivamente.</p></li>
 </ul>
-<p><img alt="alt text" src="https://github.com/OpenScienceLabs/articles/blob/main/articles/r-ggplot-bo/Rplot.png?raw=true" /></p>
+<p><img alt="alt text" src="https://github.com/OpenScienceLabs/tree/main/articles/0057-r-ggplot-bo/Rplot.png?raw=true" /></p>
 </div>
 <div class="section" id="grafica-animada">
 <h2>Gráfica Animada ⚙️<a class="headerlink" href="#grafica-animada" title="Permalink to this headline">¶</a></h2>
@@ -753,7 +753,7 @@ aes(x, y, label) “x” e “y” son las coordenadas donde se grafica la etiqu
 “with” “height” ancho y alto de la animación respectivamente en pixeles,
 “end_pause” cantidad de veces a repetirse el último frame para la animación.</p></li>
 </ul>
-<p><img alt="alt text" src="https://github.com/OpenScienceLabs/articles/blob/main/articles/r-ggplot-bo/datosimportpandemia.gif?raw=true" /></p>
+<p><img alt="alt text" src="https://github.com/OpenScienceLabs/tree/main/articles/0057-r-ggplot-bo/datosimportpandemia.gif?raw=true" /></p>
 <p>Despues de ver la animación podemos guardarla haciendo:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">archivo</span><span class="o">&lt;-</span><span class="n">animate</span><span class="p">(</span><span class="n">anim</span><span class="p">,</span> <span class="n">fps</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">end_pause</span> <span class="o">=</span> <span class="mi">30</span> <span class="p">)</span>
 <span class="n">anim_save</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;datosimportpandemia.gif&quot;</span><span class="p">,</span> <span class="n">animation</span> <span class="o">=</span> <span class="n">archivo</span><span class="p">,</span> <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;.my/path/save/&quot;</span><span class="p">)</span>

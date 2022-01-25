@@ -146,8 +146,7 @@ Modifica el conjunto de colores usado en el tema para realizar la gráfica.
 
 * ```labs(x, y, color, title, subtitle)```Capa que pone los nombres a eje "x" y al eje "y", además de poner el nombre encima de las leyendas con "color", el nombre título y subtítulo con "title" y "subtitle" respectivamente.
 
-
-![alt text](https://github.com/OpenScienceLabs/articles/blob/main/articles/r-ggplot-bo/Rplot.png?raw=true)
+![alt text](https://github.com/OpenScienceLabs/tree/main/articles/0057-r-ggplot-bo/Rplot.png?raw=true)
 
 ## Gráfica Animada ⚙️
 Ya teniendo nuestra nuestra gráfica estática vamos a realizar algunas modificaciones para que se resalte los datos de nuestro interés.
@@ -213,7 +212,7 @@ animate(anim, fps = 25, duration = 15, width=800, height=500, end_pause = 30 )
     "with" "height" ancho y alto de la animación respectivamente en pixeles,
     "end_pause" cantidad de veces a repetirse el último frame para la animación.
 
-![alt text](https://github.com/OpenScienceLabs/articles/blob/main/articles/r-ggplot-bo/datosimportpandemia.gif?raw=true)
+![alt text](https://github.com/OpenScienceLabs/tree/main/articles/0057-r-ggplot-bo/datosimportpandemia.gif?raw=true)
 
 Despues de ver la animación podemos guardarla haciendo:
 
