@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT. Más que un JPG &#8212; Open Science Labs</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/osl.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open Science Labs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Open Science Labs
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  blog
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0057-r-ggplot-bo/ArticuloGgplotenR.html">
+   #0057: Visualiza tus datos en R con ggplot2 y gganimate
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0056-openscienceframework/openscienceframework.html">
+   0056: ¿Qué es el Open Science Framework?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0055-Rstudio/Rstudio.html">
+   0055: Primeros pasos con RStudio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0054-dvc/dvc.html">
+   0054: ¿Qué es el Data Version Control (DVC) y por qué es necesario que tu equipo sepa cómo utilizarlo?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0053-spyder/spyder.html">
+   0053: Primeros pasos con Spyder
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0052-carpentries/carpentries.html">
+   0052: ¿Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0051-5proyectosdeinteligenciaartificial/5proyectosdeinteligenciaartificial.html">
+   0051: 5 proyectos de inteligencia artificial que te sorprenderan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0050-10herramientasgestionequipos/10herramientasgestionequipos.html">
+   #0050: 10 Plataformas que te ayudarán en la gestión de tu grupo de trabajo.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0049-figshare/figshare.html">
+   #0049: Todas las posibilidades que te ofrece utilizar figshare en tus proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0048-tipsconda/tipsconda.html">
+   #0048: Características y tips útiles que te ayudarán a sacar el máximo provecho de CONDA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0047-conda/conda.html">
+   #0047: ¿Cómo instalar y comenzar a utilizar Conda?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0046-tensorflow/tensorflow.html">
+   #0046: ¿Cómo instalar y comenzar a utilizar Tensorflow?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0045-rOpenSci/rOpenSci.html">
+   #0045: Te contamos sobre la comunidad rOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0044-dataverse/dataverse.html">
+   #0044: Dataverse y su potencial para proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0043-PyOpenSci/PyOpenSci.html">
+   #0043: pyOpenSci: un promotor de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0042-LaboratoriosCovid/LaboratoriosCovid.html">
+   #0042: Los laboratorios sociales y el manejo del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0041-algunosproyectoscodigoabierto/algunosproyectoscodigoabierto.html">
+   #0041: Algunos proyectos entretenidos de código abierto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0040-4lugarescienciaabierta/4lugarescienciaabierta.html">
+   #0040: Te enseñamos 4 lugares para aprender los fundamentos de la ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0039-bibliotecas_visualizacion/bibliotecas_visualizacion.html">
+   #0039: Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0038-bash/bash.html">
+   Automatización de tareas vía bash
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0037-visualizacion_python/visualizacion_python.html">
+   #0037: Herramientas de visualización en Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0036-cienciaabiertapandemias/cienciaabiertapandemias.html">
+   #0036: ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0035-automatizaciondecitasyreferencias/automatizaciondecitasyreferencias.html">
+   #0035: Si has pensado en cómo automatizar la construcción de citas en tu proyecto, te contamos cómo hacerlo posible.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0034-dashboard_integridad/dashboard_integridad.html">
+   #0034: La importancia de la integridad en los datos manejados en los dashboards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0033-licenciascienciaabierta/licenciascienciaabierta.html">
+   #0033: Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0032-visualizacionR/visualizacionR.html">
+   #0032: Herramientas de visualización en R
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0031-documentaci%C3%B3n_cienciaabierta/documentaci%C3%B3n_cienciaabierta.html">
+   #0031: ¿Cómo documentar tu proyecto de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0030-ciudadanaCOVID19/ciudadanaCOVID19.html">
+   #0030: Algunos proyectos de ciencia e inteligencia ciudadana para atender la pandemia del COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0029-principios_acceso_abierto/principios_acceso_abierto.html">
+   #0029: ¿Cómo aplicar los principios de acceso abierto en tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0028-coronavirus/coronavirus.html">
+   #0028: Te mostramos algunos repositorios con datos sobre el COVID-19
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0027-dashboards-visualizacion-datos/dashboards-visualizacion-datos.html">
+   #0027: Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0026-inv_reproducible_codigoabierto/inv_reproducible_codigoabierto.html">
+   #0026: ¿Cómo aplicar la investigación reproducible a proyectos de código abierto?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0025-comopresentartucodigo/comopresentartucodigo.html">
+   #0025: ¿Cómo presentar tu código como un artículo científico?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0024-5_datos_abiertos/5_datos_abiertos.html">
+   #0024: Cinco cosas que no debes olvidar al trabajar con datos abiertos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0023-documentacioncodigoabierto/documentacioncodigoabierto.html">
+   #0023: Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0022-Investigacion_abierta_rep_vers/Investigacion_abierta_rep_vers.html">
+   #0022: La investigación abierta, el manejo de repositorios y control de versiones
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0021-mentor%C3%ADas/mentor%C3%ADas.html">
+   #0021: ¿Qué son las mentorías y cómo potencian los proyectos de ciencia abierta?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0020-codigo_abierto/codigo_abierto.html">
+   #0020: ¿Qué es el código abierto y cómo puede ayudarte?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0019-tres_proyectos_ciencia_ciudadana/tres_proyectos_ciencia_ciudadana.html">
+   #0019: Tres proyectos de ciencia ciudadana que te sorprenderán
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0018-quesonlaboratoriossociales/quesonlaboratoriossociales.html">
+   #0018: ¿Qué son los laboratorios sociales y cómo pueden ayudar a los equipos de investigación?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0017-5ProductividadGit/5ProductividadGit.html">
+   #0017: Cinco tips para aumentar tu productividad con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0016-queescienciaciudadana/queescienciaciudadana.html">
+   #0016: ¿Qué es ciencia ciudadana?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0015-investigacionreproducible/investigacionreproducible.html">
+   #0015: ¿Cuáles son los principios de la investigación reproducible?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0014-5Markdown/5Markdown.html">
+   #0014: Cinco cosas que no debes olvidar al trabajar con Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0013-acceso_abierto/acceso_abierto.html">
+   #0013: ¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0012-5Repositorios/5Repositorios.html">
+   #0012: Te hablamos de cinco repositorios con datos abiertos sobre países
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0011-10razonesparausarpython/10razonesparausarpython.html">
+   #0011: 10 razones para usar Python en tu proximo proyecto de investigación
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0010-manejodecienciaabierta/manejodecienciaabierta.html">
+   #0010: Aspectos clave en el manejo de equipos de ciencia abierta
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.html">
+   #0009: Investigación Colaborativa con Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0008-5gestion_datos/5gestion_datos.html">
+   #0008: Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0007-datosabiertos/datosabiertos.html">
+   #0007: Que son los datos abiertos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0006-LenguajeR/LenguajeR.html">
+   #0006: ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0005-investigacion_abierta_ciencias/investigacion_abierta_ciencias.html">
+   #0005: La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0004-que-es-jupyter/que-es-jupyter.html">
+   #0004: ¿Ya has probado los Cuadernos de Jupyter? Te explicamos qué son y cómo te ayudarán en tu próxima investigación.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0003-investigacion_colaborativa/investigacion_colaborativa.html">
+   #0003: Todo lo que debes saber sobre la investigación colaborativa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0002-GitCeroACien/GitCeroACien.html">
+   #0002: Git de 0 a 100 en diez sencillos pasos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0001-ciencia_abierta/ciencia_abierta.html">
+   #0001: ¿Qué es la ciencia abierta?
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/articles/0058-nfts-article1/nft-mas-que-un-jpg.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pero-que-es-un-nft">
+   Pero, ¿Qué es un NFT?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estamos-ante-una-burbuja">
+   ¿Estamos ante una burbuja?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#siguenos-en-nuestras-redes-sociales">
+   Siguenos en nuestras redes sociales
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#autor">
+   Autor ✒️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#licencia">
+   Licencia 📄
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>NFT. Más que un JPG</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pero-que-es-un-nft">
+   Pero, ¿Qué es un NFT?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estamos-ante-una-burbuja">
+   ¿Estamos ante una burbuja?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#siguenos-en-nuestras-redes-sociales">
+   Siguenos en nuestras redes sociales
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#autor">
+   Autor ✒️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#licencia">
+   Licencia 📄
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="nft-mas-que-un-jpg">
+<h1>NFT. Más que un JPG<a class="headerlink" href="#nft-mas-que-un-jpg" title="Permalink to this headline">¶</a></h1>
+<p><img alt="Bored ape yacht club" src="../../_images/header8.png" /></p>
+<p>Quizá hayas escuchado el término NFT últimamente. Títulos de noticias descabelladas como <a class="reference external" href="https://www.cnet.com/news/why-this-cryptopunk-nft-sold-for-532-million-sort-of/">«Porque este CryptoPunk NFT  fue vendido por $532 millones de USD»</a> o <a class="reference external" href="https://mashable.com/article/classic-memes-sold-nft-prices">«Memes clásicos que fueron vendidos como NFT»</a>.</p>
+<p>En este último artículo, se hace mención al meme de la «novia posesiva» que fue vendido por $411,000.00 USD.</p>
+<p><img alt="Overly attached Girlfriend MEME" src="../../_images/nft-girlfriend-overly-attached.jpeg" /></p>
+<div class="section" id="pero-que-es-un-nft">
+<h2>Pero, ¿Qué es un NFT?<a class="headerlink" href="#pero-que-es-un-nft" title="Permalink to this headline">¶</a></h2>
+<p>Equivocadamente, se entiende como un JPG, o sea, un archivo de imagen. Si le doy click derecho y “guardar imagen”, ¿también tendría el NFT?, y ¿gratis?.</p>
+<p>Recientemente, se hizo viral el hecho de que en un torrent estaban todos los NFTS actuales, una colección billonaria, descargable para cualquiera.</p>
+<p><img alt="Torrents de NFTs" src="../../_images/nft-torrents.jpeg" /></p>
+<p>NFT es mucho más que una imagen, o un video, o una canción. Es la representación digital de una propiedad. Imagina un sistema totalmente independiente, inmutable, donde se reconoce tu propiedad. Por el momento lo que está pegando, es arte, más específico, artes visuales digitales (imágenes y videos). Sin embargo, no te extrañes ver campañas de NFT que sean mucho más que imágenes, que podrían ser canciones, películas, cortos y lo que puedas imaginar digital.</p>
+<p>Dejando claro que es mucho más que una imagen, entonces podemos decir que un NFT es un registro de propiedad, validado por una cadena de bloques, descentralizada e inmutable, que nunca caducará. Creo que en este punto la pregunta es: ¿Qué no podría ser un NFT?, bueno, hay muchas cosas que no pueden ser digitales, pero imagina todo lo que sí pueden, y todo lo que ya lo es.</p>
+<p>Leí el caso de un músico que creó su proyecto, su propio token, en vez de ser bitcoin o eth, y lo usó para juntar fondos para su disco. Los fans pudieron dar apoyo a su artista favorito, colaborando a su crowdfunding, y obtienen cierta cantidad del token del artista (un NFT). Al tener ingresos por su nuevo álbum, el artista le dio parte de las regalías a los que tenían los NFTs.</p>
+<p>Podrás leer más aquí: <a class="reference external" href="https://fortune.com/2021/10/29/nfts-music-industry/">NFTs are revolutionizing the music industry too</a>. Esto nos lleva a lo que realmente mueve la web 3.0, propiedad de nuestros bienes digitales (ownership).</p>
+<p>Lo cierto es que, el NFT le viene a dar más poder e independencia al artista. Jack Conte, el CEO de Patreon, es un músico independiente que notó un fenómeno: se esforzaba minuciosamente por hacer sus videos musicales, le metía todo su dinero para hacer sus videos creativos, con stop motion, y proyecciones, y nada pasaba, unas cuantas vistas en sus videos de youtube. Luego notó que a pesar de tener éxito en youtube, y que la gente llegaba a sus presentaciones, no lograba ser económicamente sostenible. Tienes talento, tienes fans, y entregas constantemente tu arte, ¿Qué es lo que falta?.</p>
+<p>El modelo de negocio actual se trata del intermediario. Amazon no hace dinero fabricando productos, AirBnb no hace dinero alquilando sus propiedades, Uber no hace dinero con sus propios autos. Todos son intermediarios, y sus modelos de negocio les permiten ganar mucho dinero manejando el uso de la propiedad ajena. Lo mismo pasaba con Jack y youtube, así que creó Patreon, una plataforma en la que los fans apoyan al artista directamente. Para mí esta es la primera versión de la revolución del arte, y el NFT solo va a venir a acelerarlo. Imagina que ser artista o creador de contenido, ya no sea una carrera en las que tus familiares te dirían «de eso no vas a poder vivir», «pero necesitas una carrera de verdad».</p>
+</div>
+<div class="section" id="estamos-ante-una-burbuja">
+<h2>¿Estamos ante una burbuja?<a class="headerlink" href="#estamos-ante-una-burbuja" title="Permalink to this headline">¶</a></h2>
+<p>Hay muchas opiniones al respecto, y como en cualquier tema te recomiendo hacer tu propia investigación y llegar a tus propias conclusiones, especialmente si hay dinero en juego.</p>
+<p>Personalmente, pienso que si esto es una burbuja, los precios son ridículamente altos y eventualmente se normalizarán.</p>
+<p>Es importante entender que, la burbuja aquí es el precio, no la tecnología, y esta tecnología vino para quedarse.</p>
+<p><img alt="Burbuja de las .com" src="../../_images/dotcom-bubble.webp" /></p>
+<p>La burbuja de las “.com” es algo que resuena cuando se habla de este punto. Cuando vino la tecnología de la web 2.0, se creó una burbuja, que explotó y apenas 2 de cada 10 compañías sobrevivieron. Sin embargo, la tecnología se quedó, y nos dio los gigantes tech que tenemos hoy en día como: google, facebook, twitter, etc.</p>
+<p>Claro, el NFT actual hace una intersección entre dos mundos que no todos tenemos acceso, el invertir cantidades ridículamente altas de dinero en arte, y la tecnología disruptiva que no está lista para ser mainstream. Si le quitamos la tecnología, solo nos queda gente gastando un montón de dinero en representaciones visuales que son interpretadas. Y eso ya pasa, hay pinturas y arte moderno que hoy en día se venden por precios ridículamente altos. Así que el consejo es, no le busques el sentido al precio del arte, entiende la tecnología por detrás, y no te dejes engañar o cegar por JPGs de millones de dólares.</p>
+</div>
+<div class="section" id="siguenos-en-nuestras-redes-sociales">
+<h2>Siguenos en nuestras redes sociales<a class="headerlink" href="#siguenos-en-nuestras-redes-sociales" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://twitter.com/opensciencelabs">Twitter</a></p></li>
+<li><p><a class="reference external" href="https://www.linkedin.com/company/open-science-labs/">Linkedin</a></p></li>
+</ul>
+</div>
+<div class="section" id="autor">
+<h2>Autor ✒️<a class="headerlink" href="#autor" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Alan Hurtarte</strong> - <a class="reference external" href="https://twitter.com/alanhurtarte">Twitter</a></p></li>
+</ul>
+</div>
+<div class="section" id="licencia">
+<h2>Licencia 📄<a class="headerlink" href="#licencia" title="Permalink to this headline">¶</a></h2>
+<p>Bajo la Licencia (CC BY SA 4.0)</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./articles/0058-nfts-article1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By OpenScienceLabs Team<br/>
+    
+        &copy; Copyright 2020.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
