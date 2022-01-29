@@ -224,7 +224,7 @@ RStudio ofrece la posiblidad e exportar fácilmente desde su menú, ubicado enci
 ggsave(filename="grafica1.png", path = ".../mypath/", scale=1, device="png", dpi=320)
 ```
 
-Guarda el mapa con el nombre "filename" en la ruta "path" con la escala y formato de "scale" y "device". COn "dpi" indicamos la cantidad de pixeles por pulgada que es la calida de nuestro archivo a exportar.
+Guarda el mapa con el nombre `filename` en la ruta `path`, con la escala y formato de `scale` y "device". Con `dpi`, indicamos la cantidad de pixeles por pulgada, que es la calida de nuestro archivo a exportar.
 
 [Descarga lo archivos de este ejemplo](https://github.com/)
 
