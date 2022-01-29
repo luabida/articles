@@ -12,7 +12,7 @@ Para este artículo vamos a utilizar archivos de formato Shapefile. Si todavía 
 Un archivo Shapefile contiene al menos:
 * .shp - Un archivo tipo shape, es la geometría misma.
 * .shx - Un archivo tipo index, tiene las posiciones indexadas del archivo shp.
-* .dbf - un archivo tipo attibute, tiene los atributos de cada forma en una columna es de tipo dBase IV.
+* .dbf - un archivo tipo attribute, tiene los atributos de cada forma en una columna, es de tipo dBase IV.
 
 Adicionalmente la carpeta donde se encuentran dichos archivos pueden contener otros archivos de formato .prj o .sbn que aportan más datos de la geometria, o que pueden ser usados en otros programas de sistemas de información geógrafico.
 
