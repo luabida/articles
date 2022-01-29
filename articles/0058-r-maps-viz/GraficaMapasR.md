@@ -214,7 +214,7 @@ ggplot() +
 ![altext](grafica3.png)
 #### Como asignar los colores
 Puedes asignar los colores simplemente usando su nombre en inglés. Para el blanco es **white**, para el rojo, **red**. También puedes usar su código hexadeciamal, como  **#FF4500** para el rojo anaranjado. Puedes agruparlos en una escala de colores, usando la función `c("red","#FF4500"...)`. Una página recomendable para seleccionar colores y obtener su código de color con un click es [r-chart.com/colors/](https://r-charts.com/colors/).
-Tambien puede usar la funciones auxiliares que ofrec R como scale_color/fill_brewer/viridis_ estas proporcionan escalas predefinidas que podrían mejorar el impacto visual.
+También puede usar la funciones auxiliares que ofrece `R`, por ejemplo: `scale_color`/`fill_brewer`/`viridis_`. Estas proporcionan escalas predefinidas que podrían mejorar el impacto visual.
 
 ## Com guardar nuestros mapas ✒️
 RStudio ofrece la posiblidad e exportar fácilmente desde su menú ubicado encima de la vista previa del gráfico "Export". Pero veces podemos optar por guardar nuestro mapa con mayor calidad o cierto formato, para ello podemos usar ggsave() que nos permite exportar o guardar nuestro último gráfico ejecutado.
