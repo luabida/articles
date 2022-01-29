@@ -217,7 +217,7 @@ Puedes asignar los colores simplemente usando su nombre en inglés. Para el blan
 También puede usar la funciones auxiliares que ofrece `R`, por ejemplo: `scale_color`/`fill_brewer`/`viridis_`. Estas proporcionan escalas predefinidas que podrían mejorar el impacto visual.
 
 ## Com guardar nuestros mapas ✒️
-RStudio ofrece la posiblidad e exportar fácilmente desde su menú ubicado encima de la vista previa del gráfico "Export". Pero veces podemos optar por guardar nuestro mapa con mayor calidad o cierto formato, para ello podemos usar ggsave() que nos permite exportar o guardar nuestro último gráfico ejecutado.
+RStudio ofrece la posiblidad e exportar fácilmente desde su menú, ubicado encima de la vista previa del gráfico "Export". Podemos optar por guardar nuestro mapa con mayor calidad o cierto formato y, para ello, podemos usar `ggsave()`, que nos permite exportar o guardar nuestro último gráfico ejecutado.
 
 
 ```python
