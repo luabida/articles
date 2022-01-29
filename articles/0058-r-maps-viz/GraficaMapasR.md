@@ -213,7 +213,7 @@ ggplot() +
 
 ![altext](grafica3.png)
 #### Como asignar los colores
-Los colores puedes asignar simplemente usando su nombre en ingles para el blanco es "white" para el rojo "red" y así, también puedes usar su código como "#FF4500" para el rojo anaranjado. Puedes agruparlos usando la función "c("red","#FF4500"...)" para las escalas de color. Una página recomendable para seleccionar colores y obtener su código de color con un click es [r-chart.com/colors/](https://r-charts.com/colors/)
+Puedes asignar los colores simplemente usando su nombre en inglés. Para el blanco es **white**, para el rojo, **red**. También puedes usar su código hexadeciamal, como  **#FF4500** para el rojo anaranjado. Puedes agruparlos en una escala de colores, usando la función `c("red","#FF4500"...)`. Una página recomendable para seleccionar colores y obtener su código de color con un click es [r-chart.com/colors/](https://r-charts.com/colors/).
 Tambien puede usar la funciones auxiliares que ofrec R como scale_color/fill_brewer/viridis_ estas proporcionan escalas predefinidas que podrían mejorar el impacto visual.
 
 ## Com guardar nuestros mapas ✒️
