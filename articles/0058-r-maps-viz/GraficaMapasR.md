@@ -243,4 +243,3 @@ Bajo la Licencia (CC BY SA 4.0)
 * [Robinlovelace](https://github.com/Robinlovelace/Creating-maps-in-R)
 * [Documentacion de R](https://www.rdocumentation.org)
 
----
