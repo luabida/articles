@@ -1,6 +1,6 @@
 # Dibuja tus mapas en R usando archivos de formato Shapefile
 
-_Este breve tutorial te mostrará como graficar los mapas y modificar sus atributos. Al finalizar el tutorial podrás crear un mapa de densidad poblacional como el mostrado a continuación._
+Este breve tutorial te mostrará como graficar los mapas y modificar sus atributos. Al finalizar el tutorial podrás crear un mapa de densidad poblacional como el mostrado a continuación.
 
 ![alt text](grafica2.png)
 
