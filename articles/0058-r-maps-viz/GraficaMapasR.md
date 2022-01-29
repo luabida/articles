@@ -7,7 +7,8 @@ Este breve tutorial te mostrará como graficar los mapas y modificar sus atribut
 ## Comenzando 🚀
 Para que todos las librerías se instalen correctamente es recomendable instalar las última versión de [R](https://cran.r-project.org/) y su IDE [RStudio](https://www.rstudio.com/) con su correspondiente complemento [RTools](https://cran.r-project.org/bin/windows/Rtools/rtools40.html).
 
-Explicando que contiene un fichero formato Shapefile.
+Para este artículo vamos a utilizar archivos de formato Shapefile. Si todavía no sabes de qué se trata, te explicamos a continuación.
+
 Un archivo Shapefile contiene al menos:
 * .shp - Un archivo tipo shape, es la geometría misma.
 * .shx - Un archivo tipo index, tiene las posiciones indexadas del archivo shp.
