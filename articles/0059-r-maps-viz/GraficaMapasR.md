@@ -17,7 +17,7 @@ Un archivo Shapefile contiene al menos:
 * .shx - un archivo tipo index, tiene las posiciones indexadas del archivo .shp.
 * .dbf - un archivo tipo attribute, tiene los atributos de cada forma en una columna, es de tipo dBase IV.
 
-Adicionalmente la carpeta donde se encuentran dichos archivos pueden contener otros archivos de formato .prj o .sbn que aportan más datos de la geometría, o que pueden ser usados en otros programas de sistemas de información geógrafico.
+Adicionalmente, la carpeta donde se encuentran dichos archivos pueden contener otros archivos de formato .prj o .sbn, estos aportan más datos de la geometría o pueden ser usados en otros programas de sistemas de información geógrafica.
 
 Los datos importados con `rgdal` a partir de un archivo shapefile, es un objeto que contiene polígonos vectoriales con las coordenadas la latitud y la longitud en formato decimal, a partir de este objeto podemos extraer datos para graficarlos desde una tabla, la biblioteca `broom` nos ayuda en la extracción y logra agrupar los polígonos en diferentes grupos.
 
