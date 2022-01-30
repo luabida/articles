@@ -22,7 +22,7 @@ Adicionalmente, la carpeta donde se encuentran dichos archivos pueden contener o
 Los datos importados con `rgdal` a partir de un archivo shapefile, son objetos que contienen polígonos vectoriales con las coordenadas la latitud y la longitud en formato decimal. A partir de estos objetos, podemos extraer datos para graficarlos desde una tabla. La biblioteca `broom` nos ayuda en la extracción y logra agrupar los polígonos en diferentes grupos.
 
 ** Donde conseguir los archivos shapefile **
-Muchos de estos archivos Shapefile representan mapas de nuestros Estados, por lo que están disponibles de manera gratuita en la mayoria de los casos, en otros son de paga o están más completos, actualizados y/o poseen datos específicos. Debajo mostramos algunas recursos web gratuitos que puedes usar.
+Muchos de estos archivos Shapefile representan mapas de nuestros Estados, por lo que están disponibles de manera gratuita en la mayoria de los casos, en otros, son de paga o están más completos, actualizados y/o poseen datos específicos. Debajo mostramos algunas recursos web gratuitos que puedes usar.
 
 [data.humdata.org](https://data.humdata.org/) para shapefiles varios países del mundo. (Algunos están desactualizados)
 
