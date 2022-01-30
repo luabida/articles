@@ -45,7 +45,7 @@ _(Recuerde que para ejecutar una linea de Comando en el Editor de RStudio se usa
 
 ## Preparación de los datos para graficar
 
-Nuestra base de datos fue descargada de [GeoBolivia](https://geo.gob.bo), [INE Bolivia](https://www.ine.gob.bo/) y [geodatos.net](https://www.geodatos.net/coordenadas/bolivia), una vez descargados estos datos fueron depurados para sólo tener los datos de nuestro interés.
+Nuestra base de datos fue descargada de [GeoBolivia](https://geo.gob.bo), [INE Bolivia](https://www.ine.gob.bo/) y [geodatos.net](https://www.geodatos.net/coordenadas/bolivia). Una vez descargados, estos datos fueron depurados para sólo tener los datos de nuestro interés.
 
 Abrimos nuestras bibliotecas requeridas.
 
