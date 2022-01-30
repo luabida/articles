@@ -73,7 +73,7 @@ shapefile = readOGR(
 ```
 - **`dsn`** directorio dentro de la carpeta donde se encuentran ficheros shapefiles, si se pone sólo un punto **"."** hace referencia a que los ficheros se encuentran en el directorio actual.
 
-- **`encoding="utf-8", use_iconv=TRUE`** indica a la función `readOGR` que debe importarse con la codificación **utf-8**. Esto es necesario para el ejemplo, pues contiene caracteres con ñ y vocales con tíldes.
+- **`encoding="utf-8", use_iconv=TRUE`** indica a la función `readOGR` que debe importarse con la codificación **utf-8**. Esto es necesario para el ejemplo, pues contiene caracteres especiales como **ñ** y vocales con tildes.
 
 Para observar el contenido de `shapefile` use `View(shapefile)`.
 
