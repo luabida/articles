@@ -131,7 +131,7 @@ colnames(poblacion)[colnames(poblacion) == "DEPARTAMENTO"] <- "DEPARTAMEN"
 datos<-left_join(geotable, poblacion, by = "DEPARTAMEN")
 ```
 
-## Mapa con ggplot2
+## Graficando el mapa con ggplot2
 
 Ahora, graficamos con `ggplot2`:
 
@@ -291,12 +291,12 @@ ggplot() +
 
 ![Mapa de Bolivia: Capitales de departamento](grafica3.png)
 
-#### Como asignar los colores
+#### Asignando colores
 
 Puedes asignar los colores simplemente usando su nombre en inglés. Para el blanco es **white**, para el rojo, **red**. También puedes utilizar el código hexadecimal, como  **#FF4500** para el rojo anaranjado; agruparlos en una escala de colores, utilizando el comando `c("red","#FF4500"...)`. Una página recomendable para seleccionar colores y obtener su código de color con un click es [r-chart.com/colors/](https://r-charts.com/colors/).
 También puede emplear las funciones auxiliares que ofrece `R`, por ejemplo: `scale_color`/`fill_brewer`/`viridis_`. Estas proporcionan escalas predefinidas que podrían mejorar el impacto visual.
 
-## Como guardar nuestros mapas
+## Guardando nuestro mapa
 
 RStudio ofrece la posibilidad de exportar fácilmente desde su menú, ubicado encima de la vista previa del gráfico "Export". Podemos optar por guardar nuestro mapa con mayor calidad o cierto formato y, para ello, podemos usar `ggsave()`, que nos permite exportar o guardar nuestro último gráfico ejecutado.
 
