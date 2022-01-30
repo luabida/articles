@@ -75,7 +75,7 @@ shapefile = readOGR(
 
 - **`encoding="utf-8", use_iconv=TRUE`** indica a la función `readOGR` que debe importarse con la codificación **utf-8**. Esto es necesario para el ejemplo, pues contiene caracteres especiales como **ñ** y vocales con tildes.
 
-Para observar el contenido de `shapefile` use `View(shapefile)`.
+Para observar el contenido de `shapefile`, use `View(shapefile)`.
 
 Extrayendo datos en `geotable` para graficar y mostrando su cabecera.
 
