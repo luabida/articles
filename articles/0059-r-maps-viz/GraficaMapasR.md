@@ -10,7 +10,7 @@ Este breve tutorial te mostrará como graficar mapas en R, extaer datos de archi
 
 Para que todas las bibliotecas funcionen correctamente, se recomienda instalar o actualizar a las últimas versiones de [R](https://cran.r-project.org/) y de su IDE [RStudio](https://www.rstudio.com/) con su correspondiente complemento [RTools](https://cran.r-project.org/bin/windows/Rtools/rtools40.html).
 
-En este artículo vamos a utilizar archivos de formato Shapefile. Si todavía no sabes de qué se trata, te explicamos a continuación.
+En este artículo, vamos a utilizar archivos de formato Shapefile. Si todavía no sabes de qué se trata, te explicamos a continuación.
 
 Un archivo Shapefile contiene al menos:
 * .shp - un archivo tipo shape, es la geometría misma.
