@@ -7,6 +7,8 @@ parts:
 
   - caption: blog
     chapters:
+    - file: articles/0059-r-maps-viz/GraficaMapasR.md
+      title: "#0059: Dibuja tus mapas en R usando archivos de formato Shapefile"
     - file: articles/0057-r-ggplot-bo/ArticuloGgplotenR.md
       title: "#0057: Visualiza tus datos en R con ggplot2 y gganimate"
     - file: articles/0056-openscienceframework/openscienceframework.md
