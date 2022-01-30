@@ -319,7 +319,6 @@ Guarda el mapa con el nombre `filename` en la ruta `path`, con la escala y forma
 
 [Descarga lo archivos de este ejemplo](https://github.com/)
 
-
 Bajo la Licencia (CC BY SA 4.0)
 
 ## Referencias
