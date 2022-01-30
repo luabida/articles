@@ -77,7 +77,7 @@ shapefile = readOGR(
 
 Para observar el contenido de `shapefile`, use `View(shapefile)`.
 
-Extrayendo datos en `geotable` para graficar y mostrando su cabecera.
+Extrae datos en `geotable` para graficar y, en seguida, muestra su cabecera:
 
 ```r
 geotable = tidy(shapefile)
