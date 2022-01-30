@@ -110,6 +110,7 @@ geotable <- left_join(geotable,shapefile@data, by="id")
 Para verificar que se han añadido los correspondientes nombres de regiones use para ver `head(geotable)`
 
 Funciones auxiliares:
+
 * **`shapefile$id <- `** crea una nueva columna **id** en shapefile o la reemplaza.
 * **`row.names(shapefile) `** extrae los nombres de las filas del shapefile que por defecto es una numeración que va desde 0 y coincide con el **id** de nuestro `geotable`.
 * **`shapefile@data `** accede a la tabla o dataframe **data** de nuestro shapefile.
