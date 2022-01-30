@@ -146,7 +146,7 @@ ggplot() +
   coord_equal() + labs(fill = "POBLACION")
 ```
 
-* **`geom_polygon(data, aes(x, y, group, fill))`** dibuja polígonos con la tabla **data** muestra la estética con **aes()**.
+* **`geom_polygon(data, aes(x, y, group, fill))`** dibuja polígonos con la tabla **data** y muestra la estética con **aes()**.
 	**x**, **y** son los valores en ejes de las absisas y las ordenadas, estan agrupadas por el valor de la columna **group** y rellenadas con base a los valores de la columna **fill**.
 * **`coord_equal()`** obliga a la gráfica que la relación de aspecto entre coordenadas sea 1:1.
 * **`lab(fill)`** pone el título a la leyenda con **fill**.
