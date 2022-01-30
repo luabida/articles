@@ -134,7 +134,7 @@ datos<-left_join(geotable, poblacion, by = "DEPARTAMEN")
 
 ## Mapa con ggplot2
 
-Ahora podemos graficar :
+Ahora, podemos graficar:
 
 ```r
 ggplot() +
