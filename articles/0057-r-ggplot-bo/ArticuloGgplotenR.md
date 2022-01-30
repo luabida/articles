@@ -217,7 +217,7 @@ Hay casos en los que extrañamente no se instalan los renders para hacer la rend
 ![alt text](datosimportpandemia.gif)
 
 
-Despues de ver la animación podemos guardarla haciendo:
+Después de ver la animación, podemos guardarla haciendo:
 
 ```python
 archivo<-animate(anim, fps = 25, duration = 15, width=800, height=500, end_pause = 30 )
