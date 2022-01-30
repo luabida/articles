@@ -212,7 +212,10 @@ animate(anim, fps = 25, duration = 15, width=800, height=500, end_pause = 30 )
     "with" "height" ancho y alto de la animación respectivamente en pixeles,
     "end_pause" cantidad de veces a repetirse el último frame para la animación.
 
+Hay casos en los que extrañamente no se instalan los renders para hacer la renderización de la animación y aparece un error al tratar de ejecutar el código arriba mostrado, en ese caso puede probar con la siguiente solución: Ejecute en modo administrador RStudio e instale los renders con ```install.packages("gifski")``` para el render que viene por defecto con ```gganimate```, tambien puede instalar el render magick con ```install.packages("magick")``` para tener otra opción para renderizar. Para saber que opciones tiene el render magick ejecute ```help("magick_renderer")``` y se le mostrara su breve manual.
+
 ![alt text](datosimportpandemia.gif)
+
 
 Despues de ver la animación podemos guardarla haciendo:
 
