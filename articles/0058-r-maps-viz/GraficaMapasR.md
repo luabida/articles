@@ -4,27 +4,25 @@
 
 Autor: [Ever Vino](https://github.com/EverVino)
 
-Este breve tutorial te mostrará como graficar los mapas y modificar sus atributos. Al finalizar el tutorial podrás crear un mapa de densidad poblacional como el mostrado a continuación.
-
-![alt text](grafica2.png)
+Este breve tutorial te mostrará como graficar mapas en R, extaer datos de archivos de formato shapefile, resaltar puntos en tu mapa y modificar su apariencia utilizando las bibliotecas `rgdal` y `ggplot2`.
 
 ## Comenzando
 
-Para que todas las bibliotecas se instalen correctamente se recomienda instalar las últimas versiones de [R](https://cran.r-project.org/) y su IDE [RStudio](https://www.rstudio.com/) con su correspondiente complemento [RTools](https://cran.r-project.org/bin/windows/Rtools/rtools40.html).
+Para que todas las bibliotecas funcionen correctamente se recomienda instalar o actualizar a las últimas versiones de [R](https://cran.r-project.org/) y de su IDE [RStudio](https://www.rstudio.com/) con su correspondiente complemento [RTools](https://cran.r-project.org/bin/windows/Rtools/rtools40.html).
 
-Para este artículo vamos a utilizar archivos de formato Shapefile. Si todavía no sabes de qué se trata, te explicamos a continuación.
+En este artículo vamos a utilizar archivos de formato Shapefile. Si todavía no sabes de qué se trata, te explicamos a continuación.
 
 Un archivo Shapefile contiene al menos:
 * .shp - un archivo tipo shape, es la geometría misma.
 * .shx - un archivo tipo index, tiene las posiciones indexadas del archivo .shp.
 * .dbf - un archivo tipo attribute, tiene los atributos de cada forma en una columna, es de tipo dBase IV.
 
-Adicionalmente la carpeta donde se encuentran dichos archivos pueden contener otros archivos de formato .prj o .sbn que aportan más datos de la geometria, o que pueden ser usados en otros programas de sistemas de información geógrafico.
+Adicionalmente la carpeta donde se encuentran dichos archivos pueden contener otros archivos de formato .prj o .sbn que aportan más datos de la geometría, o que pueden ser usados en otros programas de sistemas de información geógrafico.
 
-Los datos importados con `rgdal` a partir de un archivo shapefil es un objeto que contienen poligonos vectoriales estos tienen como coordenadas la latitud y la longitud en formato decimal, a partir de este objeto podemos extraer datos para graficarlos desde una tabla, la biblioteca `broom` nos ayuda en la extracción y logra agrupar los polígonos en diferentes grupos.
+Los datos importados con `rgdal` a partir de un archivo shapefile, es un objeto que contiene polígonos vectoriales con las coordenadas la latitud y la longitud en formato decimal, a partir de este objeto podemos extraer datos para graficarlos desde una tabla, la biblioteca `broom` nos ayuda en la extracción y logra agrupar los polígonos en diferentes grupos.
 
 ** Donde conseguir los archivos shapefile **
-Muchos de estos archivos Shapefile representan mapas de nuestros Estados, por lo que estan disponibles de manera gratuita en la mayoria de los casos, en otros son de paga o están más completos, actualizados y/o poseen datos específicos. Debajo mostramos algunas recursos web gratuitos que puedes usar.
+Muchos de estos archivos Shapefile representan mapas de nuestros Estados, por lo que están disponibles de manera gratuita en la mayoria de los casos, en otros son de paga o están más completos, actualizados y/o poseen datos específicos. Debajo mostramos algunas recursos web gratuitos que puedes usar.
 
 [data.humdata.org](https://data.humdata.org/) para shapefiles varios países del mundo. (Algunos están desactualizados)
 
@@ -47,9 +45,9 @@ _(Recuerde que para ejecutar una linea de Comando en el Editor de RStudio se usa
 
 ## Preparación de los datos para graficar
 
-Nuestra base de datos fué descargada [GeoBolivia](https://geo.gob.bo), [INE Bolivia](https://www.ine.gob.bo/) y [geodatos.net](https://www.geodatos.net/coordenadas/bolivia), una vez descargados estos datos fueron depurados para sólo tener los datos de nuestro interés.
+Nuestra base de datos fue descargada de [GeoBolivia](https://geo.gob.bo), [INE Bolivia](https://www.ine.gob.bo/) y [geodatos.net](https://www.geodatos.net/coordenadas/bolivia), una vez descargados estos datos fueron depurados para sólo tener los datos de nuestro interés.
 
-Abrimos nuestras librerías requeridas con:
+Abrimos nuestras bibliotecas requeridas.
 
 ```r
 library(ggplot2)
@@ -65,18 +63,19 @@ Redireccionamos el directorio actual a nuestro directorio de trabajo e importamo
 
 ```r
 setwd("../mypath/") # Redirecciona el directo actual a nuestro directorio de trabajo
+#Importamos los datos geofgráficos a nuestra varibales shapefile
 shapefile = readOGR(
   dsn = ".",
   layer = "departamentos_geo",
   encoding = 'utf-8',
   use_iconv = TRUE
-) #Importamos los datos geofgráficos a nuestra varibales shapefile
+) 
 ```
-- `dsn` directorio dentro de la carpeta donde se encuentran ficheros shapefiles, si se pone sólo un punto **"."** hace referencia a que los ficheros se encuentran en el directorio actual.
+- **`dsn`** directorio dentro de la carpeta donde se encuentran ficheros shapefiles, si se pone sólo un punto **"."** hace referencia a que los ficheros se encuentran en el directorio actual.
 
-- `encoding="utf-8", use_iconv=TRUE` indica a la función `readOGR` que debe importarse con la codificación **utf-8**. Esto es necesario para el ejemplo, pues contiene caracteres con ñ y vocales con tíldes.
+- **`encoding="utf-8", use_iconv=TRUE`** indica a la función `readOGR` que debe importarse con la codificación **utf-8**. Esto es necesario para el ejemplo, pues contiene caracteres con ñ y vocales con tíldes.
 
-Para observar la estructura de nuestro shapefile importado use `View(shapefile)`.
+Para observar el contenido de `shapefile` use `View(shapefile)`.
 
 Extrayendo datos en `geotable` para graficar y mostrando su cabecera.
 
@@ -111,18 +110,18 @@ geotable <- left_join(geotable,shapefile@data, by="id")
 Para verificar que se han añadido los correspondientes nombres de regiones use para ver `head(geotable)`
 
 Funciones auxiliares:
-* `shapefile$id <- ` Crea una nueva columna en shapefile o la reemplaza.
-* `row.names(shapefile) ` Extrae los nombres de las filas del shapefile que por defecto es una numeración que va desde 0 y coincide con el id de nuestro geotable.
-* `shapefile@data ` Accede a la tabla o dataframe **data** de nuestro shapefile.
-* `left_join(tabla1, tabla2, by = clave) ` Junta dos tablas por izquierda, es decir añade valores que faltan de "tabla2" a la "tabla1" de acuerdo al código "clave" o columna común.
+* **`shapefile$id <- `** crea una nueva columna **id** en shapefile o la reemplaza.
+* **`row.names(shapefile) `** extrae los nombres de las filas del shapefile que por defecto es una numeración que va desde 0 y coincide con el **id** de nuestro `geotable`.
+* **`shapefile@data `** accede a la tabla o dataframe **data** de nuestro shapefile.
+* **`left_join(tabla1, tabla2, by = clave) `** junta dos tablas por izquierda, es decir añade valores que faltan de **tabla2** a la **tabla1** de acuerdo al código **clave** o columna común.
 
-Ahora importamos nuestra tabla con los datos de población por departamento con(con `header=TRUE` nos aseguramos que la primera fila sean los nombres de las columnas):
+Ahora importamos nuestra tabla con los datos de población por departamento. (Haciendo `header = TRUE` nos aseguramos que la primera fila sean los nombres de las columnas):
 
 ```r
 #Importando la tabla de datos de población
 poblacion <- import("departamentospoblacion.csv", header = TRUE)
 ```
-Notesé que cambiamos el nombre nuestra columna de en población DEPARTAMENTO por DEPARTAMEN para que coincidan nuestra columnas para luego poderlas juntarlas con `left_join()`.
+Notesé que cambiamos el nombre nuestra columna de en población `DEPARTAMENTO` por `DEPARTAMEN` para que coincidan nuestra columnas para luego poderlas juntarlas con `left_join()`.
 
 ```r
 #Cambiando el nombre de la columna de DEPARTAMENTO POR DEPARTAMEN para poder juntar tablas segun nombre
@@ -147,9 +146,10 @@ ggplot() +
   coord_equal() + labs(fill = "POBLACION")
 ```
 
-* `geom_polygon(data, aes(x, y, group, fill))` Dibuja poligonos con la tabla **data** muestra la estetica con **aes()**, **x**, **y** son los valores en ejes de las absisas y las ordenadas, estan agrupadas por el valor de la columna **group** y rellenadas con base a los valores de la columna **fill**.
-* `coord_equal()` Obliga a la gráfica que la relación de aspecto entre coordenadas sea 1:1.
-* `lab(fill)` Pone el título a la leyenda con **fill**.
+* **`geom_polygon(data, aes(x, y, group, fill))`** dibuja polígonos con la tabla **data** muestra la estética con **aes()**.
+	**x**, **y** son los valores en ejes de las absisas y las ordenadas, estan agrupadas por el valor de la columna **group** y rellenadas con base a los valores de la columna **fill**.
+* **`coord_equal()`** obliga a la gráfica que la relación de aspecto entre coordenadas sea 1:1.
+* **`lab(fill)`** pone el título a la leyenda con **fill**.
 
 ![alt text](grafica1.png)
 
@@ -169,18 +169,18 @@ etiquetas_poblacion <- datos %>% group_by(DEPARTAMEN) %>%
 ```
 ¿Qué hicimos?
 
-* `tabla0 %>% funcion0 %>% funcion1 ...` El símbolo **%>%** es conocido como **pipe operator** y sirve para contatenar valores de entrada y salida de diferentes funciones, para el caso mostrado toma como argumento la **tabla0** para la **funcion0** y luego los resultados de la **funcion0** las utiliza como argumentos para **función1** y así sucesivamente.
-* `group_by(col) %>% summarise(col1=accion1, col2=accion2 ...)` Agrupa los datos en función del valor de columna **col** y con **summarise()** usa los datos agrupados para devolver nuevos valores **col1**, **col2** ... que pueden estar en función de los valores que estan agrupados.
-* `range(v)` Extrae los valores maximo y mínimo de un rango de datos **v**.
-* `mean(v)` Devuelve el valor medio del vector **v**.
+* **`tabla0 %>% funcion0 %>% funcion1 ...`** el símbolo **%>%** es conocido como **pipe operator** y sirve para concatenar valores de entrada y salida de diferentes funciones, es decir toma la **tabla0** como argumento de la **funcion0** y luego los resultados de la **funcion0** las utiliza como argumentos para **función1** y así sucesivamente.
+* **`group_by(col) %>% summarise(col1=accion1, col2=accion2 ...)`** agrupa los datos en función del valor de columna **col** y con **summarise()** usa los datos agrupados para devolver nuevos valores **col1**, **col2** ... que pueden estar en función de los valores que están agrupados.
+* **`range(v)`** Extrae los valores máximo y mínimo de un rango de datos **v**.
+* **`mean(v)`** Devuelve el valor medio del vector **v**.
 
-Si queremos incluir nuevas fuentes para el tipo de letra para nuestro mapa usamos los siguientes comandos. 
+Si queremos incluir nuevas fuentes para el tipo de letra para nuestro mapa empleamos los siguientes comandos. 
 (Nota: nos pedirá confirmación para realizar la importación de fuentes y tardará unos minutos):
 
 ```r
 extrafont::font_import("C:/Windows/Fonts")
 loadfonts(device = "win")
-fonts() # Nos muestra las fuentes disponibles lueggo de la importación
+fonts() # Nos muestra las fuentes disponibles.
 ```
 
 Incluimos los datos de `etiquetas_población` en nuestra gráfica
@@ -229,21 +229,26 @@ ggplot() +
   )
 ``` 
 
-* **`theme_void()`** Eliminamos el fondo y los ejes de nuestra gráfica.
-* **`geom_text(size, alpha, fontface, data, mapping = aes(x, y, label), color)`** Dibuja texto extrayendo datos de la tabla **data** con las coordenadas **x** e **y**, muestra los valores de la columna **label** las diferencia con el valor de la columna **color**. Con **size**, **alpha** y **fontface** etablecemos el tamaño, la opacidad y la estetica del texto respectivamente.
-* **`format(v, big.mark)`** Le da el formato al valor **v** de separación de miles con "big.mark" (En nuestro caso el separados de miles es sólo el espacio " ").
-* **`labs(title, fill, caption)`** Pone el texto de los títulos, con **title**, **fill**, "caption" se pone el texto del título, la leyenda y el pie del gráfico respectivamente.
-* **`scale_colour_gradientn(colours,guide)`** Aplica una escala de colores a todos los valores asignados a la argumento "color" en nuestro ejemplo tenemos asignado color dentro de la función  **geom_text(...aes(..color=pob...)...)**, es decir los valores de "pob" estarán coloreados según los valores de "colours". (la sintaxis "color" "colors" puenden intercambiarse sin problema con "colour" y "colours"). **guide = "none**  evita que la leyenda de esta escala se muestre.
-* **`scale_fill_continuous(low, high, guide, labels)`** Aplica una escala de colores continua a los valores asginados a **fill** en nuestro ejemplo tenemos asignado **fill** dentro del a función **geom_polygon(... aes(... fill = Poblacion2022 ...) ...)**, es decir los valores de la columna **Poblacion2022** estaran afectados por esta función. en **low** determinamos el color que va a tener el valor más bajo de **fill** y con **high** el color que va a tener el más alto valor. **guide** nos permite mostrar nuestra leyenda en forma de colorbar. con **labels** modificamos la apariencia en la escala de nuestro colorbar.
-* **`scales::label_number(big.mark=" ")`** llama a la librería **scales** y aplica la función **label_number()** con esto modificamos la apariencia de los números de nesutra leyeda poniendole un espacio **" "** como separador de miles.(Podemos hacer esto en vez de usar **scales::funcion()** en vez de  **library(scales) funcion())**.
-* **`theme(plot.title, legend.title, plot.caption)`** Modificamos con **plot.title**, **legend.title** y **plot.caption** la apariencia del título, el título de la leyenda y el pie de gráfico respectivamente.
-* **`element_text(size, face, family, hjust)`** Modificamos con **size**, **face**, **family** y **hjust** el tamaño, la estética, el tipo de texto, y la posición en horizontal del texto.
+* **`theme_void()`** Elimina el fondo y los ejes de nuestra gráfica.
+* **`geom_text(size, alpha, fontface, data, mapping = aes(x, y, label), color)`** dibuja texto extrayendo datos de la tabla **data**.
+Muestra el texto **label** en las coordenadas **x** e **y**, para diferenciar los textos puede usarse **color**. 
+Con **size**, **alpha** y **fontface** establecemos el tamaño, la opacidad y la estetica del texto respectivamente.
+* **`format(v, big.mark)`** da el formato al valor **v** de separación de miles con **big.mark** (En nuestro ejemplo el separador de miles es sólo el espacio " ").
+* **`labs(title, fill, caption)`** pone el texto de los títulos, con **title**, **fill**, **caption** pone el texto del título, la leyenda y el pie del gráfico respectivamente.
+* **`scale_colour_gradientn(colours, guide)`** aplica una escala de colores a todos los valores asignados a el argumento **color** en nuestro ejemplo tenemos color dentro de la función  **geom_text(... aes(.. color = pob ...) ...)**, es decir los valores de **pob** estarán coloreados según los valores de **colours**. (la sintaxis `color` `colors` pueden intercambiarse sin problema con `colour` y `colours`), para que la guia de leyenda no se muestre usamos **guide = "none**.
+* **`scale_fill_continuous(low, high, guide, labels)`** establece una escala de colores continua a los valores asignados a **fill** en nuestro ejemplo **fill** está dentro de la función **geom_polygon(... aes(... fill = Poblacion2022 ...) ...)**, es decir los valores de la columna **Poblacion2022** estaran afectados por esta función,
+	**low** color correspondientes al valor más bajo, **high** color del valor más alto. Con **guide = colorbar** Mostramos nuestra leyenda en forma de colobar y **labels** modifica la apariencia en la escala de nuestro colorbar.
+* **`scales::label_number(big.mark=" ")`** usa la función **label_number()**  de la biblioteca **scales**. 
+Con esto modificamos la apariencia de los números de nuestra leyenda poniéndole un espacio **" "** como separador de miles.
+(Notesé que podemos usar **scales::funcion()** en vez de **library(scales) funcion())**.
+* **`theme(plot.title, legend.title, plot.caption)`** Modifica la apariencia del título, el título de la leyenda y el pie de gráfico respectivamente.
+* **`element_text(size, face, family, hjust)`** Extrae propiedades del texto para modificar el tamaño, la estética, el tipo y la posición en horizontal.
 
 ![alt text](grafica2.png)
 
 ## Añadiendo ubicaciones a nuestro mapa
 
-Incluyamos la ubicación de ciudades capitales de departamento a nuestro mapa.
+Incluyendo las ubicaciones de ciudades capitales de departamento a nuestro mapa.
 
 ```r
 ciudades = import("ciudades.csv") #Importamos la localización de las ciudades capitales
@@ -283,21 +288,21 @@ ggplot() +
     plot.caption = element_text(family = "Helvetica")
   ) 
 ```
-* **`geom_point(alpha, data, mapping = aes(x, y, colour), size)`** Grafica puntos en el plot, con **alpha** **data**, **size** modificamos la opacidad, tabla a usarse y el tamaño de los puntos, con mapping asignamos la estética, **x** e **y** asignamos las columnas para los valores de los ejes y con "colour" la columna que se va usar para asignarles colores, a este se le puede asignar un solo color también si se quiere.
-* **`scale_fill_brewer(palette, guide)`** Es una función que aplica una escala de colores tipo brewer a todos los objetos asignados a **fill**.**pallete** permite la selección de una paleta especifica y guide asigna la pressentación de la leyenda.
-* **`scale_color_manual(values)`** Aplica una escala de color manual a todos lo objetos asignado a "color". **values** asginamos los colores de nuestra escala.
+* **`geom_point(alpha, data, mapping = aes(x, y, colour), size)`** Grafica puntos en el plot, comparte similares argumento que **geom_poligon()** y **geom_text()**.
+* **`scale_fill_brewer(palette, guide)`** Similar a la función **scale_fill_continuous(low, high, guide, labels)**, aplica una escala de colores tipo brewer a todos los objetos asignados a **fill** con **pallete** seleccionamos el tipo de paleta de colores a aplicarse.
+* **`scale_color_manual(values)`** Nos permite usar una escalr de colores manual, **values** debe ser un vector que contenga los valores de los colores de la escala.
 * ***`raibow(9)`** Devuelve un vector con 9 colores del arcoiris.
 
 ![altext](grafica3.png)
 
 #### Como asignar los colores
 
-Puedes asignar los colores simplemente usando su nombre en inglés. Para el blanco es **white**, para el rojo, **red**. También puedes usar su código hexadeciamal, como  **#FF4500** para el rojo anaranjado. Puedes agruparlos en una escala de colores, usando la función `c("red","#FF4500"...)`. Una página recomendable para seleccionar colores y obtener su código de color con un click es [r-chart.com/colors/](https://r-charts.com/colors/).
-También puede usar la funciones auxiliares que ofrece `R`, por ejemplo: `scale_color`/`fill_brewer`/`viridis_`. Estas proporcionan escalas predefinidas que podrían mejorar el impacto visual.
+Puedes asignar los colores simplemente usando su nombre en inglés. Para el blanco es **white**, para el rojo, **red**. También puedes utilizar el código hexadecimal, como  **#FF4500** para el rojo anaranjado. Puedes agruparlos en una escala de colores, utilizando el comando `c("red","#FF4500"...)`. Una página recomendable para seleccionar colores y obtener su código de color con un click es [r-chart.com/colors/](https://r-charts.com/colors/).
+También puede emplear las funciones auxiliares que ofrece `R`, por ejemplo: `scale_color`/`fill_brewer`/`viridis_`. Estas proporcionan escalas predefinidas que podrían mejorar el impacto visual.
 
 ## Como guardar nuestros mapas
 
-RStudio ofrece la posiblidad e exportar fácilmente desde su menú, ubicado encima de la vista previa del gráfico "Export". Podemos optar por guardar nuestro mapa con mayor calidad o cierto formato y, para ello, podemos usar `ggsave()`, que nos permite exportar o guardar nuestro último gráfico ejecutado.
+RStudio ofrece la posibilidad de exportar fácilmente desde su menú, ubicado encima de la vista previa del gráfico "Export". Podemos optar por guardar nuestro mapa con mayor calidad o cierto formato y, para ello, podemos usar `ggsave()`, que nos permite exportar o guardar nuestro último gráfico ejecutado.
 
 ```r
 ggsave(
@@ -309,7 +314,7 @@ ggsave(
 )
 ```
 
-Guarda el mapa con el nombre `filename` en la ruta `path`, con la escala y formato de `scale` y "device". Con `dpi`, indicamos la cantidad de pixeles por pulgada, que es la calida de nuestro archivo a exportar.
+Guarda el mapa con el nombre `filename` en la ruta `path`, con la escala y formato de `scale` y "device". Con `dpi` indicamos la cantidad de píxeles por pulgada, que es la calidad de nuestro archivo a exportar.
 
 [Descarga lo archivos de este ejemplo](https://github.com/)
 
