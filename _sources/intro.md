@@ -11,6 +11,14 @@ herramientas computacionales y trabajo colaborativo.
 
 <!--content:start-->
 
+```{admonition} NFT. Más que un JPG
+![header](articles/0058-nfts-article1/header.png)
+
+Quizá hayas escuchado el término NFT últimamente. Títulos de noticias descabelladas como [«Porque este CryptoPunk NFT  fue vendido por $532 millones de USD»](https://www.cnet.com/news/why-this-cryptopunk-nft-sold-for-532-million-sort-of/) o [«Memes clásicos que fueron vendidos como NFT»](https://ma ...
+[see more](articles/0058-nfts-article1/nft-mas-que-un-jpg.md)
+
+```
+    
 ```{admonition} Visualiza tus datos en R con ggplot2 y gganimate
 ![header](articles/0057-r-ggplot-bo/header.png)
 
