@@ -2,6 +2,8 @@
 
 ![header](header.png)
 
+Por [Ever Vino](../../authors/ever-vino.md)
+
 Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los analizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R.
 
 ## Comenzando 🚀
@@ -227,14 +229,6 @@ anim_save(filename="datosimportpandemia.gif", animation = archivo, path = ".my/p
     Guarda el renderizado de "animation" con el nombre "filename" en la ruta "path".
     
 [Descarga los archivos de este ejemplo](https://github.com/OpenScienceLabs/articles/tree/main/articles/0057-r-ggplot-bo) 
-
-## Autores ✒️
-
-* **Ever Vino** - ** - [EverVino](https://github.com/EverVino)
-
-## Licencia 📄
-
-Bajo la Licencia (CC BY SA 4.0)
 
 ## Referencias 📄
 
