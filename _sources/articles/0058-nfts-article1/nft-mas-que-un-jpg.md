@@ -42,15 +42,3 @@ La burbuja de las “.com” es algo que resuena cuando se habla de este punto. 
 
 Claro, el NFT actual hace una intersección entre dos mundos que no todos tenemos acceso, el invertir cantidades ridículamente altas de dinero en arte, y la tecnología disruptiva que no está lista para ser mainstream. Si le quitamos la tecnología, solo nos queda gente gastando un montón de dinero en representaciones visuales que son interpretadas. Y eso ya pasa, hay pinturas y arte moderno que hoy en día se venden por precios ridículamente altos. Así que el consejo es, no le busques el sentido al precio del arte, entiende la tecnología por detrás, y no te dejes engañar o cegar por JPGs de millones de dólares.
 
-
-## Siguenos en nuestras redes sociales
-* [Twitter](https://twitter.com/opensciencelabs)
-* [Linkedin](https://www.linkedin.com/company/open-science-labs/)
-
-## Autor ✒️
-
-* **Alan Hurtarte** - [Twitter](https://twitter.com/alanhurtarte)
-
-## Licencia 📄
-
-Bajo la Licencia (CC BY SA 4.0)
