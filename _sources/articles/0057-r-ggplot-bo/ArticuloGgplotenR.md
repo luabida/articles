@@ -2,7 +2,7 @@
 
 ![header](header.png)
 
-Por [Ever Vino](../../authors/ever-vino.md)
+**Autor**: [Ever Vino](../../authors/ever-vino.md)
 
 Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los analizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En este artículo se describe como hacer animación usando ggplot2 y gganimate en R.
 

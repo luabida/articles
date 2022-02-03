@@ -27,7 +27,10 @@ herramientas computacionales y trabajo colaborativo.
 ```{admonition} NFT. Más que un JPG
 ![header](articles/0058-nfts-article1/header.png)
 
-Quizá hayas escuchado el término NFT últimamente. Títulos de noticias descabelladas como [«Porque este CryptoPunk NFT  fue vendido por $532 millones de USD»](https://www.cnet.com/news/why-this-cryptopunk-nft-sold-for-532-million-sort-of/) o [«Memes clásicos que fueron vendidos como NFT»](https://ma ...
+
+**Autor**: [Alan Hurtarte](../../authors/alan-hurtarte.md)
+
+Quizá hayas escuchado el término NFT últimamente. Títulos de noticias descabelladas como [«Porque este CryptoPunk NFT  fue vendido por $532 millones de USD»](https://www.cnet.com/news/why-this-cryptopunk-nft-sold-for-532-million-sort-of/) ...
 [see more](articles/0058-nfts-article1/nft-mas-que-un-jpg.md)
 
 ```
@@ -36,9 +39,9 @@ Quizá hayas escuchado el término NFT últimamente. Títulos de noticias descab
 ![header](articles/0057-r-ggplot-bo/header.png)
 
 
-Por [Ever Vino](../../authors/ever-vino.md)
+**Autor**: [Ever Vino](../../authors/ever-vino.md)
 
-Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los analizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo?. En es ...
+Una gráfica es una buena manera de expresar los datos, estos ayudan a ver detalles que simplemente pueden pasar desapercibidos cuando sólo se los analizan numericamente, estos pueden tener aún mayor impacto si estan animados. ¿Por qué no hacerlo? ...
 [see more](articles/0057-r-ggplot-bo/ArticuloGgplotenR.md)
 
 ```

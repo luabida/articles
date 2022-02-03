@@ -1,5 +1,8 @@
 # NFT. Más que un JPG
+
 ![Bored ape yacht club](header.png "Bored ape yacht club")
+
+**Autor**: [Alan Hurtarte](../../authors/alan-hurtarte.md)
 
 Quizá hayas escuchado el término NFT últimamente. Títulos de noticias descabelladas como [«Porque este CryptoPunk NFT  fue vendido por $532 millones de USD»](https://www.cnet.com/news/why-this-cryptopunk-nft-sold-for-532-million-sort-of/) o [«Memes clásicos que fueron vendidos como NFT»](https://mashable.com/article/classic-memes-sold-nft-prices).
 
