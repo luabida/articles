@@ -703,32 +703,5 @@ de hacer ciencia.
 
 ```
     
-```{admonition} Alan Hurtarte
-![header](images/empty.png)
-
-
-
-Software engineer with more than six years of working experience, with a post-degree in data analysis.
-Full-stack web development experience, delivering products from scratch to production with several 
-technologies like git, vue js, react js, Laravel, php, solidity, mysql, c++, and agile methodo ...
-[see more](authors/alan-hurtarte.md)
-
-```
-    
-```{admonition} Ever Vino
-![header](images/empty.png)
-
-
-
-Ingeniero Ambiental de Profesión con experiencia en Investigación,
-análisis químico, desarrollo de modelos matemáticos para
-Bioprocesos, diseño de sistemas de tratamiento de aguas residuales. Actualmente migrando a Ingeniería de Datos.
-
-
- ...
-[see more](authors/ever-vino.md)
-
-```
-    
 <!--content:end-->
 
