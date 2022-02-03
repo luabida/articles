@@ -7,8 +7,6 @@ parts:
 
   - caption: blog
     chapters:
-
-=======
     - file: articles/0059-r-maps-viz/GraficaMapasR.md
       title: "> 0059: Dibuja tus mapas en R usando archivos de formato Shapefile"
     - file: articles/0058-nfts-article1/nft-mas-que-un-jpg.md
