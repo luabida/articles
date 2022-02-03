@@ -7,119 +7,130 @@ parts:
 
   - caption: blog
     chapters:
+
+=======
     - file: articles/0059-r-maps-viz/GraficaMapasR.md
-      title: "#0059: Dibuja tus mapas en R usando archivos de formato Shapefile"
+      title: "> 0059: Dibuja tus mapas en R usando archivos de formato Shapefile"
+    - file: articles/0058-nfts-article1/nft-mas-que-un-jpg.md
+      title: "> 0058: NFT mas que un JPG"
     - file: articles/0057-r-ggplot-bo/ArticuloGgplotenR.md
-      title: "#0057: Visualiza tus datos en R con ggplot2 y gganimate"
+      title: "> 0057: Visualiza tus datos en R con ggplot2 y gganimate"
     - file: articles/0056-openscienceframework/openscienceframework.md
-      title: "0056: ¿Qué es el Open Science Framework?"
+      title: "> 0056: ¿Qué es el Open Science Framework?"
     - file: articles/0055-Rstudio/Rstudio.md
-      title: "0055: Primeros pasos con RStudio"
+      title: "> 0055: Primeros pasos con RStudio"
     - file: articles/0054-dvc/dvc.md
-      title: "0054: ¿Qué es el Data Version Control (DVC) y por qué es necesario que tu equipo sepa cómo utilizarlo?"
+      title: "> 0054: ¿Qué es el Data Version Control (DVC) y por qué es necesario que tu equipo sepa cómo utilizarlo?"
     - file: articles/0053-spyder/spyder.md
-      title: "0053: Primeros pasos con Spyder"
+      title: "> 0053: Primeros pasos con Spyder"
     - file: articles/0052-carpentries/carpentries.md
-      title: "0052: ¿Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos?"
+      title: "> 0052: ¿Por qué deberías considerar a The Carpentries como una referencia para aprender ciencia de datos?"
     - file: articles/0051-5proyectosdeinteligenciaartificial/5proyectosdeinteligenciaartificial.md
-      title: "0051: 5 proyectos de inteligencia artificial que te sorprenderan"
+      title: "> 0051: 5 proyectos de inteligencia artificial que te sorprenderan"
     - file: articles/0050-10herramientasgestionequipos/10herramientasgestionequipos.md
-      title: "#0050: 10 Plataformas que te ayudarán en la gestión de tu grupo de trabajo."
+      title: "> 0050: 10 Plataformas que te ayudarán en la gestión de tu grupo de trabajo."
     - file: articles/0049-figshare/figshare.md
-      title: "#0049: Todas las posibilidades que te ofrece utilizar figshare en tus proyectos"
+      title: "> 0049: Todas las posibilidades que te ofrece utilizar figshare en tus proyectos"
     - file: articles/0048-tipsconda/tipsconda.md
-      title: "#0048: Características y tips útiles que te ayudarán a sacar el máximo provecho de CONDA"
+      title: "> 0048: Características y tips útiles que te ayudarán a sacar el máximo provecho de CONDA"
     - file: articles/0047-conda/conda.md
-      title: "#0047: ¿Cómo instalar y comenzar a utilizar Conda?"
+      title: "> 0047: ¿Cómo instalar y comenzar a utilizar Conda?"
     - file: articles/0046-tensorflow/tensorflow.md
-      title: "#0046: ¿Cómo instalar y comenzar a utilizar Tensorflow?"
+      title: "> 0046: ¿Cómo instalar y comenzar a utilizar Tensorflow?"
     - file: articles/0045-rOpenSci/rOpenSci.md
-      title: "#0045: Te contamos sobre la comunidad rOpenSci"
+      title: "> 0045: Te contamos sobre la comunidad rOpenSci"
     - file: articles/0044-dataverse/dataverse.md
-      title: "#0044: Dataverse y su potencial para proyectos de ciencia abierta"
+      title: "> 0044: Dataverse y su potencial para proyectos de ciencia abierta"
     - file: articles/0043-PyOpenSci/PyOpenSci.md
-      title: "#0043: pyOpenSci: un promotor de la ciencia abierta"
+      title: "> 0043: pyOpenSci: un promotor de la ciencia abierta"
     - file: articles/0042-LaboratoriosCovid/LaboratoriosCovid.md
-      title: "#0042: Los laboratorios sociales y el manejo del COVID-19"
+      title: "> 0042: Los laboratorios sociales y el manejo del COVID-19"
     - file: articles/0041-algunosproyectoscodigoabierto/algunosproyectoscodigoabierto.md
-      title: "#0041: Algunos proyectos entretenidos de código abierto"
+      title: "> 0041: Algunos proyectos entretenidos de código abierto"
     - file: articles/0040-4lugarescienciaabierta/4lugarescienciaabierta.md
-      title: "#0040: Te enseñamos 4 lugares para aprender los fundamentos de la ciencia abierta"
+      title: "> 0040: Te enseñamos 4 lugares para aprender los fundamentos de la ciencia abierta"
     - file: articles/0039-bibliotecas_visualizacion/bibliotecas_visualizacion.md
-      title: "#0039: Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta"
+      title: "> 0039: Te mostramos cinco librerías en Python para tu próximo proyecto de ciencia abierta"
     - file: articles/0038-bash/bash.md
-      title: "#0038: Automatización de tareas vía bash"
+      title: "> 0038: Automatización de tareas vía bash"
     - file: articles/0037-visualizacion_python/visualizacion_python.md
-      title: "#0037: Herramientas de visualización en Python"
+      title: "> 0037: Herramientas de visualización en Python"
     - file: articles/0036-cienciaabiertapandemias/cienciaabiertapandemias.md
-      title: "#0036: ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?"
+      title: "> 0036: ¿Qué hemos aprendido, gracias a la ciencia abierta, del manejo de pandemias?"
     - file: articles/0035-automatizaciondecitasyreferencias/automatizaciondecitasyreferencias.md
-      title: "#0035: Si has pensado en cómo automatizar la construcción de citas en tu proyecto, te contamos cómo hacerlo posible."
+      title: "> 0035: Si has pensado en cómo automatizar la construcción de citas en tu proyecto, te contamos cómo hacerlo posible."
     - file: articles/0034-dashboard_integridad/dashboard_integridad.md
-      title: "#0034: La importancia de la integridad en los datos manejados en los dashboards"
+      title: "> 0034: La importancia de la integridad en los datos manejados en los dashboards"
     - file: articles/0033-licenciascienciaabierta/licenciascienciaabierta.md
-      title: "#0033: Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta"
+      title: "> 0033: Te hablamos de las licencias mas utilizadas en proyectos de ciencia abierta"
     - file: articles/0032-visualizacionR/visualizacionR.md
-      title: "#0032: Herramientas de visualización en R"
+      title: "> 0032: Herramientas de visualización en R"
     - file: articles/0031-documentación_cienciaabierta/documentación_cienciaabierta.md
-      title: "#0031: ¿Cómo documentar tu proyecto de ciencia abierta?"
+      title: "> 0031: ¿Cómo documentar tu proyecto de ciencia abierta?"
     - file: articles/0030-ciudadanaCOVID19/ciudadanaCOVID19.md
-      title: "#0030: Algunos proyectos de ciencia e inteligencia ciudadana para atender la pandemia del COVID-19"
+      title: "> 0030: Algunos proyectos de ciencia e inteligencia ciudadana para atender la pandemia del COVID-19"
     - file: articles/0029-principios_acceso_abierto/principios_acceso_abierto.md
-      title: "#0029: ¿Cómo aplicar los principios de acceso abierto en tus investigaciones?"
+      title: "> 0029: ¿Cómo aplicar los principios de acceso abierto en tus investigaciones?"
     - file: articles/0028-coronavirus/coronavirus.md
-      title: "#0028: Te mostramos algunos repositorios con datos sobre el COVID-19"
+      title: "> 0028: Te mostramos algunos repositorios con datos sobre el COVID-19"
     - file: articles/0027-dashboards-visualizacion-datos/dashboards-visualizacion-datos.md
-      title: "#0027: Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto"
+      title: "> 0027: Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto"
     - file: articles/0026-inv_reproducible_codigoabierto/inv_reproducible_codigoabierto.md
-      title: "#0026: ¿Cómo aplicar la investigación reproducible a proyectos de código abierto?"
+      title: "> 0026: ¿Cómo aplicar la investigación reproducible a proyectos de código abierto?"
     - file: articles/0025-comopresentartucodigo/comopresentartucodigo.md
-      title: "#0025: ¿Cómo presentar tu código como un artículo científico?"
+      title: "> 0025: ¿Cómo presentar tu código como un artículo científico?"
     - file: articles/0024-5_datos_abiertos/5_datos_abiertos.md
-      title: "#0024: Cinco cosas que no debes olvidar al trabajar con datos abiertos"
+      title: "> 0024: Cinco cosas que no debes olvidar al trabajar con datos abiertos"
     - file: articles/0023-documentacioncodigoabierto/documentacioncodigoabierto.md
-      title: "#0023: Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)"
+      title: "> 0023: Si ya usas código abierto, te contamos como puedes sacarle mayor provecho a tu documentación (para tus artículos y publicaciones)"
     - file: articles/0022-Investigacion_abierta_rep_vers/Investigacion_abierta_rep_vers.md
-      title: "#0022: La investigación abierta, el manejo de repositorios y control de versiones"
+      title: "> 0022: La investigación abierta, el manejo de repositorios y control de versiones"
     - file: articles/0021-mentorías/mentorías.md
-      title: "#0021: ¿Qué son las mentorías y cómo potencian los proyectos de ciencia abierta?"
+      title: "> 0021: ¿Qué son las mentorías y cómo potencian los proyectos de ciencia abierta?"
     - file: articles/0020-codigo_abierto/codigo_abierto.md
-      title: "#0020: ¿Qué es el código abierto y cómo puede ayudarte?"
+      title: "> 0020: ¿Qué es el código abierto y cómo puede ayudarte?"
     - file: articles/0019-tres_proyectos_ciencia_ciudadana/tres_proyectos_ciencia_ciudadana.md
-      title: "#0019: Tres proyectos de ciencia ciudadana que te sorprenderán"
+      title: "> 0019: Tres proyectos de ciencia ciudadana que te sorprenderán"
     - file: articles/0018-quesonlaboratoriossociales/quesonlaboratoriossociales.md
-      title: "#0018: ¿Qué son los laboratorios sociales y cómo pueden ayudar a los equipos de investigación?"
+      title: "> 0018: ¿Qué son los laboratorios sociales y cómo pueden ayudar a los equipos de investigación?"
     - file: articles/0017-5ProductividadGit/5ProductividadGit.md
-      title: "#0017: Cinco tips para aumentar tu productividad con Git"
+      title: "> 0017: Cinco tips para aumentar tu productividad con Git"
     - file: articles/0016-queescienciaciudadana/queescienciaciudadana.md
-      title: "#0016: ¿Qué es ciencia ciudadana?"
+      title: "> 0016: ¿Qué es ciencia ciudadana?"
     - file: articles/0015-investigacionreproducible/investigacionreproducible.md
-      title: "#0015: ¿Cuáles son los principios de la investigación reproducible?"
+      title: "> 0015: ¿Cuáles son los principios de la investigación reproducible?"
     - file: articles/0014-5Markdown/5Markdown.md
-      title: "#0014: Cinco cosas que no debes olvidar al trabajar con Markdown"
+      title: "> 0014: Cinco cosas que no debes olvidar al trabajar con Markdown"
     - file: articles/0013-acceso_abierto/acceso_abierto.md
-      title: "#0013: ¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?"
+      title: "> 0013: ¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?"
     - file: articles/0012-5Repositorios/5Repositorios.md
-      title: "#0012: Te hablamos de cinco repositorios con datos abiertos sobre países"
+      title: "> 0012: Te hablamos de cinco repositorios con datos abiertos sobre países"
     - file: articles/0011-10razonesparausarpython/10razonesparausarpython.md
-      title: "#0011: 10 razones para usar Python en tu proximo proyecto de investigación"
+      title: "> 0011: 10 razones para usar Python en tu proximo proyecto de investigación"
     - file: articles/0010-manejodecienciaabierta/manejodecienciaabierta.md
-      title: "#0010: Aspectos clave en el manejo de equipos de ciencia abierta"
+      title: "> 0010: Aspectos clave en el manejo de equipos de ciencia abierta"
     - file: articles/0009-investigacion_colaborativa_con_git/investigacion_colaborativa_con_git.md
-      title: "#0009: Investigación Colaborativa con Git"
+      title: "> 0009: Investigación Colaborativa con Git"
     - file: articles/0008-5gestion_datos/5gestion_datos.md
-      title: "#0008: Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos"
+      title: "> 0008: Cinco cosas que te ayudarán a gestionar mejor los datos de tus próximos proyectos"
     - file: articles/0007-datosabiertos/datosabiertos.md
-      title: "#0007: Que son los datos abiertos?"
+      title: "> 0007: Que son los datos abiertos?"
     - file: articles/0006-LenguajeR/LenguajeR.md
-      title: "#0006: ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?"
+      title: "> 0006: ¿Qué es el Lenguaje R y cómo puede ayudarte en tus proyectos?"
     - file: articles/0005-investigacion_abierta_ciencias/investigacion_abierta_ciencias.md
-      title: "#0005: La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué."
+      title: "> 0005: La investigación abierta podría cambiar el futuro de la investigación en ciencias puras. Te contamos por qué."
     - file: articles/0004-que-es-jupyter/que-es-jupyter.md
-      title: "#0004: ¿Ya has probado los Cuadernos de Jupyter? Te explicamos qué son y cómo te ayudarán en tu próxima investigación."
+      title: "> 0004: ¿Ya has probado los Cuadernos de Jupyter? Te explicamos qué son y cómo te ayudarán en tu próxima investigación."
     - file: articles/0003-investigacion_colaborativa/investigacion_colaborativa.md
-      title: "#0003: Todo lo que debes saber sobre la investigación colaborativa"
+      title: "> 0003: Todo lo que debes saber sobre la investigación colaborativa"
     - file: articles/0002-GitCeroACien/GitCeroACien.md
-      title: "#0002: Git de 0 a 100 en diez sencillos pasos"
+      title: "> 0002: Git de 0 a 100 en diez sencillos pasos"
     - file: articles/0001-ciencia_abierta/ciencia_abierta.md
-      title: "#0001: ¿Qué es la ciencia abierta?"
+      title: "> 0001: ¿Qué es la ciencia abierta?"
+  - caption: Autores
+    chapters:
+    - file: authors/alan-hurtarte.md
+      title: Alan Hurtarte
+    - file: authors/ever-vino.md
+      title: Ever Vino
+

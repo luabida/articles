@@ -8,13 +8,16 @@ SUMMARY_SIZE = 300
 def get_summary(content_list):
     summary = ""
     for l in content_list:
-        if l.startswith("#") or l.startswith("!"):
+        if l.startswith("#") or l.startswith("!") or l.startswith("["):
             continue
 
         summary += l
 
         if len(summary) > SUMMARY_SIZE:
             continue
+
+    # fix path
+    summary = summary.replace("[../../authors", "[./authors")
 
     return summary[:SUMMARY_SIZE] + " ..."
 
@@ -39,6 +42,9 @@ def generate_toc():
     """
 
     for fname in files:
+        if not fname.startswith("articles"):
+            continue
+
         with open(fname) as f:
             f_content = f.readlines()
             f_title = f_content[0].replace("#", "").strip()
