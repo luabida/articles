@@ -5,11 +5,11 @@
 RStudio es un entorno de desarrollo integrado (IDE) para el lenguaje de
 programación R, el cual puedes utilizar para realizar scripts de análisis de
 datos, aplicaciones web interactivas, documentos, reportes, gráficos y mucho
-más. [https://fast.wistia.net/embed/iframe/520zbd3tij?videoFoam=true]
+más. \[https://fast.wistia.net/embed/iframe/520zbd3tij?videoFoam=true\]
 
 Para acceder o utilizar esta herramienta se tienen las siguientes opciones:
-(RStudio Desktop)[https://rstudio.com/products/rstudio/#rstudio-desktop] y
-(RServer)[https://rstudio.com/products/rstudio/#rstudio-server]. Cada uno de
+(RStudio Desktop)\[https://rstudio.com/products/rstudio/#rstudio-desktop\] y
+(RServer)\[https://rstudio.com/products/rstudio/#rstudio-server\]. Cada uno de
 ellas tiene una en versión Open Source (código abierto) y otra Pro.
 
 **RStudio Desktop** brinda acceso local a RStudio y tiene entre sus
@@ -26,20 +26,20 @@ a escala y en la RAM. Cuenta con poderosas herramientas de codificación para
 mejorar la productividad.
 
 También existe la posibilidad de trabajar con esta herramienta completamente
-online a través de (RStudio Cloud)[https://rstudio.cloud/] una versión web de
+online a través de (RStudio Cloud)\[https://rstudio.cloud/\] una versión web de
 RStudio que te permite acceder a todas sus funcionalidades desde un buscador.
 Sin embargo, en este articulo nos centraremos en RStudio Desktop.
 
 ¿Cómo instalar RStudio Desktop?
 
 1. Debes instalar R (https://cloud.r-project.org/)
-2. Acceder a la web oficial de [RStudio](https://rstudio.com/)
-3. Ir a la sección Download https://rstudio.com/products/rstudio/download/
+1. Acceder a la web oficial de [RStudio](https://rstudio.com/)
+1. Ir a la sección Download https://rstudio.com/products/rstudio/download/
    específicamente hasta "All Installers" cerca de la parte inferior de la
    página.
-4. Hacer click en el enlace de descarga correspondiente al sistema operativo de
+1. Hacer click en el enlace de descarga correspondiente al sistema operativo de
    su ordenador.
-5. Seleccionar el archivo descargado e instalar de acuerdo a su sistema
+1. Seleccionar el archivo descargado e instalar de acuerdo a su sistema
    operativo.
 
 Ahora, **Conozcamos la Interfaz de RStudio:**
@@ -49,16 +49,16 @@ dividido en cuatro cuadrantes o regiones:
 
 ![RStudio](img/Rstudio.png)
 
-* El cuadrante superior izquierdo contiene una ventana que permite crear y
+- El cuadrante superior izquierdo contiene una ventana que permite crear y
   editar scripts y, mostrar datos. También cuenta con una serie de comandos o
   botones asociados con la ejecución de los scripts. Lo podemos encontrar en
   algunas referencias como Source Panel. Es importante mencionar que si es la
   primera vez que abres RStudio este cuadrante no aparece hasta que se cree un
   nuevo script o se abra uno que ya haya sido creado previamente.
 
- ![Source Panel](../img/C1.gif)
+![Source Panel](../img/C1.gif)
 
-* El cuadrante inferior izquierdo contiene una consola, que recibe directamente
+- El cuadrante inferior izquierdo contiene una consola, que recibe directamente
   las instrucciones y las interpreta. Luego de esto muestra el resultado. Por
   ejemplo, ingresamos 9 + 3 entonces la consola interpreta que debe hacer una
   suma y finalmente devolverá el número 7.
@@ -68,9 +68,9 @@ dividido en cuatro cuadrantes o regiones:
   locales y trabajos remotos. Puedes usarlas para ejecutar tus scripts en
   segundo plano mientras sigues usando el IDE.
 
- ![Consola](../img/2consola.gif)
+![Consola](../img/2consola.gif)
 
-* En el cuadrante superior derecho podemos encontrar el Panel de Environment
+- En el cuadrante superior derecho podemos encontrar el Panel de Environment
   (ambiente), Historial y las Conexiones. *Environment* muestra las
   características de variables, dataframes u objetos que se estén trabajando en
   algún proyecto o sesión determinada. También hay un botón que permite cargar
@@ -81,43 +81,43 @@ dividido en cuatro cuadrantes o regiones:
   los comandos directamente a la consola, o al script. Además es posible guardar
   el historial de comandos para usarlos en otra sesión.
 
- ![Environment](../img/Environment.gif)
+![Environment](../img/Environment.gif)
 
-* El cuadrante inferior derecho contiene varias pestañas:
+- El cuadrante inferior derecho contiene varias pestañas:
 
- -Files(Archivos): es un gestor de archivos propio de RStudio, te permite crear,
+-Files(Archivos): es un gestor de archivos propio de RStudio, te permite crear,
 editar y eliminar tus archivos, así como crear carpetas.
 
- -Plots: en esta pestaña se muestran los gráficos que se generen a tráves del
+-Plots: en esta pestaña se muestran los gráficos que se generen a tráves del
 script o líneas de comandos. También te permite exportarlos en distintos
 formatos.
 
- -Packages: Si damos click en esta pestaña aparecen dos botones, install y
+-Packages: Si damos click en esta pestaña aparecen dos botones, install y
 update, seguido por una lista de paquetes que pueden estar o no instalados en tu
 ordenador y que puedes utilizar o instalar según sea el caso.
 
- -Help: Nos da acceso a la ayuda que esta compuesta por varias secciones,
+-Help: Nos da acceso a la ayuda que esta compuesta por varias secciones,
 
-  *R Resources: Contiene una lista de enlaces que te dirigen a páginas web de
-  las ayudas oficiales de R.
-  
-  *RStudio: Contiene enlaces asociados a los sitios web oficiales de RStudio.
+\*R Resources: Contiene una lista de enlaces que te dirigen a páginas web de
+las ayudas oficiales de R.
 
-  *Manuals: Esta sección contiene los enlaces que te permiten acceder de forma
-    local a una serie de manuales a cerca de R.
-  
-  *Reference: Hay dos enlaces, uno es el índice de los paquetes instalados y
-    otro muestra una serie de palabras clave y la clasificación por tópicos de
-    paquetes; al hacer click en cualquiera de estos enlaces la información es
-    cargada de forma local.
-  
-  *Miscellaneous Material: Muestra material diverso sobre R, tal como manuales
-    de usuario, preguntas frecuentes, Acerca de R, entre otros.
+\*RStudio: Contiene enlaces asociados a los sitios web oficiales de RStudio.
 
- -Viewer: esta pestaña es complemento de la extensión RMarkdown, la cual permite
- tener una vista previa de los archivos .rmd.
+\*Manuals: Esta sección contiene los enlaces que te permiten acceder de forma
+local a una serie de manuales a cerca de R.
 
- ![Files, Plots, Packages, Help](../img/4.gif)
+\*Reference: Hay dos enlaces, uno es el índice de los paquetes instalados y
+otro muestra una serie de palabras clave y la clasificación por tópicos de
+paquetes; al hacer click en cualquiera de estos enlaces la información es
+cargada de forma local.
+
+\*Miscellaneous Material: Muestra material diverso sobre R, tal como manuales
+de usuario, preguntas frecuentes, Acerca de R, entre otros.
+
+-Viewer: esta pestaña es complemento de la extensión RMarkdown, la cual permite
+tener una vista previa de los archivos .rmd.
+
+![Files, Plots, Packages, Help](../img/4.gif)
 
 Nota: Los cuadrantes se pueden agrandar o reducir. Permitiendo ajustar la
 pantalla a tus necesidades.

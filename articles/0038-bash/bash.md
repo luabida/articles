@@ -29,14 +29,13 @@ nuestro home mediante el signo ~.Veremos en pantalla algo similar a:
 
 El home es el sitio donde se pueden aplicar inicialmente las tareas.
 
-
 Un par de comandos que nos brindan ayuda o referencias en Bash son `man` e
 `info`, ideales cuando se tienen dudas acerca de uno o varios comandos.
 
-* `man` muestra la información del manual de bash en el sistema sobre el comando
+- `man` muestra la información del manual de bash en el sistema sobre el comando
   o página indicado.
 
-* `info` permite consultar la información que se almacena en archivos INFO
+- `info` permite consultar la información que se almacena en archivos INFO
   (archivos de formato [Texinfo](https://es.wikipedia.org/wiki/Texinfo)) de
   algún comando o software.
 
@@ -48,12 +47,12 @@ características principales.
 ![Comandos man e info](../img/ayuda.gif)
 
 # Crear, eliminar y editar carpetas o directorios
- 
+
 Entre las tareas que podemos realizar con bash están  crear, eliminar y editar
 carpetas o directorios. Algunos de los comandos asociados a estas son:
 
 `pwd` nos indica el directorio en el que estamos actualmente. Si probamos este
-comando en el home obtendremos algo similar a 
+comando en el home obtendremos algo similar a
 
 ![pwd en home](../img/pwd.gif)
 
@@ -79,7 +78,7 @@ cual es necesario que se tenga permiso de escritura sobre ese fichero y el lugar
 de destino. Se utiliza simplemente indicando mv nombre_origen ruta_destino.
 
 *Con este comando también es posible mover directorios, o todos los ficheros de
-  un directorio.*
+un directorio.*
 
 La otra operación que se puede realizar con `mv` es el cambio de nombre, así basta con
 indicar el nombre de un fichero o directorio, y luego su nuevo nombre.
@@ -100,7 +99,7 @@ lo mismo con los directorios. Hay que tener en cuenta que un directorio puede
 contener muchos ficheros y, además, otros directorios que, a su vez, pueden
 contener más ficheros y directorios. Por tanto, si se quiere copiar un fichero
 completo, con todo lo que tiene dentro, hay que indicarlo con la opción -R. A
-esto último se suele llamar “copiar de forma recursiva”.  
+esto último se suele llamar “copiar de forma recursiva”.
 
 Otro comando que puede ser util es `rm -rf nombre_del_directorio`, borra el
 directorio y todo lo que contiene (lo que se elimina no se puede recuperar).
@@ -113,7 +112,7 @@ la hora de escribir un nombre de fichero o directorio. Además la tecla tab
 permite completar rutas o algún comando a la hora de escribir. Por ejemplo,
 escribe /ho y pulsa tab verás cómo aparece /home/).
 
-Los principales comodines son *, ? y los corchetes [].
+Los principales comodines son \*, ? y los corchetes \[\].
 
 - El asterisco sustituye a cualquier grupo de letras.
 
@@ -134,6 +133,7 @@ documento de ayuda.
 Puedes consultar más de los comandos en https://ss64.com/bash/index.html
 
 # Referencias
+
 Manual Práctico de Linux con ejercicios por Luis José Sánchez González.
 Manual de Linux por Álvaro Alea Fdz.
 [EcuRed-Terminal](https://www.ecured.cu/Terminal_de_GNU/Linux)

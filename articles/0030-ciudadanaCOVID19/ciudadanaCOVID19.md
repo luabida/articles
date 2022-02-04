@@ -48,7 +48,6 @@ durante los días de aislamiento, busca ser compartida con la familia,
 amigos y/o vecinos. La iniciativa estará activa mientras duren el
 período de excepcionalidad y las medidas de aislamiento en España.
 
-
 ### Barcelona Cultura
 
 Es una plataforma digital accesible desde
@@ -59,7 +58,6 @@ espíritu de los equipamientos públicos y privados de la ciudad, así como
 las iniciativas culturales individuales. Aquí se observan actividades
 donde se informa sobre museos, recursos literarios, blibliotecas, entre
 otras.
-
 
 ### Proyecto Radars
 
@@ -72,7 +70,6 @@ basura, pasear perros, entre otras. Si deseas consultar más información,
 visita
 https://ajuntament.barcelona.cat/serveissocials/ca/canal/projecte-daccio-comunitaria-radars.
 
-
 ## Covid-19 SG
 
 Es una web que muestra información de Singapur sobre los casos de
@@ -82,7 +79,7 @@ detalles. Es una iniciativa del gobierno el cual ha adoptado el enfoque
 abierto sobre los datos oficiales de las infecciones y manifiesta que
 esta es la mejor manera de ayudar a las personas a tomar decisiones y
 controlarse frente al Covid-19. Puedes acceder a esta información en
-https://co.vid19.sg/.  
+https://co.vid19.sg/.
 
 ## Minería en redes sociales
 
@@ -115,7 +112,6 @@ Instituto de Diseño de Proteínas de esta Universidad. Más información
 en:
 https://www.geekwire.com/2020/university-washington-coronavirus-puzzle-game-aims-crowdsource-cure/
 
-
 ## Chatbot Carina
 
 Es un asistente virtual basado en inteligencia artificial, desarrollado
@@ -134,7 +130,7 @@ información de la Organización Mundial de la Salud (OMS), el Ministerio
 de Sanidad y normativas gubernamentales, el Center For Disease, Control
 and Prevention, artículos científicos e información de artículos de
 prensa certificados. Encontrarás información adicional sobre Carina en
-https://1millionbot.com/chatbot-coronavirus/ 
+https://1millionbot.com/chatbot-coronavirus/
 
 ## OpenWHO
 
@@ -168,7 +164,6 @@ siendo un gran método para luchar contra el COVID-19, empleándose en
 todo el mundo por comunidades y gobiernos para dar respuesta a esta
 situación. Te animamos a que seas partícipe de cualquier proyecto de
 ciencia ciudadana en tu comunidad, o te permitas emprender uno propio.
-
 
 ### Referencias
 

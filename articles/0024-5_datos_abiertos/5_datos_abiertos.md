@@ -18,17 +18,17 @@ abiertos:
 
 https://ceweb.br/guias/dados-abertos/es/capitulo-2/
 
-* Disponibilidad y acceso: los datos deben estar disponibles de manera integral
+- Disponibilidad y acceso: los datos deben estar disponibles de manera integral
   y en una forma en que no genere costos exhorbitantes para la parte interesada en
   copiarlos. El escenario más favorable es poner los datos a disposición para
   que sean descargados a través de Internet. Asimismo, los datos deben ofrecerse
   en un formato conveniente y modificable.
 
-* Reutilización y redistribución: los datos deben ponerse a disposición bajo
+- Reutilización y redistribución: los datos deben ponerse a disposición bajo
   términos de uso que permitan su reutilización y redistribución, e incluso que
   permitan su mezcla y entrecruzamiento con otros obtenidos de distintas bases.
 
-* Participación universal: cualquier persona debe poder usar, reutilizar y
+- Participación universal: cualquier persona debe poder usar, reutilizar y
   redistribuir los datos. No debe existir ningún tipo de discriminación contra
   campos de actuación, individuos o grupos. Por ejemplo, restricciones "no
   comerciales" que impidieren el uso "comercial" de los datos, o bien
@@ -39,7 +39,7 @@ Con lo anterior tenemos una noción más clara de lo que significa que los datos
 estén o sean abiertos. Existen diversos repositorios y paginas web que nos
 permiten acceder a datos abiertos. Por ejemplo, si estamos interesados en
 estudiar los cultivos de Colombia podemos ingresar al sitio web en el que se
-publican datos del gobierno Colombiano [https://www.datos.gov.co], allí
+publican datos del gobierno Colombiano \[https://www.datos.gov.co\], allí
 encontraremos una gama de conjuntos de datos referentes al tema, si escogemos
 uno en especifico, veremos sus detalles y si deseamos tener la data en un
 directorio de nuestro equipo tenemos la opción de descargarlo en formato csv.
@@ -59,7 +59,7 @@ fuentes, específicamente datos abiertos, no debemos olvidar que:
    metadatos. Estos últimos son datos de los datos, permiten describir los datos
    de manera detallada.
 
-2. Todos los elementos de acceso abierto tienen la particularidad de que se
+1. Todos los elementos de acceso abierto tienen la particularidad de que se
    muestra de manera explicita sus propietarios, autores y las personas
    involucradas en el trabajo, es importante que si utilizamos o reutlizamos
    alguno de sus trabajos no pasemos desapercibidos estos nombres y los
@@ -67,7 +67,7 @@ fuentes, específicamente datos abiertos, no debemos olvidar que:
    los datos y no encontramos información en la documentación podemos
    contactarlos.
 
-3. Los conjuntos datos poseen una estructura predeterminada que puede ser
+1. Los conjuntos datos poseen una estructura predeterminada que puede ser
    descargada en distintos formatos, lo debemos tener en cuenta para realizar un
    análisis óptimo. Esto es porque muchas veces nuestro equipo esta configurado
    de alguna manera en especifico y los archivos son leídos de manera
@@ -78,12 +78,12 @@ fuentes, específicamente datos abiertos, no debemos olvidar que:
    se puede cambiar la configuración o indicarle en el proceso de lectura el
    tipo de separador.
 
-4. Los datos abiertos pueden reutilizarse, si hacemos esto de manera que unamos
+1. Los datos abiertos pueden reutilizarse, si hacemos esto de manera que unamos
    uno o más conjuntos de datos debemos tener cuidado y verificar que la
    estructura de los datos sea la misma. Esto evitaría que la información se
    confunda obteniendo una mezcla homogénea de los datos.
 
-5. Los resultados obtenidos según sea el carácter de la investigación debieren
+1. Los resultados obtenidos según sea el carácter de la investigación debieren
    ser compartidos a través de un paper o artículo científico de manera que vaya
    de la mano con el acceso abierto. Esto permitirá una retroalimentación
    constante y si es el caso brindaría otro enfoque para el análisis de estos

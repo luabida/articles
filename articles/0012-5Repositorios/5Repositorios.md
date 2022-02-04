@@ -13,7 +13,7 @@ culminar alguno. Sin embargo, la finalidad de este post no es hablarte
 específicamente sobre los datos abiertos sino sobre algunos repositorios
 de datos abiertos. Sin embargo, una pequeña introducción a estos no está
 de más para entrar en confianza sobre el tema. Puedes visitar nuestro
-post sobre Datos abiertos [aquí](enlace a artículo de Rainer sobre datos
+post sobre Datos abiertos \[aquí\](enlace a artículo de Rainer sobre datos
 abiertos).
 
 Los repositorios de datos abiertos son almacenes de datos que tienen la
@@ -35,7 +35,7 @@ probar herramientas de manejo de datos, entre otras situaciones afines.
 A continuación te contamos de cinco repositorios de datos abiertos sobre
 algunos países, sin orden en particular:
 
-### 1. [**Portal de Datos de Europa**](https://www.europeandataportal.eu/es/homepage) 
+### 1. [**Portal de Datos de Europa**](https://www.europeandataportal.eu/es/homepage)
 
 Ofrece una recopilación de datos y
 [**metadatos**](https://es.wikipedia.org/wiki/Metadatos) referidos a
@@ -72,7 +72,7 @@ investigación y otros trabajos sectoriales y económicos, como
 estrategias de atención a países. La información proporcionada por este
 repositorio proviene, en su mayoría, de los sistemas estadísticos de los
 países miembros y por tal motivo, la calidad de los datos depende de la
-eficiencia y calidad de dichos sistemas. 
+eficiencia y calidad de dichos sistemas.
 
 Como usuario de los datos del Banco Mundial, puedes copiar, distribuir,
 adaptar, exhibir o incluir los datos con fines comerciales o no, sin
@@ -86,8 +86,7 @@ Datos*](https://datacatalog.worldbank.org/) y al [*Banco de
 Datos*](https://databank.bancomundial.org/home.aspx) del Banco Mundial
 que te servirá para complementar información.
 
-
-### 3. [**Portal de Datos Abiertos: Números para el desarrollo](https://code.iadb.org/es) del Banco Interamericano de desarrollo.
+### 3. [\*\*Portal de Datos Abiertos: Números para el desarrollo](https://code.iadb.org/es) del Banco Interamericano de desarrollo.
 
 Permite explorar, visualizar y descargar datos sobre indicadores
 socioeconómicos de América Latina y el Caribe. Los datos disponibles
@@ -131,9 +130,8 @@ países y realizar comparaciones entre ellos. Asimismo los datos,
 visualizaciones y publicaciones se encuentran disponibles para su
 descarga y envío.
 
-
 ### 5.[Iniciativa de datos abiertos del gobierno de España](https://datos.gob.es/es/catalogo)
- 
+
 Esta iniciativa lleva el nombre de *Aporta* y se desarrolló con el fin
 de promocionar la apertura de la información pública y desarrollo de
 servicios avanzados basados en datos en el Gobierno de España. Cuenta,
@@ -153,7 +151,6 @@ administración, frecuencia de actualización y etiqueta. Este repositorio
 sirve tanto de punto de localización como de entrada a nuevos datos
 disponibles. Es una buena alternativa si quieres conocer o necesitas
 información sobre el desarrollo del Gobierno en España.
-
 
 En **Open Science Labs** pensamos que cada país debe contar con un
 repositorio de datos abiertos, donde se encuentre información referente

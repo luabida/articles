@@ -29,10 +29,10 @@ R](https://www.r-project.org/).
 R es fundamentalmente un lenguaje de análisis estadístico y por tanto,
 tiene en su librería "base" soporte incorporado para gráficos. Otras
 funcionalidades avanzadas se incorporan mediante la instalación de
-paquetes encontrados en [https://cran.r-project.org] y son generados por
+paquetes encontrados en \[https://cran.r-project.org\] y son generados por
 una gran comunidad activa de desarrolladores de R. Puedes acceder a más
-información que te proporcionamos acerca de R en nuestro artículo [¿Qué
-es el Lenguaje R y cómo puede ayudarte en tus proyectos?](enlace a
+información que te proporcionamos acerca de R en nuestro artículo \[¿Qué
+es el Lenguaje R y cómo puede ayudarte en tus proyectos?\](enlace a
 artículo LenguajeR).
 
 R posee una [**Galería de gráficos**](https://www.r-graph-gallery.com/),
@@ -52,7 +52,7 @@ base de R" y "El motor *grid*".
 Las funciones básicas de R para gráficos como, `plot`, `hist`, `boxplot`
 y otras, están desarrolladas bajo el motor tradicional de R. No
 obstante, para construir otro tipo de gráficos no es suficientemente
-adecuada. Por tal motivo, [Paul Murrell](enlace a biografía) desarrolló
+adecuada. Por tal motivo, \[Paul Murrell\](enlace a biografía) desarrolló
 el motor grid.
 
 ## Algunas consideraciones sobre el motor tradicional de R
@@ -95,7 +95,7 @@ A continuación daremos una descripción breve sobre algunos paquetes
 
 ### lattice
 
-El paquete fue escrito por [Deepayan Sarkar](enlace a biografía) con el
+El paquete fue escrito por \[Deepayan Sarkar\](enlace a biografía) con el
 objetivo de mejorar los gráficos básicos de R, proporcionando mejores
 valores por defecto y tiene la capacidad de mostrar, de una manera
 fácil, las relaciones multivariantes. Está desarrollado bajo el motor
@@ -104,14 +104,13 @@ que describen situaciones complejas (mayormente multivariantes) como la
 relación entre variables condicionada a una o más variables,
 representándolo en un sólo gráfico organizado en paneles. Además tiene
 la funcionalidad para generar gráficos en 3D, puedes consultar la
-[documentación de este paquete](enlace a documentación lattice) para más
+\[documentación de este paquete\](enlace a documentación lattice) para más
 información.
-
 
 ### ggplot2
 
-Es un paquete apoyado en el motor grid. Fue desarrollado por [Hardley
-Wickham](enlace a biografía) como una implementación de la metodología
+Es un paquete apoyado en el motor grid. Fue desarrollado por \[Hardley
+Wickham\](enlace a biografía) como una implementación de la metodología
 de visualización de datos llamada *The Grammar of Graphics* cuya idea
 consiste en especificar de manera independiente las componentes del
 gráfico y luego combinarlas. Es un paquete ampliamante difundido y
@@ -127,8 +126,7 @@ por ejemplo, `geom_point`, `geom_line`, `geom_histogram`, `geom_bar`,
 `geom_boxplot`, **Facetas** y **Temas**, referentes a aspectos
 estéticos, por ejemplo, ejes, etiquetas, colores de fondo, tamaño de los
 márgenes y otros. Puedes consultar más sobre este poderoso paquete en
-[http://www.ggplot2.org]
-
+\[http://www.ggplot2.org\]
 
 ### ggmap
 
@@ -147,7 +145,7 @@ barras, error, cajas, histogramas, mapas térmicos, subgráficos, de
 múltiples ejes y gráficos 3D. Es gratuito y de código abierto con
 licencia del MIT, puedes ver la fuente, informar de los problemas o
 contribuir en GitHub. Funciona sin conexión y no requiere ningún
-registro de cuenta. Más información en [https://plot.ly/r/].
+registro de cuenta. Más información en \[https://plot.ly/r/\].
 
 ### shiny
 
@@ -160,7 +158,6 @@ web mediante pocas líneas de código.
 El paquete proporciona varias aplicaciones de ejemplo que puedes usar
 para aprender sus principios básicos. Consulta más información en
 (enlace a documentación o sitio web de shiny).
-
 
 ### Otros paquetes
 

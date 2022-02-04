@@ -55,9 +55,8 @@ En líneas generales, la documentación te ayudará a organizar las tareas, dele
 En OpenScienceLabs te animamos a que comiences a documentar tu proyecto
 y que tomes en cuenta esta buena práctica para futuros desafíos.
 
-
 ## Referencias
 
-[Manual de Capacitación sobre Ciencia abierta]((https://book.fosteropenscience.eu/es/))
+[Manual de Capacitación sobre Ciencia abierta](<(https://book.fosteropenscience.eu/es/)>)
 [Guía de expertos en Gestión de Datos](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide)
 [5 reglas básicas y 5 pasos para documentar tu proyecto web](https://www.socialancer.com/como-documentar-un-proyecto-web/)

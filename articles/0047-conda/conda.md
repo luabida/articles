@@ -83,29 +83,29 @@ normalmente.
 
 ### En MacOS
 
-* Miniconda:
+- Miniconda:
 
-    - En una ventana del terminal ejecute `bash Miniconda3-latest-MacOSX-x86_64.sh`
+  - En una ventana del terminal ejecute `bash Miniconda3-latest-MacOSX-x86_64.sh`
 
-* Anaconda:
+- Anaconda:
 
-    - Dirígete a la carpeta donde se encuentra el archivo descargado y haz
-  doble click. Es un archivo .pkg.
+  - Dirígete a la carpeta donde se encuentra el archivo descargado y haz
+    doble click. Es un archivo .pkg.
 
-- Sigue las instrucciones de las pantallas de instalación
+* Sigue las instrucciones de las pantallas de instalación
 
-- Debes cerrar y volver a abrir la ventana del terminal para que los
+* Debes cerrar y volver a abrir la ventana del terminal para que los
   cambios se realicen.
 
 ### En Linux
 
 En una ventana del terminal ejecuta:
 
-* Miniconda:
+- Miniconda:
 
 `bash Miniconda3-latest-Linux-x86_64.sh`
 
-* Anaconda:
+- Anaconda:
 
 `bash Anaconda3-latest-Linux-x86_64.sh`
 

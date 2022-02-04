@@ -2,7 +2,7 @@
 
 Open Science Labs es una comunidad que tiene como objetivo unir a personas de todas partes del mundo,
 especialmente de países latinoamericanos y crear un espacio abierto para enseñar,
-aprender y compartir temas relacionados con la ciencia abierta y las herramientas computacionales. 
+aprender y compartir temas relacionados con la ciencia abierta y las herramientas computacionales.
 
 ## Redes Sociales
 
@@ -16,12 +16,11 @@ Estés al tanto de nuestras publicaciones en las redes sociales:
 [![discord](./images/networks/discord.png)](http://discord.opensciencelabs.org)
 [![youtube](./images/networks/youtube.png)](http://youtube.opensciencelabs.org)
 
-
 ## Blog
 
 En esta sección presentamos nuestras publicaciones sobre temas de ciencia abierta,
 herramientas computacionales y trabajo colaborativo.
 
 <!--content:start-->
-<!--content:end-->
 
+<!--content:end-->

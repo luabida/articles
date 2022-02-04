@@ -37,7 +37,7 @@ manera eficiente y sin complicaciones.
 
 - Para consultar los entornos virtuales que haz creado, ejecuta el
   comando `conda info --envs`. Si tienes varios creados, el que aparezca
-  con un asterisco (*) al lado del nombre es el que tienes activado
+  con un asterisco (\*) al lado del nombre es el que tienes activado
   actualmente.
 
 - Para trabajar en cualquiera de los entornos virtuales que tengas
@@ -47,8 +47,7 @@ manera eficiente y sin complicaciones.
 
 - Si deseas remover un paquete específico del entorno de trabajo actual,
   ejecuta el comando `conda remove nombre_paquete` y si deseas eliminar
-  un paquete de otro entorno entonces ejecuta `conda remove -n
-  nombre_entorno nombre_paquete`.
+  un paquete de otro entorno entonces ejecuta `conda remove -n nombre_entorno nombre_paquete`.
 
 - Para ver una lista de los paquetes que tienes instalados en el entorno
   actual ejecuta `conda list` y para consultar los paquetes instalados
@@ -77,9 +76,9 @@ A continuación encontrarás enlaces con información y comandos que te
 serán de gran ayuda para el manejo de paquetes y entornos virtuales con
 conda.
 
-* [Cheat sheets de terceros](https://kapeli.com/cheat_sheets/Conda.docset/Contents/Resources/Documents/index)
+- [Cheat sheets de terceros](https://kapeli.com/cheat_sheets/Conda.docset/Contents/Resources/Documents/index)
 
-* [Cheat sheets de Continuum Analytics, compañía creadora de conda](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
+- [Cheat sheets de Continuum Analytics, compañía creadora de conda](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
 
 En OpenScienceLabs te invitamos a indagar y a que comiences a usar
 conda. Con la ayuda de este post y los recursos que hemos señalado,

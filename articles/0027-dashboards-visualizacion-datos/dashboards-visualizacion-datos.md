@@ -19,11 +19,11 @@ Un framework es una plataforma reutilizable útil en el desarrollo de aplicacion
 Por supuesto, hay también bastantes otras opciones. Está Shiny, que es un paquete de R que permite la creación de aplicaciones web directamente desde R, ya sea alojándolas directamente en un sitio web o integrándolas en documentos R Markdown, que también soporta el uso de temas CSS y Javascript. Shiny también tiene una comunidad bastante dedicada y activa. También esta Cube.js, un framework de código abierto diseñado desde abajo para análisis inteligente accesible instantáneamente desde un sitio web. O JDash, o Mozaïk.Todo es cuestión de utilizar el que mas se acerque a tus necesidades.
 
 Los dashboards son una herramienta bastante poderosa. Con un proceso automatizado de subida y recolecta de datos por debajo, y un diseño funcional, sencillo y bien pensado, pueden volverse un instrumento muy importante para presentar tu proyecto y/o desarrollarlo en grupo, y en áreas de marketing, o negocios son prácticamente indispensables. Si tienes dificultades con cuestiones de coordinación de equipos, monitoreo de proyectos o manejo de finanzas, ¿por qué no probarlos?
-[1]: https://dash.plot.ly/ "Dash"
-[2]: https://dash-gallery.plotly.host/Portal/ "Dash App Gallery"
-[3]: https://gist.github.com/chriddyp/3d2454905d8f01886d651f207e2419f0 "Hello World Dash app"
-[4]: https://shiny.rstudio.com/ "R Shiny"
-[5]: https://shiny.rstudio.com/gallery/#user-showcase "R Shine | User Showcase"
-[6]: https://cube.dev/ "Cube.js"
-[7]: http://jdash.io/ "JDash"
-[8]: http://mozaik.rocks/ "Mozaïk"
+\[1\]: https://dash.plot.ly/ "Dash"
+\[2\]: https://dash-gallery.plotly.host/Portal/ "Dash App Gallery"
+\[3\]: https://gist.github.com/chriddyp/3d2454905d8f01886d651f207e2419f0 "Hello World Dash app"
+\[4\]: https://shiny.rstudio.com/ "R Shiny"
+\[5\]: https://shiny.rstudio.com/gallery/#user-showcase "R Shine | User Showcase"
+\[6\]: https://cube.dev/ "Cube.js"
+\[7\]: http://jdash.io/ "JDash"
+\[8\]: http://mozaik.rocks/ "Mozaïk"

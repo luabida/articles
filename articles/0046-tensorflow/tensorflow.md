@@ -26,7 +26,7 @@ disponible una serie de herramientas ideadas para instruirse.
 Ahora bien, para instalar y utilizar Tensorflow tenemos tres opciones: pip,
 docker y Gooogle Colab. Veamos el procedimiento en cada caso.
 
-* Instalar Tensorflow con pip:
+- Instalar Tensorflow con pip:
 
 1. Se debe tener un entorno de desarrollo de Python en el sistema o tener
    instalado Python a través de una de sus distribuciones. Por ejemplo,
@@ -50,7 +50,7 @@ https://realpython.com/python-ides-code-editors-guide/
    la página de Tensorflow hay un espacio dedicado a este punto
    https://www.tensorflow.org/install/pip?lang=python3#2.-create-a-virtual-environment-recommended
 
-4. Instalar el paquete de tensorflow con pip, utilizando:
+1. Instalar el paquete de tensorflow con pip, utilizando:
 
 `pip install --upgrade pip` # Esta línea de código permite actualizar pip
 
@@ -60,8 +60,7 @@ Luego, puedes importar tensorflow como una biblioteca, colocando:
 
 `import tensorflow as tf`
 
-
-* Docker. Ejecutar un contenedor de Tensorflow.
+- Docker. Ejecutar un contenedor de Tensorflow.
 
 Docker es una plataforma abierta para desarrollar, enviar y ejecutar
 aplicaciones. Con Docker podemos mantener aislados los programas que estemos
@@ -76,11 +75,11 @@ https://www.tensorflow.org/install/docker.
 En el caso de tener o haber instalado Docker en tu equipo, con las siguientes
 líneas de código puedes obtener Tensorflow:
 
- `docker pull tensorflow/tensorflow:latest-py3`  # Descarga la imagen estable más reciente de Tensorflow
- 
- `docker run -it -p 8888:8888 tensorflow/tensorflow:latest-py3-jupyter`  #Inicia un servidor de Jupyter
+`docker pull tensorflow/tensorflow:latest-py3`  # Descarga la imagen estable más reciente de Tensorflow
 
-* Ejecutar Tensorflow desde Google Colab.
+`docker run -it -p 8888:8888 tensorflow/tensorflow:latest-py3-jupyter`  #Inicia un servidor de Jupyter
+
+- Ejecutar Tensorflow desde Google Colab.
 
 Google Colab: Es una plataforma basada en los cuadernos de Jupyter, la cual
 permite ejecutar y programar código de Python en tu navegador. No requiere
@@ -94,14 +93,14 @@ guía de bienvenida que sus desarrolladores han ideado.
 Para comenzar a utilizar Tensorflow en esta herramienta es necesario que se cree
 un archivo en esta plataforma, lo cual se puede hacer desde una cuenta de Google
 Drive en la opción nuevo, luego seleccionando la opción **más** y finalmente la
-opción **Google colaboratory**. 
+opción **Google colaboratory**.
 
 Una vez creado el archivo se tendrán disponibles celdas en las cuales podemos
 escribir código de Python. En este caso debemos escribir inicialmente una línea
 de código que permita instalar a través de pip la versión de Tensorflow que
 necesitemos, esto sería ejecutando:
 
-  !pip install tensorflow
+!pip install tensorflow
 
 Luego podemos verificar la versión mediante
 
@@ -118,7 +117,7 @@ sobre el modelo. Sin embargo, si aún no se tiene un proyecto definido y solo se
 desea empezar a utilizar esta herramienta puedes visitar
 https://www.tensorflow.org/tutorials; un sitio web donde se presentan algunas
 guías, blogs, vídeos y otros materiales de ayuda.
- 
+
 Por otro lado, es importante destacar que Tensorflow es una plataforma que se
 actualiza constantemente y que en el paso del tiempo ha venido incluyendo nuevas
 funcionalidades que permiten construir y entrenar modelos de forma tal que el

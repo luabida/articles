@@ -28,7 +28,7 @@ verde implica el depósito y difusión en acceso abierto de resultados de
 investigación en repositorios (institucionales, como DIGITAL.CSIC, temáticos,
 como arXiv, o generalistas como Zenodo). La ruta dorada hace referencia a la
 publicación de artículos revisados por pares en revistas de acceso abierto
-[https://digital.csic.es/dc/accesoAbierto.jsp]. 
+\[https://digital.csic.es/dc/accesoAbierto.jsp\].
 
 ## ¿Cómo se organiza el acceso abierto?
 
@@ -72,25 +72,25 @@ sociedad a través del tiempo y a su vez incentivar el proceso de investigación
 futuro. Las herramientas son brindadas por distintas organizaciones y equipos de
 trabajo. Casos que lo demuestran son los diferentes repositorios como:
 
-*ACS (American Chemical Association)
-*arXiv
-*BioMed Central
-*Cambridge University Press
-*Copernicus Publications
-*F1000Research
-*Frontiers
-*IntechOpen
-*Knowledge Unlatched
-*MDPI
-*Open Library of Humanities
-*Oxford University Press
-*PeerJ.
-*Pensoft Publishers
-*PLOS ONE
-*PNAS
-*Royal Society of Chemistry (RSC) 
-*SCOAP3
-*Springer Open
+\*ACS (American Chemical Association)
+\*arXiv
+\*BioMed Central
+\*Cambridge University Press
+\*Copernicus Publications
+\*F1000Research
+\*Frontiers
+\*IntechOpen
+\*Knowledge Unlatched
+\*MDPI
+\*Open Library of Humanities
+\*Oxford University Press
+\*PeerJ.
+\*Pensoft Publishers
+\*PLOS ONE
+\*PNAS
+\*Royal Society of Chemistry (RSC)
+\*SCOAP3
+\*Springer Open
 
 Que brindan opciones para que los investigadores puedan hacer visibles sus
 resultados.
@@ -99,12 +99,12 @@ Referencias:
 
 http://bibliotecas.csic.es/publicacion-en-acceso-abierto
 
-[DIGITAL.CSIC Ciencia Abierta] (https://digital.csic.es/dc/accesoAbierto.jsp)
+\[DIGITAL.CSIC Ciencia Abierta\] (https://digital.csic.es/dc/accesoAbierto.jsp)
 
-[Universidad de Jaén]
+\[Universidad de Jaén\]
 (https://libereurope.eu/wp-content/uploads/2017/09/OpenAccess5Principlesposter.jpg)
 
 [UCRIndex](https://ucrindex.ucr.ac.cr/?page_id=896)
 
-[Manifiesto de Ciencia Abierta y Colaborativa]
+\[Manifiesto de Ciencia Abierta y Colaborativa\]
 (https://ocsdnet.org/wp-content/uploads/2015/04/Manifesto-Infographic-Spanish-1.pdf)

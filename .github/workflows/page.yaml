@@ -13,19 +13,31 @@ on:
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: bash -l {0}
     steps:
     - uses: actions/checkout@v2
 
-    # Install dependencies
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
+    - uses: conda-incubator/setup-miniconda@v2
       with:
-        python-version: 3.7
+        miniconda-version: "latest"
+        mamba-version: "*"
+        environment-file: conda/dev.yaml
+        channels: conda-forge,nodefaults
+        activate-environment: inlyse-dashboard
+        use-mamba: true
+        miniforge-variant: Mambaforge
 
     # Install the pre-release of jupyter book for now until it is "officially" released
-    - name: Install Jupyter Book
+    - name: Install deps
       run: |
-        pip install -r requirements_dev.txt
+        poetry install
+
+    - name: run pre-commit
+      run:
+        pre-commit run --all-files
 
     # Build the book
     - name: Build the book

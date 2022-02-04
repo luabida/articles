@@ -16,10 +16,9 @@ _Puedes descargar R y RStudio desde sus páginas web oficiales:_
 
 [rstudio.org](https://www.rstudio.com/)
 
-
 ### Instalación de pre-requisitos 🔧 📋
 
-Para este ejemplo se usan las librerías de ```rio```, ```dplyr```, ```ggplot2``` y ```gganimate```. Para instalarlas se ejecutan las siguientes líneas de código en R
+Para este ejemplo se usan las librerías de `rio`, `dplyr`, `ggplot2` y `gganimate`. Para instalarlas se ejecutan las siguientes líneas de código en R
 _(Recuerde que para ejecutar una linea de Comando en el Editor de RStudio Es con Ctrl+Enter o puede escribirlo directamento en la Consola)_
 
 ```python
@@ -33,6 +32,7 @@ install.package(gganimate)  #librería para realizar la animación
 
 En nuestro ejemplo usaremos la base de datos del INE "Importaciones de Productos y Artículos de Bolivia 1992-2021p"
 Abrimos nuestras librerías con:
+
 ```python
 library(rio)
 library(ggplot2)
@@ -45,7 +45,8 @@ Importamos los datos a un objeto llamado libro con:
 ```python
 libro<-import(".my/path/DatosImportacionBolivia1992-2021.csv")
 ```
-Para ver la cabecera del libro y para ver la estructura del libro libro ejecutamos respectivamente ```head(libro)``` y ``` str(libro)```
+
+Para ver la cabecera del libro y para ver la estructura del libro libro ejecutamos respectivamente `head(libro)` y ` str(libro)`
 
 ```python
 > head(libro)
@@ -77,6 +78,7 @@ Para ver la cabecera del libro y para ver la estructura del libro libro ejecutam
  $ EQUIPO DE TRANSPORTE Y SUS PIEZAS Y ACCESORIOS: num  22.2 18.7 17.4 16.8 22.8 ...
  $ ARTÍCULOS DE CONSUMO                          : num  5.59 6.53 6.2 5.42 5.46 ...
 ```
+
 Es importante verificar el tipo de dato antes de graficar, en este caso nos importa que la fecha tenga formato de IDate y los demás sean tengan formato de num.
 
 Con las siguientes lineas de código se compactamos el número de columnas de nuestro libro en un nuevo objeto llamado datos _(Notese que solamente utilizaremos las primeras 4 columnas del objeto libro)._ Es decir una columna para la fecha, una columna para su valor y otra columna que muestre su clasificación.
@@ -94,19 +96,20 @@ datos <- data.frame(Fecha = c(libro$Fecha,libro$Fecha,libro$Fecha,libro$Fecha),
                                rep("Combustibles y Lubricantes",nrow(libro)),
                                rep("Equipo de Transporte",nrow(libro))
 ```
+
 Funciones auxiliares usadas:
 
-* ```libro$columna``` para acceder al columna del libro.
+- `libro$columna` para acceder al columna del libro.
 
-* ```data.frame(columna1, columna2 ...)``` para crear una nuevo objeto de Datos.
+- `data.frame(columna1, columna2 ...)` para crear una nuevo objeto de Datos.
 
-* ```c(elemento1, elemento2, ...)``` para juntar elementos en un vector.
+- `c(elemento1, elemento2, ...)` para juntar elementos en un vector.
 
-* ```rep(elemento, n_veces)``` para generar un vector con el elemento repetido n_veces.
+- `rep(elemento, n_veces)` para generar un vector con el elemento repetido n_veces.
 
-* ```nrow(tabla)``` para obtener el número de filas de tabla.
+- `nrow(tabla)` para obtener el número de filas de tabla.
 
-Veamos la cabecera de nuestro obejto datos con ```head(datos)``` :
+Veamos la cabecera de nuestro obejto datos con `head(datos)` :
 
 ```python
 > head(datos)
@@ -118,12 +121,14 @@ Veamos la cabecera de nuestro obejto datos con ```head(datos)``` :
 5 2018-05-01 51.86330 Alimentos y Bebidas
 6 2018-06-01 43.84668 Alimentos y Bebidas
 ```
+
 ## Gráfica estática ⚙️
-Para graficar con ```ggplot2``` es conveniente entender que esta librería añade sus componentes en layers (capas), estos layers son objetos a los cuales se le puede modificar su apariencia y especificar de donde extraer sus valores.
+
+Para graficar con `ggplot2` es conveniente entender que esta librería añade sus componentes en layers (capas), estos layers son objetos a los cuales se le puede modificar su apariencia y especificar de donde extraer sus valores.
 
 Asignamos a un objeto ggplot llamado p1 lo que vamos a graficar
 
-``` python
+```python
 #Modificando el theme
 theme_set(theme_bw())
 
@@ -135,32 +140,35 @@ p1 <- ggplot(data=datos)+
        subtitle = "Expresado en Millones de Bolivianos")
 p1
 ```
+
 Funciones utilizadas
 
-* ```theme_set(theme_bw())```
-Modifica el conjunto de colores usado en el tema para realizar la gráfica.
+- `theme_set(theme_bw())`
+  Modifica el conjunto de colores usado en el tema para realizar la gráfica.
 
-* ```ggplot(data)```Esta es la primera capa a utilizarse inicialmente le asignamos nuestos datos para que cree las dimensiones de las coordenadas.
+- `ggplot(data)`Esta es la primera capa a utilizarse inicialmente le asignamos nuestos datos para que cree las dimensiones de las coordenadas.
 
-* ```geom_line(aes(x, y, color), size)``` Capa que hereda los datos de ggplot() y se los puede usar  directamente con el nombre de sus columnas, grafica los datos "x" e "y" como líneas y las clasifica deacuerdo al "color" y "size" determina el grosor de sus líneas.
+- `geom_line(aes(x, y, color), size)` Capa que hereda los datos de ggplot() y se los puede usar  directamente con el nombre de sus columnas, grafica los datos "x" e "y" como líneas y las clasifica deacuerdo al "color" y "size" determina el grosor de sus líneas.
 
-* ```theme(legend.position)```Capa que modifica la posición de la leyenda dentro gráfico con "legend.position", esta puede adquirir valores de "top", "left", etc.
+- `theme(legend.position)`Capa que modifica la posición de la leyenda dentro gráfico con "legend.position", esta puede adquirir valores de "top", "left", etc.
 
-* ```labs(x, y, color, title, subtitle)```Capa que pone los nombres a eje "x" y al eje "y", además de poner el nombre encima de las leyendas con "color", el nombre título y subtítulo con "title" y "subtitle" respectivamente.
+- `labs(x, y, color, title, subtitle)`Capa que pone los nombres a eje "x" y al eje "y", además de poner el nombre encima de las leyendas con "color", el nombre título y subtítulo con "title" y "subtitle" respectivamente.
 
 ![alt text](Rplot.png)
 
 ## Gráfica Animada ⚙️
+
 Ya teniendo nuestra nuestra gráfica estática vamos a realizar algunas modificaciones para que se resalte los datos de nuestro interés.
 
 Filtrando datos con fecha mayor al año 2019.
+
 ```python
 datos<-filter(datos,datos$Fecha>=as.Date("2019-01-01"))
 ```
-* ```filter(datos, condicion)``` evalua cada fila de datos y filtra de acuerdo a la condicion.
 
-* ```as.Date(var)``` convierte var a un formato de fecha Date
+- `filter(datos, condicion)` evalua cada fila de datos y filtra de acuerdo a la condicion.
 
+- `as.Date(var)` convierte var a un formato de fecha Date
 
 Agregando un nuevo data frame periodos para resaltar las fechas de confinamiento por Covid19.
 
@@ -168,7 +176,9 @@ Agregando un nuevo data frame periodos para resaltar las fechas de confinamiento
 periodos<-data.frame(xmin = as.Date("2020-03-22"), xmax = as.Date("2020-08-31"),
                      ymin = -Inf, ymax=Inf, Periodo = "Confinamiento por COVID19")
 ```
-Creando un nuevo objeto ```ggplot2``` p2 para incluir las nuevas modificaciones.
+
+Creando un nuevo objeto `ggplot2` p2 para incluir las nuevas modificaciones.
+
 ```python
 p2 <- ggplot(data=datos)+
   geom_line(aes(x=Fecha, y=Valor, color=Clasificacion), size=1) +
@@ -181,43 +191,43 @@ p2 <- ggplot(data=datos)+
 p2
 ```
 
-* ```geom_rect(data, alpha, aes(xmin, xmax, ymin, ymax, fill))``` dibuja un rectangulo a partir de los datos en "Data",
-    modifica su opacidad de acuerdo a "alpha",
-    extrae los datos de acuerdo a "xmin, xmax, ymin, ymax",
-    y los clasifica de acuerdo a "fill".
+- `geom_rect(data, alpha, aes(xmin, xmax, ymin, ymax, fill))` dibuja un rectangulo a partir de los datos en "Data",
+  modifica su opacidad de acuerdo a "alpha",
+  extrae los datos de acuerdo a "xmin, xmax, ymin, ymax",
+  y los clasifica de acuerdo a "fill".
 
-* ```lab(fill)``` pone el nombre encima de la leyenda de los rectángulos dibujados.
+- `lab(fill)` pone el nombre encima de la leyenda de los rectángulos dibujados.
 
-Con las modificaciones ya hechas con en p2, creamos el objeto ```gganimate``` anim el cuál contendrá nuestra grafico a animar.
+Con las modificaciones ya hechas con en p2, creamos el objeto `gganimate` anim el cuál contendrá nuestra grafico a animar.
 
 ```python
 anim <- p2 + transition_reveal(Fecha) +
   geom_label(aes(x=as.Date("2019-06-01"), y=280, label=format(datos$Fecha,"%Y")), col = "gray", size = 15)
 ```
-* ```transition_reveal(var)``` Añade la animacion transition_reveal() usando como referencia la variable "var".
 
-* ```geom_label((aes(x,y,label)) col, size)```
+- `transition_reveal(var)` Añade la animacion transition_reveal() usando como referencia la variable "var".
+
+- `geom_label((aes(x,y,label)) col, size)`
   Añade la la etiqueta del año dentro de la gráfica
   aes(x, y, label) "x" e "y" son las coordenadas donde se grafica la etiqueta "label", con "col" seleccionamos un color y con "size" el tamaño.
 
 _Nota: geom_label() fué diseñado para graficar etiquetas que acompañen a la gráfica. En este ejemplo en específico fué usado como una etiqueta estática fijando sus coordenadas "x" e "y" en un sólo punto. Se optó por esta opción ya que genera un buen impacto visual._
 
-Con el objeto anim creato podemos invocar la función animate de ```gganimate```. Una vez ejecutada la función animate() se abrirá una ventana con el resultado en formato .gif.
+Con el objeto anim creato podemos invocar la función animate de `gganimate`. Una vez ejecutada la función animate() se abrirá una ventana con el resultado en formato .gif.
 
 ```python
 animate(anim, fps = 25, duration = 15, width=800, height=500, end_pause = 30 )
 ```
 
-* ``` animate(anim, fps, duration, width, height, end_pause)``` de la función "anim" objeto a animarse
-    "fps" cantidad de frames por segundo,
-    "duration" duración de la animación en segundos,
-    "with" "height" ancho y alto de la animación respectivamente en pixeles,
-    "end_pause" cantidad de veces a repetirse el último frame para la animación.
+- ` animate(anim, fps, duration, width, height, end_pause)` de la función "anim" objeto a animarse
+  "fps" cantidad de frames por segundo,
+  "duration" duración de la animación en segundos,
+  "with" "height" ancho y alto de la animación respectivamente en pixeles,
+  "end_pause" cantidad de veces a repetirse el último frame para la animación.
 
-Hay casos en los que extrañamente no se instalan los renders para hacer la renderización de la animación y aparece un error al tratar de ejecutar el código arriba mostrado, en ese caso puede probar con la siguiente solución: Ejecute en modo administrador RStudio e instale los renders con ```install.packages("gifski")``` para el render que viene por defecto con ```gganimate```, tambien puede instalar el render magick con ```install.packages("magick")``` para tener otra opción para renderizar. Para saber que opciones tiene el render magick ejecute ```help("magick_renderer")``` y se le mostrara su breve manual.
+Hay casos en los que extrañamente no se instalan los renders para hacer la renderización de la animación y aparece un error al tratar de ejecutar el código arriba mostrado, en ese caso puede probar con la siguiente solución: Ejecute en modo administrador RStudio e instale los renders con `install.packages("gifski")` para el render que viene por defecto con `gganimate`, tambien puede instalar el render magick con `install.packages("magick")` para tener otra opción para renderizar. Para saber que opciones tiene el render magick ejecute `help("magick_renderer")` y se le mostrara su breve manual.
 
 ![alt text](datosimportpandemia.gif)
-
 
 Despues de ver la animación podemos guardarla haciendo:
 
@@ -225,14 +235,15 @@ Despues de ver la animación podemos guardarla haciendo:
 archivo<-animate(anim, fps = 25, duration = 15, width=800, height=500, end_pause = 30 )
 anim_save(filename="datosimportpandemia.gif", animation = archivo, path = ".my/path/save/")
 ```
-```anim_save(filename, animation, path)```
-    Guarda el renderizado de "animation" con el nombre "filename" en la ruta "path".
-    
-[Descarga los archivos de este ejemplo](https://github.com/OpenScienceLabs/articles/tree/main/articles/0057-r-ggplot-bo) 
+
+`anim_save(filename, animation, path)`
+Guarda el renderizado de "animation" con el nombre "filename" en la ruta "path".
+
+[Descarga los archivos de este ejemplo](https://github.com/OpenScienceLabs/articles/tree/main/articles/0057-r-ggplot-bo)
 
 ## Referencias 📄
 
-* [Instituto Nacional de Estadística Bolivia](https://www.ine.gob.bo) 📢
-* [Documentacion de R](https://www.rdocumentation.org)
+- [Instituto Nacional de Estadística Bolivia](https://www.ine.gob.bo) 📢
+- [Documentacion de R](https://www.rdocumentation.org)
 
----
+______________________________________________________________________

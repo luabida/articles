@@ -67,18 +67,20 @@ era no serian posibles por la capacidad de aporte de cada una.
 
 !!! example "Ejemplo"
 
-    Un grupo de científicos independientes estudiaron la genética de unos osos 
-    polares de la Antártida y encontraron que los osos tienen características 
-    especiales con respecto al clima y su comida. Es importante entonces que 
-    los resultados se publiquen en revistas o plataformas que pueden difundir 
-    el tema. Es posible pensar en que se debiere hacer en una revista 
-    especializada, no obstante se requiere una cantidad de tiempo para que 
-    esto se logre satisfactoriamente. A corto plazo no es viable.
+```
+Un grupo de científicos independientes estudiaron la genética de unos osos 
+polares de la Antártida y encontraron que los osos tienen características 
+especiales con respecto al clima y su comida. Es importante entonces que 
+los resultados se publiquen en revistas o plataformas que pueden difundir 
+el tema. Es posible pensar en que se debiere hacer en una revista 
+especializada, no obstante se requiere una cantidad de tiempo para que 
+esto se logre satisfactoriamente. A corto plazo no es viable.
 
-    Mientras que si se decide publicar los resultados bajo investigación abierta se
-    tiene que los resultados, los datos y otros aspectos generales y específicos
-    estarán disponibles en un repositorio que a su vez puede recabar dinero a partir
-    de donaciones y apoyo de instituciones para nuevas investigaciones
+Mientras que si se decide publicar los resultados bajo investigación abierta se
+tiene que los resultados, los datos y otros aspectos generales y específicos
+estarán disponibles en un repositorio que a su vez puede recabar dinero a partir
+de donaciones y apoyo de instituciones para nuevas investigaciones
+```
 
 En una visión más detallada el futuro de las ciencias puras depende
 esencialmente del interés de las personas de nuevas generaciones, la educación y

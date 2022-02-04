@@ -2,13 +2,13 @@
 
 **Por Rainer Palm**
 
-¿Quieres llevar tus artículos a un formato mas intuitivo, legible y facíl de editar? [Jupyter Notebook](https://jupyter.org) es una aplicación web que te deja incorporar en tus documentos elementos de código abierto y de texto enriquecido de una forma sencilla y fluida, que además facilita que otras personas colaboren en tu investigación. Utilizar estos elementos permitirá que tanto tu como tus lectores puedan no solamente ver la descripción y resultados de tu analísis de una forma mas gráfica, sino hacerlo en tiempo real, algo especialmente útil para garantizar la reproducibilidad de tus resultados. 
+¿Quieres llevar tus artículos a un formato mas intuitivo, legible y facíl de editar? [Jupyter Notebook](https://jupyter.org) es una aplicación web que te deja incorporar en tus documentos elementos de código abierto y de texto enriquecido de una forma sencilla y fluida, que además facilita que otras personas colaboren en tu investigación. Utilizar estos elementos permitirá que tanto tu como tus lectores puedan no solamente ver la descripción y resultados de tu analísis de una forma mas gráfica, sino hacerlo en tiempo real, algo especialmente útil para garantizar la reproducibilidad de tus resultados.
 
 El uso de Jupyter Notebook hoy día es bastante común en las comunidades científicas: por ejemplo, la creación de la foto de un agujero negro utilizo un cuaderno de Jupyter, con codigo en https://github.com/achael/eht-imaging), por lo que hay una gran variedad de ejemplos en todo tipo de areas, usualmente disponible en un repositorio publico de [GitHub](https://github.com), con los cuales podrás interactuar libremente. Estos documentos son producidos por la aplicación Jupyter Notebook, la cual te explicaremos con mas profundidad a continuación.
 
 ## ¿Que es Jupyter?
 
-Jupyter se refiere a la organización de codigo abierto sin fines de lucro: Project Jupyter, que es la principal organización que desarolla una multitud de proyectos, entornos de ejecución principalmente en [Julia](https://julialang.org), [Python](https://www.python.org) y [R](https://www.r-project.org), de los cuales se construye su nombre. El principal propósito de Jupyter es “apoyar ciencia de datos interactiva y computación científica en todos los lenguajes de programación” [1]. De hecho, todos sus proyectos son desarollados de forma abierta en GitHub, bajo la licencia modificada de [BSD](https://whatis.techtarget.com/definition/BSD-licenses), y prometen mantener disponibles tanto el software como su codigo, para el uso libre de cualquiera. 
+Jupyter se refiere a la organización de codigo abierto sin fines de lucro: Project Jupyter, que es la principal organización que desarolla una multitud de proyectos, entornos de ejecución principalmente en [Julia](https://julialang.org), [Python](https://www.python.org) y [R](https://www.r-project.org), de los cuales se construye su nombre. El principal propósito de Jupyter es “apoyar ciencia de datos interactiva y computación científica en todos los lenguajes de programación” [1]. De hecho, todos sus proyectos son desarollados de forma abierta en GitHub, bajo la licencia modificada de [BSD](https://whatis.techtarget.com/definition/BSD-licenses), y prometen mantener disponibles tanto el software como su codigo, para el uso libre de cualquiera.
 
 Sin duda, la característica más popular de Jupyter Notebook, es ser una aplicación web que permite editar y compartir documentos (llamados "cuadernos de jupyter") que contienen trozos de codigo, visualizaciones, ecuaciones, todas interactivas y ejecutadas en tiempo real. Su integración de los elementos *rich media* en documentos intuitivos y sencillos de editar la ha convertido en una herramienta muy popular en la elaboración de articulos, analísis e investigaciónes científicas.
 
@@ -31,7 +31,7 @@ Jupyter es un proyecto que esta apoyado abiertamente por empresas como Google (d
 
 Jupyter es, sin duda, una de las iniciativas de ciencia abierta mas prometedoras que hay, con una popularidad inmensa incluso fuera de su area de enfoque, y una accesibilidad bastante impresionante, que permite a científicos de todo tipo de trasfondos empezar a aprovechar de sus capacidades rich media en cuestión de segundos. Y para aquellos que deseen entrar un poco mas profundo en el tema, existe una cantidad de recursos y apoyo dedicado a Jupyter bastante grande [4] para el poco tiempo que ha estado bajo el foco, haciendo de tu aprendizaje algo bastante sencillo e indoloro. Llevar tus investigaciones a otro nivel es cuestión de querer aprender, nada mas!
 
-[1] https://jupyter.org/about
-[2] https://github.com/parente/nbestimate
-[3] https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks 
-[4] https://github.com/jupyter-guide/jupyter-guide
+[1]: https://jupyter.org/about "Jupyter"
+[2]: https://github.com/parente/nbestimate "nbestimate"
+[3]: https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks "A gallery of interesting Jupyter Notebooks"
+[4]: https://github.com/jupyter-guide/jupyter-guide "Jupyter Guide"
