@@ -18,17 +18,17 @@ No vamos a construir una crítica a ultranza del uso de chats en las comunicacio
 
 ## Prácticas sanas en los equipos de trabajo.
 
-Todo equipo de trabajo gira en torno, al menos, de un proyecto, los proyectos se organizan en torno a hitos y éstos en función de tareas y actividades cuya concresión debe organizarse y gestionarse. En medio de todo esto, ocurre el flujo de presupuestos y asignación de recursos financieros pero también de tiempo. 
+Todo equipo de trabajo gira en torno, al menos, de un proyecto, los proyectos se organizan en torno a hitos y éstos en función de tareas y actividades cuya concresión debe organizarse y gestionarse. En medio de todo esto, ocurre el flujo de presupuestos y asignación de recursos financieros pero también de tiempo.
 
 Los equipos de trabajo en desarrollo de software no son la excepción en este sentido. Aunque, en muchas ocasiones, se trate de equipos pequeños y no de uno, sino de varios proyectos, resulta vital identificar los componentes y quienes lideran cada uno de sus procesos. Por ello Organizar las tareas, definir los flujos de información para la gestión de actividades y hacer seguimiento de los alcances, logros y problemas del equipo, a menudo requiere no sólo del uso de una herramienta que lo facilite, sino también que el equipo asimile y haga propias las prácticas necesarias para ello, haciéndolas hábitos colectivos.
 
 Si nos centramos de forma estricta en la organización del trabajo, sabemos  cómo los equipos de ciencia abierta deben cultivar algunas prácticas, y ahora sabemos que esto puede lograrse con el fomento en el uso de dispositivos que las faciliten:
 
 1. Control de versiones integrado a los dispositivos de comunicación,
-2. Manejo de issues y sub-grupos en tus repositorios,
-3. Metodología ágil para identificar hitos, metas, tareas y seguimiento,
-4. Entrenamiento en políticas de ciencia abierta para todo el equipo de trabajo, e
-5. Incentivo a la ciencia abierta apoyando el desarrollo de habilidades no sólo para el desarrollo, sino también para la sistematización y la socialización de los avances.
+1. Manejo de issues y sub-grupos en tus repositorios,
+1. Metodología ágil para identificar hitos, metas, tareas y seguimiento,
+1. Entrenamiento en políticas de ciencia abierta para todo el equipo de trabajo, e
+1. Incentivo a la ciencia abierta apoyando el desarrollo de habilidades no sólo para el desarrollo, sino también para la sistematización y la socialización de los avances.
 
 Afortunadamente existen varias herramientas que pueden ayudar a integrar, en un esquema *todo en uno* estas distintas prácticas. Sin embargo, sabemos que también es bastante probable que tu equipo de trabajo termine trasladando al uso de algunas de estas herramientas, prácticas cotidianas que pueden no ayudar mucho en el aprovechamiento de las bondades del uso de una aplicación que permita organizar el trabajo en equipo.
 
@@ -39,7 +39,8 @@ Para apoyarte en la decisión de cuál herramienta utilizar, hemos preparado par
 Hemos seleccionado 10 de las herramientas más utilizadas en el trabajo en equipos, algunas de las cuales son de uso general y otras son de uso específico. La mejor recomendación en este punto es que conozcas las prácticas que tu equipo realiza y el propósito que tendría la incorporación de una herramienta, para tomar la decisión sobre cuál herramienta utilizar.
 
 ### 1. [Asana](http://asana.com)
-Asana es una plataforma en línea que permite la gestión de proyectos y grupos de trabajo. Como plataforma es gratuita para personas o equipos que están comenzando, aunque tiene limitaciones en cuanto al manejo de tareas (sólo hasta 1.000 tareas por equipo), número de integrantes de cada equipo (hasta 15) y ofrece más de 100 integraciones de las que están disponibles de forma gratuita. Asana, cuenta un espacio de gestión de proyectos, actualización de estatus de proyectos, priorización de tareas, mensajes, conversaciones integradas sobre cada tarea programada, tablero tipo Kanban y calendario. 
+
+Asana es una plataforma en línea que permite la gestión de proyectos y grupos de trabajo. Como plataforma es gratuita para personas o equipos que están comenzando, aunque tiene limitaciones en cuanto al manejo de tareas (sólo hasta 1.000 tareas por equipo), número de integrantes de cada equipo (hasta 15) y ofrece más de 100 integraciones de las que están disponibles de forma gratuita. Asana, cuenta un espacio de gestión de proyectos, actualización de estatus de proyectos, priorización de tareas, mensajes, conversaciones integradas sobre cada tarea programada, tablero tipo Kanban y calendario.
 
 ![Asana](./Asana1.png)
 
@@ -51,7 +52,7 @@ Discourse for teams es una versión de Discourse orientada a equipos de trabajo,
 
 ![Discourse](./Discourse1.png)
 
-El enfoque de Discourse es la conversación que puede serguirse a través de notificaciones por correo e incluye integraciones interesantes para equipos de desarrollo como Slack, Github y Zendesk. 
+El enfoque de Discourse es la conversación que puede serguirse a través de notificaciones por correo e incluye integraciones interesantes para equipos de desarrollo como Slack, Github y Zendesk.
 
 ### 3. [Slack](http://slack.com)
 
@@ -62,6 +63,7 @@ Sin lugar a dudas esta es la aplicación que domina el mercado de aplicaciones d
 Otra funcionalidad que tiene Slack, es que permite conectar el trabajo entre equipos/empresas diferentes, así como integrar videollamadas y mensajería, así como la función de generación de flujos de trabajo.
 
 ### 4. [Twist](http://twist.com)
+
 Twist es una plataforma que, al igual que otras reseñadas en este artículo, incluye espacio para gestionar el trabajo colaborativo remoto y también generar conversaciones entre los integrantes de los equipos. Twist promete estar centrada en la conversación que ocurre entre los equipos de trabajo, permitiendo que esté disponible y transparente para todos los integrantes del equipo, organizada por temas de trabajo, estructurándola de forma que ofrece hacer sencillo retomar la conversación luego de un tiempo sin participar en ella por estar enfocado en el trabajo. De esta forma, la conversación de los equipos de trabajo ocurre de forma asíncrona pero, según ofrece la herramienta, no deja de ser un apoyo a los procesos internos garantizando que cualquier persona pueda retomar o entender el hilo de una conversación. Quienes conocen Slack verán en Twist a primera vista una interfaz muy similar que muestra las conversaciones agrupadas en canales y por mensajes individuales, Twist incorpora, sin embargo, la opción de visualizar y localizar las conversaciones también por temas.
 
 ![Twist](./twist1.png)
@@ -83,19 +85,25 @@ A diferencia de las aplicaciones que hemos reseñado hasta aquí, Threads sólo 
 ![53198440.png](attachments/53198440.png)
 
 Esta aplicación está centrada, al igual que las otras reseñadas, en la dar estructura, orden y sistematización a la conversación de los equipos, y la forma en que Buffer expone la ha utilizado, echa mano de tarjetas de conversación, hilos y espacios en los cuales se puede dar lugar a chats para distención del equipo de trabajo, pero también acceso a los distintos temas manejados por el equipo de trabajo a través de chats organizados a modo de tarjetas y un buscador que prometen hacer mucho más sencillo la localización de conversaciones específicas.
+
 ### 7. [Basecamp](http://basecamp.com)
+
 Basecamp es otra de las aplicaciones disponibles para el manejo de las actividades grupales, que incluye mensajes, manejo de tableros de tareas pendientes, calendarios, vinculación de documentos y archivos, chats grupales y un banco de preguntas comunes. Ofrece la posibilidad de programar las notificaciones para garantizar tiempos de descanso en lugar de la exigente conectividad que imponen aplicaciones como Slack.
 
 ![838028b1.png](Basecamp1.png)
 
-Este producto incluye una opción gratuita para uso personal, con la posibilidad de manejar hasta 3 proyectos, 20 usuarios y 1GB de almacenamiento en la nube. 
+Este producto incluye una opción gratuita para uso personal, con la posibilidad de manejar hasta 3 proyectos, 20 usuarios y 1GB de almacenamiento en la nube.
+
 ### 8. [Flarum](http://flarum.org)
+
 A diferencia de las aplicaciones presentadas antes y aunque esta es version beta aún, Flarum está centrada en servir de plataforma para conducir los foros en páginas y portales web, y por ello ofrece una especie de interfaz renovada de la interfaz tipo de foros web. Es un software de licencia abierta que garantiza su expansividad y flexibilidad a las necesidades de los equipos de trabajo.
 
 ![Flarum](Flarum1.png)
 
 Una versión demo puede utilizarse [desde aquí](https://beta.flarum.site) y cuenta con todas las funcionalidades disponibles, entre ellas el manejo de etiquetas que es lo que que permite organizar de una forma más pulcra la lista de discusiones visibles, tanto a través de la barra lateral como de las banderas indicadas junto a cada discusión dentro de la lista de las más recientes.
+
 ### 9. [Keybase](http://keybase.io)
+
 Keybase es una aplicación gratuita, de código abierto, disponible para pc y móbiles. Enfatiza en sus capacidades para manejo de mensajería y y envío de archivos de forma encriptada. Aunque no está pensada de forma exclusiva para el manejo del trabajo en equipos, resulta un apoyo importante por la vinculación con aplicaciones como Github y Google Drive, por ejemplo.
 
 ![Keybase](Keybase1.png)
@@ -103,6 +111,7 @@ Keybase es una aplicación gratuita, de código abierto, disponible para pc y m�
 Permite el uso de etiquetas, el diseño de canales, el manejo de conversaciones particulares, la localización de mensajes y archivos de forma relativamente flexible, se conecta también con identidades públicas, lo cual permite también el manejo de comunidades amplias. Aunque se centra en el cifrado como valor agregado, y aunque resulta un poco pesada en su funcionamiento para algunos dispositivos, lo cierto es que resulta muy potente para el manejo de conversaciones importantes para los equipos de trabajo.
 
 ### 10. [Notion](http://notion.so)
+
 Notion es una aplicación que incluye herramientas para buena parte de las tareas más necesarias en los equipos de trabajo: comunicación (chats), tareas (tasks) y bases de conocimiento (wikis) entre otras. La posibilidad de reordenar esta información en función de, por ejemplo, los proyectos y sus etiquetas, le aporta a Notion una flexibilidad mayor al momento de ser implementada en los equipos de trabajo.
 
 ![Notion](Notion1.png)

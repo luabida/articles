@@ -2,7 +2,7 @@
 
 Open Science Labs es una comunidad que tiene como objetivo unir a personas de todas partes del mundo,
 especialmente de países latinoamericanos y crear un espacio abierto para enseñar,
-aprender y compartir temas relacionados con la ciencia abierta y las herramientas computacionales. 
+aprender y compartir temas relacionados con la ciencia abierta y las herramientas computacionales.
 
 ## Redes Sociales
 
@@ -15,7 +15,6 @@ Estés al tanto de nuestras publicaciones en las redes sociales:
 [![linkedin](./images/networks/linkedin.png)](https://www.linkedin.com/company/open-science-labs)
 [![discord](./images/networks/discord.png)](http://discord.opensciencelabs.org)
 [![youtube](./images/networks/youtube.png)](http://youtube.opensciencelabs.org)
-
 
 ## Blog
 
@@ -30,7 +29,7 @@ herramientas computacionales y trabajo colaborativo.
 
 **Autor**: [Alan Hurtarte](../../authors/alan-hurtarte.md)
 
-Quizá hayas escuchado el término NFT últimamente. Títulos de noticias descabelladas como [«Porque este CryptoPunk NFT  fue vendido por $532 millones de USD»](https://www.cnet.com/news/why-this-cryptopunk-nft-sold-for-532-million-sort-of/) ...
+Quizá hayas escuchado el término NFT últimamente. Títulos de noticias descabelladas como [«Porque este CryptoPunk NFT  fue vendido por \$532 millones de USD»](https://www.cnet.com/news/why-this-cryptopunk-nft-sold-for-532-million-sort-of/ ...
 [see more](articles/0058-nfts-article1/nft-mas-que-un-jpg.md)
 
 ```
@@ -62,9 +61,8 @@ El Open Science Framework (OSF)[1] es un conjunto de herramientas diseñadas tan
 RStudio es un entorno de desarrollo integrado (IDE) para el lenguaje de
 programación R, el cual puedes utilizar para realizar scripts de análisis de
 datos, aplicaciones web interactivas, documentos, reportes, gráficos y mucho
-más. [https://fast.wistia.net/embed/iframe/520zbd3tij?videoFoam=true]
-
-P ...
+más. \[https://fast.wistia.net/embed/iframe/520zbd3tij?videoFoam=true\]
+ ...
 [see more](articles/0055-Rstudio/Rstudio.md)
 
 ```
@@ -411,9 +409,9 @@ posteri ...
 ```{admonition} ¿Cómo presentar tu código como un artículo científico?
 ![header](images/empty.png)
 
-** Por Rainer Palm**
+\*\* Por Rainer Palm\*\*
 
-Muchos científicos emplean la creación de software cuando desarollan sus investigaciones, usando herramientas tales como scripts y simulaciones, personalizadas y adaptadas a sus necesidades. En los casos en que no es así, igual la mayoría termina empleando analísis computacion ...
+Muchos científicos emplean la creación de software cuando desarollan sus investigaciones, usando herramientas tales como scripts y simulaciones, personalizadas y adaptadas a sus necesidades. En los casos en que no es así, igual la mayoría termina empleando analísis computa ...
 [see more](articles/0025-comopresentartucodigo/comopresentartucodigo.md)
 
 ```
@@ -529,9 +527,9 @@ Comúnmente, existe una visión de la ciencia que la dibuja como una actividad q
 
 **Por Rainer Palm**
 
-¿Como puedes tener total confianza y seguridad en que tu metodología es sensata, y de que tu investigación ha dado resultados certeros y facil de verificar? ¿Son veraces los estudios y descubrimientos de otros científicos? 
+¿Como puedes tener total confianza y seguridad en que tu metodología es sensata, y de que tu investigación ha dado resultados certeros y facil de verificar? ¿Son veraces los estudios y descubrimientos de otros científicos?
 
-Ciertamente, la capacidad de validar y repetir el pro ...
+Ciertamente, la capacidad de validar y repetir el proc ...
 [see more](articles/0015-investigacionreproducible/investigacionreproducible.md)
 
 ```
@@ -693,15 +691,15 @@ es la unión de distintos conocimientos, e ...
 **Por Yurely Camacho**
 
 
-Si buscas la democratización del conocimiento, oportunidades de 
+Si buscas la democratización del conocimiento, oportunidades de
 intercambio y colaboración, mayor productividad científica, y mucho
 más, la Ciencia Abierta es el camino. La producción del
 conocimiento científico se verá revolucionado gracias a esta forma
 de hacer ciencia.
+
  ...
 [see more](articles/0001-ciencia_abierta/ciencia_abierta.md)
 
 ```
     
 <!--content:end-->
-

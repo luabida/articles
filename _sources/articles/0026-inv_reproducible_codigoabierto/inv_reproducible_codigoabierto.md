@@ -55,7 +55,7 @@ implementadas en la investigación y el código generado para el
 procesamiento de los datos (para aquellas investigaciones que lo
 generen), sea "abierto" para cualquiera que esté interesado en
 reproducir nuestra investigación. Recordemos que uno de los principios
-de la [investigación reproducible](enlace a artículo
+de la \[investigación reproducible\](enlace a artículo
 investigacionreproducible) es la *Metodología abierta* que básicamente
 se trata de compartir el procedimiento llevado a cabo antes, durante y
 después de la investigación, lo
@@ -64,8 +64,8 @@ a revisar los pasos de tu investigación y permite a otros verificarlo.
 
 Otro aspecto importante a tomar en cuenta si la investigación tiene
 código y queremos que sea reproducible, es la documentación. Como lo
-mencionamos en el artículo sobre [Documentación de código
-abierto](enlace a artículo documentacioncodigoabierto), este es un
+mencionamos en el artículo sobre \[Documentación de código
+abierto\](enlace a artículo documentacioncodigoabierto), este es un
 factor muy importante a la hora de crear proyectos accesibles e
 inclusivos y también debe considerarse como un aspecto importante para
 hacer reproducible el proyecto de código abierto. Junto con la
@@ -128,7 +128,7 @@ crisis actual de reproducibilidad. Haz la diferencia.
 
 ### Referencias
 
-- [Ciencia reproducible, qué, por qué, cómo](https://www.researchgate.net/publication 306389707_Ciencia_reproducible_que_por_que_como/link/57bd44d408aedf5f75eadf0a/download)
+- \[Ciencia reproducible, qué, por qué, cómo\](https://www.researchgate.net/publication 306389707_Ciencia_reproducible_que_por_que_como/link/57bd44d408aedf5f75eadf0a/download)
 
 - [Manual de capacitación sobre ciencia abierta de la FOSTER](https://book.fosteropenscience.eu/es/)
 

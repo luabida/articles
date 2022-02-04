@@ -16,7 +16,7 @@ Algo que distingue al OSF de otros programas similares es que, con el proposito 
 
 ## ¿Quienes utilizan el Open Science Framework?
 
-La comunidad de OSF es bastante amplia. Basta con ver los numerosos repositorios de instituciones universitarias que lo utilizan para hospedar archivos[4]. En sí la plataforma gano notoriedad gracias al Psychology Reproducibility Study, un meta-estudio en el cual colaboró la Universidad de Virginia con el COS para replicar 100 estudios notables de psicología y ver si podían recibir los mismos resultados. Todo el proceso de investigación fue compartido de manera abierta en el OSF[5], permitiendo a cualquiera revisar los resultados con comodidad. 
+La comunidad de OSF es bastante amplia. Basta con ver los numerosos repositorios de instituciones universitarias que lo utilizan para hospedar archivos[4]. En sí la plataforma gano notoriedad gracias al Psychology Reproducibility Study, un meta-estudio en el cual colaboró la Universidad de Virginia con el COS para replicar 100 estudios notables de psicología y ver si podían recibir los mismos resultados. Todo el proceso de investigación fue compartido de manera abierta en el OSF[5], permitiendo a cualquiera revisar los resultados con comodidad.
 
 A pesar de que su principal audiencia son los investigadores y las instituciones en las que estos trabajan, tienen una serie de aplicaciones y herramientas gratis diseñadas para la interacción de sus usuarios con personas fuera del area. Estas son herramientas tales como OSF for Meetings[6], donde pueden subir posters y presentaciones de conferencias y reuniones y OSF Preprints[7], donde pueden compartir preprints con el proposito de recibir opiniones y exposición, y se le otorga a cada uno un identificador unico.
 
@@ -24,8 +24,7 @@ Inclusive mas alla de las necesidades de investigadores profesionales y colabora
 
 [1]: https://osf.io "Open Science Framework"
 [2]: https://cos.io "Center for Open Science"
-[3]: https://docs.google.com/document/d/1HWJxPkyuMo49uzhEsvK5HxhyrSFR3Ys625NqHY3zmsk/ "COS: Organization and Agenda"
 [4]: https://osf.io/institutions?view_only= "OSF Institutions"
 [5]: http://osf.io/ezum7 "Estimating the Reproducibility of Psychological Science"
 [6]: https://osf.io/meetings "OSF for Meetings"
-[7]: https://osf.io/preprints "OSF Preprints" 
+[7]: https://osf.io/preprints "OSF Preprints"

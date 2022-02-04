@@ -46,7 +46,7 @@ necesarios de preservar a largo plazo y qué datos eliminar, para lo cual
 te sugerimos limpiar tus datos y eligir aquellos que pueden ser útiles.
 Si en ocasiones necesitas llevar un control sobre todas las operaciones
 o cambios en tus datos, puedes utilizar herramientas como Git (enlace a
-artículo Git de cero a cien) para llevar un control de versiones.  
+artículo Git de cero a cien) para llevar un control de versiones.
 
 2. **Documenta y cita los conjuntos de datos que utilices**
 

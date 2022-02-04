@@ -14,7 +14,7 @@ Handmade Hero[1] es un proyecto en marcha que intenta "crear un juego completo, 
 
 ## The Open Book
 
-The Open Book[2] es un proyecto disponible en GitHub que busca crear una alternativa completamente libre y abierta a aquellos dispositivos que están especializados para la lectura de libros y otros documentos digitales. Tal como lo plantean en la pagina del proyecto: "Los libros están entre los documentos más importantes de nuestra cultura, pero aún asi, todos los dispositivos de lectura - el Kobo, el Nook, la Kindle e inclusive el iPad son todos dispositivos cerrados, operando como piezas pequeñas autónomas de plataformas grandes y cerradas cuyos dueños no suelen tener los mismos intereses que sus lectores". Para este propósito, el Open Book esta diseñado de tal forma que el usuario pueda fácilmente añadir o quitar accesorios o pedazos de código según sea adecuado para sus necesidades, y tiene una documentación extensa en la cual se detalla tanto la preparación del circuito Arduino como las piezas necesarias y cómo ensamblarlas. 
+The Open Book[2] es un proyecto disponible en GitHub que busca crear una alternativa completamente libre y abierta a aquellos dispositivos que están especializados para la lectura de libros y otros documentos digitales. Tal como lo plantean en la pagina del proyecto: "Los libros están entre los documentos más importantes de nuestra cultura, pero aún asi, todos los dispositivos de lectura - el Kobo, el Nook, la Kindle e inclusive el iPad son todos dispositivos cerrados, operando como piezas pequeñas autónomas de plataformas grandes y cerradas cuyos dueños no suelen tener los mismos intereses que sus lectores". Para este propósito, el Open Book esta diseñado de tal forma que el usuario pueda fácilmente añadir o quitar accesorios o pedazos de código según sea adecuado para sus necesidades, y tiene una documentación extensa en la cual se detalla tanto la preparación del circuito Arduino como las piezas necesarias y cómo ensamblarlas.
 
 ## LifeTrac
 
@@ -25,6 +25,8 @@ Formando parte de la iniciativa Open Source Ecology[3], como parte de un conjunt
 Magenta[6] es un proyecto de investigación multimedia utilizando Python y TensorFlow para "explorar el rol del *machine learning* en el proceso de creación del arte y la música". Similar a otras iniciativas de inteligencia artificial, tales como MuseNet[7], buscan crear algoritmos de entrenamiento y refuerzo profundo para la generación no solamente de archivos de audio, sino también de imágenes, dibujos, y otros materiales, con el propósito no tanto de "estorbar" o quizás "remplazar" artistas y músicos ya existentes, sino simplemente de proporcionarles herramientas inteligentes que actuén como una extensión de su flujo de trabajo actual. Si quieres ver los frutos de su investigación, puedes ver tanto los modelos que han creado hasta ahora en su GitHub como una lista de aplicaciones y demostraciones[8] que han preparado los autores del proyecto, los cuales incluyen un percusionista que genera ritmos basados en las melodías que toques[9], una inteligencia artificial que intenta emular tu estilo de composición[10], y inclusive similares aplicaciones que funcionan como plugins de Ableton Live[11].
 
 [1]: https://handmadehero.org/ "Handmade Hero"
+[10]: https://magenta.tensorflow.org/midi-me "MidiMe"
+[11]: https://magenta.tensorflow.org/studio-announce "Magenta Studio"
 [2]: https://github.com/joeycastillo/The-Open-Book "The Open Book"
 [3]: https://www.opensourceecology.org/about-overview/ "Open Source Ecology"
 [4]: https://wiki.opensourceecology.org/wiki/Global_Village_Construction_Set "Global Village Construction Set"
@@ -33,5 +35,3 @@ Magenta[6] es un proyecto de investigación multimedia utilizando Python y Tenso
 [7]: https://openai.com/blog/musenet/ "MuseNet"
 [8]: https://magenta.tensorflow.org/demos/web/ "Web apps built with Magenta.js"
 [9]: https://magenta.tensorflow.org/drumbot "DrumBot"
-[10]: https://magenta.tensorflow.org/midi-me "MidiMe" 
-[11]: https://magenta.tensorflow.org/studio-announce "Magenta Studio"

@@ -21,14 +21,3 @@ Una de las licencias en las cuales probablemente estén publicados programas que
 La licencia que en el 2015 era la mas utilizada en Github, es la licencia MIT, cuyo nombre está tomado de la institución donde se creó. Principalmente se caracteriza por ser una licencia permisiva y compatible con bastantes otras licencias. A pesar de ser una licencia de software libre, permite a los desarrolladores re-licenciar sus programas para que sean propietarios si estos son publicados bajo la licencia MIT, aunque por supuesto, también se podrían reintegrar en una licencia como la GPL con igual facilidad. Si has usado alguna distribución de Linux, ya has utilizado un programa publicado bajo la licencia MIT: el sistema de ventanas X. Publicado también bajo la misma licencia esta node.js, un framework de dashboards de los cuales se derivaron muchos mas.
 
 Finalmente, queremos recordarte que la decisión de escoger una licencia depende de cuales restricciones sean absolutamente necesarias para tu proyecto, y intentar permitir la mayor cantidad de libertades sin sacrificar la integridad y metas de tu trabajo. De la licencia utilizada pueden surgir problemas legales o de seguridad, por lo que es importante revisar con calma cual es la mejor opción y tener claro junto a todos los miembros del equipo bajo que términos se esta trabajando.
-
-[1]: https://opensource.org/osd "Open Source Definition"
-[2]: http://www.gnu.org/philosophy/free-sw.html "The Free Software Definition"
-[3]: https://creativecommons.org/about/ "Creative Commons | About"
-[4]: https://creativecommons.org/about/program-areas/open-science "Creative Commons | Open Science"
-[5]: https://creativecommons.org/use-remix/cc-licenses/ "Creative Commons | License Conditions"
-[6]: https://www.ukri.org/funding/information-for-award-holders/open-access/ "Open access - UK Research and Innovation"
-[7]: https://spdx.org/licenses/GPL-3.0.html "GNU General Public License v3.0"
-[8]: http://www.linfo.org/bsdlicense.html "BSD License Definition"
-[9]: https://github.com/blog/1964-license-usage-on-github-com "License Usage on Github.com"
-[10]: https://opensource.org/licenses/MIT "The MIT License"

@@ -89,6 +89,6 @@ Dominique; Fraga, Jorge CLACSO,Consejo Latinoamericano de Ciencias Sociales,
 Ciudad de Buenos Aires, Argentina. 2006. pp 15-33 ISBN: 987-1183-53-4.
 
 Disponible en la World Wide Web:
-[http://bibliotecavirtual.clacso.org.ar/ar/libros/secret/babini/Peter%20Suber.pdf]
+\[http://bibliotecavirtual.clacso.org.ar/ar/libros/secret/babini/Peter%20Suber.pdf\]
 
-¿Qué es el Acceso Abierto o el Open Acces? [https://youtu.be/-6qKCcRaaOA]
+¿Qué es el Acceso Abierto o el Open Acces? \[https://youtu.be/-6qKCcRaaOA\]

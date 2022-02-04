@@ -16,7 +16,6 @@ En este post mencionamos algunos laboratorios sociales y los proyectos
 que han desarrollado continuamente con respecto al manejo del COVID-19 y
 observaremos el trabajo desempeñado en conjunto de algunos de ellos.
 
-
 ### [FrenaLaCurva](https://frenalacurva.net/)
 
 FrenaLaCurva es un referente en cuanto a plataformas que desarrollan y
@@ -56,7 +55,7 @@ investigación. Entre ellos se encuentran:
 - [Centro de Información COVID-19](https://covid19.mit.edu/)
 
 Ofrece las últimas actualizaciones, orientación y recursos para ayudar a
- apoyarle durante la pandemia.
+apoyarle durante la pandemia.
 
 - [Proyecto sobre comunidades resilientes y COVID-19](https://www.media.mit.edu/projects/resilient-communities-and-covid19/overview/)
 
@@ -74,14 +73,13 @@ impacto económico.
 
 El propósito del proyecto es:
 
-* Identificar los problemas clave relacionados con COVID-19
+- Identificar los problemas clave relacionados con COVID-19
 
-* Desarrollar soluciones a estos problemas
+- Desarrollar soluciones a estos problemas
 
-* Reclutar personas y recursos para implementar estas soluciones
+- Reclutar personas y recursos para implementar estas soluciones
 
 El proyecto ofrece un dashboard, el [Pandemic Response Data Dashboard](https://www.pandemicresponsedata.org/) que recopila datos fiables y oportunos para ayudar a la comunidad científica a encontrar las soluciones más impactantes a la pandemia.
-
 
 ### [MediaLab UGR](https://medialab.ugr.es) y [LabIN Granada](https://labingranada.org/)
 
@@ -106,7 +104,7 @@ futuro.
 
 La actividad de MediaLab Prado se estructura en grupos de trabajo,
 convocatorias abiertas para la producción de proyectos, investigación
-colaborativa y comunidades de aprendizaje en torno a temas muy diversos [https://www.medialab-prado.es].
+colaborativa y comunidades de aprendizaje en torno a temas muy diversos \[https://www.medialab-prado.es\].
 MediaLab Prado está constituido por varios laboratorios, uno de ellos el [InCiLab](https://www.medialab-prado.es/laboratorios/incilab) un laboratorio de innovación ciudadana.
 
 Una de las iniciativas de InCiLab frente al COVID-19 son los [Laboratorios Bibliotecarios en confinamiento](https://www.culturaydeporte.gob.es/cultura/areas/bibliotecas/mc/laboratorios-bibliotecarios/jornadas/confinamiento.html) bajo la tutela del Ministerio de Cultura y Deporte de España. Se trata de un espacio de encuentro para reflexionar sobre el impacto que tendrá la pandemia en las bibliotecas y proponer soluciones a nuevos retos.
@@ -118,14 +116,14 @@ Continuemos con otro laboratorio y algunos de sus proyectos:
 Es el laboratorio de innovación del Grupo Banco Interamericano del
 Desarrollo (BID). Se encarga de movilizar financiamiento, conocimiento y
 conexiones para impulsar la innovación y promover la inclusión en
-América Latina y el Caribe [https://bidlab.org/es/].
+América Latina y el Caribe \[https://bidlab.org/es/\].
 
 BID Lab ofrece un sitio web [RESPONDIENDO AL
 COVID-19](https://bidlab.org/es/coronavirus) donde se presentan
 proyectos que abordan los efectos sanitarios y económicos del COVID-19.
 Algunas de esas iniciativas se muestran a continuación:
 
-- [COVID-19 Mapa de Innovadores de América Latina y el Caribe](https://bidlab.org/es/map-LAC-innovators-Covid-19) 
+- [COVID-19 Mapa de Innovadores de América Latina y el Caribe](https://bidlab.org/es/map-LAC-innovators-Covid-19)
 
 El mapa muestra los innovadores, emprendedores y
 [startups](https://es.wikipedia.org/wiki/Empresa_emergente) de América
@@ -157,7 +155,7 @@ a FrenaLaCurva como laboratorio participante, puedes ver la noticia
 También Medialab Prado se suma a la iniciativa de FrenaLaCurva:
 [Desafíos Comunes. Festival de innovación abierta Frena la Curva](https://frenalacurva.net/desafios-comunes/), accede a la noticia desde [este link](https://www.medialab-prado.es/noticias/desafios-comunes-festival-de-innovacion-abierta-frena-la-curva-proyectos-seleccionados). Desafíos comunes es una convocatoria para iniciativas vecinales, proyectos de emprendimiento e innovación social, y experiencias
 colaborativas desde el sector público.
-   
+
 Estos son algunos laboratorios sociales que han estado trabajando en el
 manejo del COVID-19 con información breve sobre sus proyectos, anímate a
 acceder a sus sitios web y obtén más detalles.
@@ -170,19 +168,18 @@ crea un proyecto durante este tiempo de aislamiento y distanciamiento
 social. En OpenScienceLabs te animamos a que no lo dejes para después,
 puedes comenzar ahora.
 
-
 #### Referencias
 
-* [FrenaLaCurva](https://frenalacurva.net/)
+- [FrenaLaCurva](https://frenalacurva.net/)
 
-* [MIT MediaLab](https://www.media.mit.edu/)
+- [MIT MediaLab](https://www.media.mit.edu/)
 
-* [MediaLab UGR](https://medialab.ugr.es)
+- [MediaLab UGR](https://medialab.ugr.es)
 
-* [LabIN Granada](https://labingranada.org/)
+- [LabIN Granada](https://labingranada.org/)
 
-* [MediaLab Prado](https://www.medialab-prado.es)
+- [MediaLab Prado](https://www.medialab-prado.es)
 
-* [BID Lab](https://bidlab.org/es/)
+- [BID Lab](https://bidlab.org/es/)
 
-* [socialab](https://socialab.com)
+- [socialab](https://socialab.com)

@@ -47,10 +47,10 @@ central es decir, una comunidad. Para que estas comunidades surjan sólo es
 necesaria una plataforma de comunicación que muchas veces puede ser un foro, en el cual
 se realizan consultas y sugerencias.
 
-~~~
+```
 Una de las comunidades de código abierto más grande del mundo es
 GitHub, en  la cual se alojan millones de proyectos a lo largo y ancho de todo el planeta.
-~~~
+```
 
 Los proyectos bajo el código abierto pueden ser utilizados por cualquier persona
 para casi cualquier propósito y, por tanto, se pueden emplear para construir otras cosas. Es
@@ -67,34 +67,34 @@ monitoreada.
 Finalmente, el código abierto recibe un aporte considerable por parte de
 empresas importantes a nivel informático apoyando el surgimiento de nuevos
 proyectos y publicando los avances en sus páginas. Tal es el caso de IBM
-[https://developer.ibm.com/open/projects/]
+\[https://developer.ibm.com/open/projects/\]
 
 ## Ejemplos de Código Abierto
 
 Linux: es una familia de sistemas operativos de código abierto tipo Unix basados
 ​​en el núcleo de Linux, un núcleo del sistema operativo lanzado por primera vez
 el 17 de septiembre de 1991 por Linus Torvalds.
-[https://en.wikipedia.org/wiki/Linux]
+\[https://en.wikipedia.org/wiki/Linux\]
 
 Android: es un sistema operativo móvil desarrollado por Google, basado en Kernel
 de Linux y otros software de código abierto. Fue diseñado para dispositivos
 móviles con pantalla táctil, como teléfonos inteligentes, tabletas, relojes
 inteligentes, automóviles y televisores.
-[https://en.wikipedia.org/wiki/Android_(operating_system)]
+\[https://en.wikipedia.org/wiki/Android\_(operating_system)\]
 
 RStudio: es un entorno de desarrollo integrado (IDE) para R. Incluye una
 consola, un editor de resaltado de sintaxis que soporta la ejecución directa de
 código, así como herramientas para el trazado, el historial, la depuración y la
 gestión del espacio de trabajo, esta disponible bajo ediciones de código abierto
-y comercial. [https://rstudio.com/]
+y comercial. \[https://rstudio.com/\]
 
 Amanda: anteriormente conocido como Advanced Maryland Automatic Network Disk
 Archiver, es una herramienta de archivo de código abierto que es capaz de
 respaldar los datos que residen en varios ordenadores de una red. Utiliza un
 modelo cliente-servidor, donde el servidor se pone en contacto con cada cliente
 para realizar una copia de seguridad a una hora programada.
-[https://en.wikipedia.org/wiki/Amanda_(software)]
+\[https://en.wikipedia.org/wiki/Amanda\_(software)\]
 
 Referencias
 
-(WORKANA) [https://www.workana.com/i/glosario/codigo-abierto/]
+(WORKANA) \[https://www.workana.com/i/glosario/codigo-abierto/\]

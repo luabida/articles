@@ -77,8 +77,8 @@ artículo *Git de 0 a 100 en diez sencillos pasos*.
 
 ## Referencias
 
-[Biblioteca de la Universidad de Extremadura] (https://biblioguias.unex.es/c.php?g=572093&p=3944864)
+\[Biblioteca de la Universidad de Extremadura\] (https://biblioguias.unex.es/c.php?g=572093&p=3944864)
 
-[Oficina de conocimiento abierto] (http://oca.unc.edu.ar/2018/08/21/repositorios-de-datos-de-investigacion-y-de-ciencia-abierta/)
+\[Oficina de conocimiento abierto\] (http://oca.unc.edu.ar/2018/08/21/repositorios-de-datos-de-investigacion-y-de-ciencia-abierta/)
 
-[Blog Neoscientia] (https://neoscientia.com/ciencia-abierta/)
+\[Blog Neoscientia\] (https://neoscientia.com/ciencia-abierta/)

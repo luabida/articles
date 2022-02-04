@@ -11,7 +11,7 @@ otros.
 
 La investigación colaborativa puede surgir en distintas ocasiones donde se
 requiera un ciclo colaborativo de acuerdo a las necesidades que se presenten,se
-busca brindar aportes significativos en la sociedad o entorno. 
+busca brindar aportes significativos en la sociedad o entorno.
 
 A continuación se muestran algunos ejemplos en los cuales es útil este
 tipo de investigación:
@@ -26,20 +26,20 @@ tipo de investigación:
   se han reunido.
 
 - Un grupo de expertos en diversas disciplinas se ha planteado crear un
-   documento que sea pieza fundamental en la conformación del presupuesto
-   nacional del siguiente año fiscal.
+  documento que sea pieza fundamental en la conformación del presupuesto
+  nacional del siguiente año fiscal.
 
 - Un diseñador industrial esta proponiendo un rediseño de uno de los productos
-   de la empresa en la que trabaja. Para ello esta realizando un estudio con la
-   ayuda de sus compañeros expertos en marketing y estadística. De manera tal
-   que se obtenga una mejor perspectiva de los usuarios, sus necesidades y
-   aceptación del mercado en general.
+  de la empresa en la que trabaja. Para ello esta realizando un estudio con la
+  ayuda de sus compañeros expertos en marketing y estadística. De manera tal
+  que se obtenga una mejor perspectiva de los usuarios, sus necesidades y
+  aceptación del mercado en general.
 
 - Una institución privada desea financiar una fundación. Para ello ha recurrido
   a un grupo de expertos con la finalidad de evaluar y presentar un esquema
   del presupuesto y la descripción de lo que debe invertir para obtener los
   mejores resultados.
-  
+
 Cada una de las situaciones ejemplificadas requieren de distintos grupos
 multidisciplinarios que pueden estar formados por personas, entidades,
 institutos o grupos de trabajo que interactúen a la vez con la información. Esto
@@ -97,7 +97,6 @@ proyectos. Los avances y cambios llegarán en poco tiempo, los equipos de trabaj
 pueden crear ambientes amigables de trabajo y cada aporte puede ser cuestionado
 de manera positiva consultando a los involucrados oportunamente, respetando su
 autoría y tiempo de dedicación al proyecto.
-
 
 Referencia:
 **The entire Pro Git book**. Autores: Scott Chacon y Ben Straub

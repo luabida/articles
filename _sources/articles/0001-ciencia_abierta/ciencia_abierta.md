@@ -4,7 +4,7 @@
 
 ![header](header.png)
 
-Si buscas la democratización del conocimiento, oportunidades de 
+Si buscas la democratización del conocimiento, oportunidades de
 intercambio y colaboración, mayor productividad científica, y mucho
 más, la Ciencia Abierta es el camino. La producción del
 conocimiento científico se verá revolucionado gracias a esta forma
@@ -23,7 +23,7 @@ en la web y libros sobre el tema.
   investigación están disponibles gratuitamente, bajo términos que
   permiten la reutilización, redistribución y reproducción de la
   investigación, sus datos y métodos subyacentes
-  (FOSTER)[https://www.fosteropenscience.eu/foster-taxonomy/open-science-definition]
+  (FOSTER)\[https://www.fosteropenscience.eu/foster-taxonomy/open-science-definition\]
 
 - La OCDE (2016) indica que “ciencia abierta se refiere a los esfuerzos
   para hacer que el proceso científico sea más abierto e inclusivo a
@@ -103,34 +103,33 @@ abierta.
 
 A continuación mencionamos algunos beneficios de la práctica de la ciencia abierta:
 
-* **Para el investigador**:
+- **Para el investigador**:
 
-- Ofrece mayor impacto y difusión de sus trabajos, a la vez que ganan
+* Ofrece mayor impacto y difusión de sus trabajos, a la vez que ganan
   reconocimiento y fuentes para trabajos futuros.
-- Brinda distintas maneras de publicar los artículos.
-- No pierdes la autoría o méritos al publicar de manera abierta.
-- Puedes ajustar el derecho al uso de la información que publicas,
+* Brinda distintas maneras de publicar los artículos.
+* No pierdes la autoría o méritos al publicar de manera abierta.
+* Puedes ajustar el derecho al uso de la información que publicas,
   protegiendo el contenido en torno a licencias **Creative Commons** o
   **Science Commons**
-- Cuando interactuas con otros investigadores sobre trabajos en temas
+* Cuando interactuas con otros investigadores sobre trabajos en temas
   similares, puedes aprender de forma más rápida y eficiente; evitando
   que trabajos parecidos sean duplicados.
 
-* **Para las empresas de financiamiento (públicas o privadas)**:
+- **Para las empresas de financiamiento (públicas o privadas)**:
 
-- Practicando la ciencia abierta, estas empresas y los estadistas se
+* Practicando la ciencia abierta, estas empresas y los estadistas se
   convencerán que los procesos de investigación son más reconocidos y
   de mayor calidad.
 
+- **Para los usuarios y público en general**:
 
-* **Para los usuarios y público en general**:
-
-- En este enfoque la producción de conocimiento es eficiente,
+* En este enfoque la producción de conocimiento es eficiente,
   democrática y permite atender mejor a las demandas
   sociales.
-- Como usuario tienes posibilidades para contribuir e intervenir en
+* Como usuario tienes posibilidades para contribuir e intervenir en
   cualquier proceso de conocimiento abierto.
-- Puedes encontrar las respuestas que buscas mediante la
+* Puedes encontrar las respuestas que buscas mediante la
   democratización del conocimiento.
 
 El aumento actual en la práctica de la ciencia abierta a despertado
@@ -143,7 +142,7 @@ ciencia abierta. A continuación mencionamos algunos:
 [**ODSL (Open Data Science Latam)**](https://www.odsla.org/)
 [**Datalat**](https://www.datalat.org/)
 [**Open Science Comunity Leiden**](https://www.universiteitleiden.nl/open-science-community-leiden)
-[***Open Knowledge Foundation**](https://okfn.org/)
+[\***Open Knowledge Foundation**](https://okfn.org/)
 [**Amelica**](http://amelica.org/)
 [**Association of European Research Libraries LIBER**](https://libereurope.eu/)
 [**MonuMAI**](https://*monumai.ugr.es/proyecto)
@@ -153,8 +152,6 @@ actuales y futuros en lo que se refiere al acceso, reproducción,
 publicación y colaboración en investigaciones de cualquier disciplina.
 La ciencia abierta es un movimiento que ha revolucionado la forma de
 ver y hacer ciencia, y en nuestra opinión es el futuro.
-
-
 
 ### Referencias
 

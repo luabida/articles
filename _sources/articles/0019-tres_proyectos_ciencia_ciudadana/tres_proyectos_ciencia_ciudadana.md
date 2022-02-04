@@ -24,15 +24,16 @@ Hasta ahora han realizado una número importante de investigaciones en instituci
 
 ## Moon Zoo
 
-Moon Zoo[6] fue un proyecto lanzado en Mayo 2010, alojado en la plataforma Zooniverse, donde usuarios registrados podían identificar, clasificar y medir formas y relieves en la superficie de la Luna, cerca del sitio de aterrizaje de la misión Apolo 17. De esta forma, catalogaban ciertas características geomorfológicas a lo largo de la superficie lunar, como cráteres frescos y relieves lineares, identificándolas entre millones de imágenes tomadas por el satélite Lunar Reconnaissance Orbiter (LRO) de la NASA. Todo ello desde un portal en el que analizaron, inclusive, las herramientas e interfaces utilizadas por los usuarios para el ingreso de los datos, seleccionándolas y diseñándolas para la encuesta. En este proyecto se prestó especial atención a los métodos de agrupación de información y de filtración de datos, para evitar marcaciones problemáticas, generando verificaciones por expertos.
+Moon Zoo\[6\] fue un proyecto lanzado en Mayo 2010, alojado en la plataforma Zooniverse, donde usuarios registrados podían identificar, clasificar y medir formas y relieves en la superficie de la Luna, cerca del sitio de aterrizaje de la misión Apolo 17. De esta forma, catalogaban ciertas características geomorfológicas a lo largo de la superficie lunar, como cráteres frescos y relieves lineares, identificándolas entre millones de imágenes tomadas por el satélite Lunar Reconnaissance Orbiter (LRO) de la NASA. Todo ello desde un portal en el que analizaron, inclusive, las herramientas e interfaces utilizadas por los usuarios para el ingreso de los datos, seleccionándolas y diseñándolas para la encuesta. En este proyecto se prestó especial atención a los métodos de agrupación de información y de filtración de datos, para evitar marcaciones problemáticas, generando verificaciones por expertos.
 
 Entre algunas de las observaciones realizadas al proyecto, se indicaron ciertos errores metodólogicos y otros más relativos al entrenamiento previo de los usuarios que vacíen información, y el proceso de filtrado de datos; sin embargo, los beneficios que les dio este acercamiento inusual al problema definitivamente se hicieron notar. Entre estos beneficios destacan: la clasificar distribuida de grandes cantidades de datos mediante observación y analísis independiente asignado a voluntariados de Internet, lo cual permitió que este proceso se realizara de una forma mucho mas rápida sin sacrificar necesariamente la calidad de la investigación.
 
 Como puedes ver, ya hay muchos investigadores que consideran útil y hasta necesaria la participación de los ciudadanos en sus estudios, y no como sujetos en encuestas o entrevistas sino como colaboradores. Inclusive si no te convencen mucho los proyectos de las lista, solamente hace falta buscar en internet para conseguir docenas de ejemplos mas, en todo tipo de lugares alrededor del mundo. Muchos presentan metodologías interesantes o inusuales y por lo tanto vistas interesantes al proceso científico, y definitivamente se merecen tu atención.
+
+\[6\]: https://moonzoo.org/ "Moon Zoo"2
 
 [1]: https://crowd.loc.gov/ "By The People"
 [2]: https://volunteer.ala.org.au/wildlife-spotter "DigiVol - Wildlife Spotter"
 [3]: https://www.bioatlasindia.org/bai-websites "Biodiversity Atlas - India"
 [4]: https://butterfly-conservation.org/ "Butterfly Conservation"
 [5]: http://www.cientificosdelabasura.cl "Científicos de la Basura"
-[6]: https://moonzoo.org/ "Moon Zoo"2

@@ -54,7 +54,6 @@ ciencia abierta. Para esto esperaba poder ofrecer talleres, sesiones de
 formación, consultoría y apoyo para hacerlo y que pyOpenSci participara
 en actividades de divulgación dentro de las comunidades. Algo que también expresa en su artículo.
 
-
 ## ¿Cómo puedes contribuir a pyOpenSci?
 
 Una buena forma de iniciarte en pyOpenSci, es involucrarte en este proyecto. Asi que aquí te presentamos algunas maneras de hacerlo:
@@ -104,8 +103,8 @@ La comunidad pyOpenSci es la encargada de desarrollar, presentar,
 revisar y promover los paquetes de software científico. Al ser una
 comunidad abierta, **cualquiera puede enviar un paquete para su revisión**. Puedes conocer los paquetes que se encuentran actualmente
 en revisión accediendo al siguiente repositorio GitHub
-[https://github.com/pyOpenSci/software-review/issues] y los aceptados en este otro enlace
-[https://www.pyopensci.org/python-packages/].
+\[https://github.com/pyOpenSci/software-review/issues\] y los aceptados en este otro enlace
+\[https://www.pyopensci.org/python-packages/\].
 
 Los paquetes aprobados hasta ahora por pyOpenSci se refieren a:
 
@@ -128,7 +127,7 @@ mantiene el proyecto (además de las reuniones y el
 
 ## pyOpenSci blog
 
-El blog de la comunidad pyOpenSci, al cual puedes acceder en [https://www.pyopensci.org/blog/] contiene información, entre otras
+El blog de la comunidad pyOpenSci, al cual puedes acceder en \[https://www.pyopensci.org/blog/\] contiene información, entre otras
 cosas, sobre:
 
 - Eventos y actividades planificadas.
@@ -165,7 +164,6 @@ La comunidad pyOpenSci está abierta para que envíes un paquete, te
 conviertas en revisor, ayudes a difundir sus actividades y buenas
 prácticas, para que tomen en cuenta tus dudas o inquietudes y así puedas
 contribuir a la comunidad científica de Python.
-
 
 ### Referencias
 

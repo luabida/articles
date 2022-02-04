@@ -71,10 +71,10 @@ ciencia_abierta) está compuesta por varias disciplinas, entre ellas: el
 acceso abierto, datos abiertos, código abierto, investigación abierta y
 reproducible, ciencia ciudadana, ciencia de datos, entre otros. El
 "hacer" ciencia abierta se está practicando cada vez más, de ahí la
-importancia de encontrar un mentor para ayudarte a 
+importancia de encontrar un mentor para ayudarte a
 desarrollar y potenciar buenas prácticas, para aprender o especializarte en
 el manejo de algunas herramientas que necesitarás para desenvolverte en
-este apasionante mundo de la ciencia abierta. 
+este apasionante mundo de la ciencia abierta.
 
 Con la ayuda de un mentor
 y un plan estratégico puedes garantizar, en buena medida, un logro de
@@ -95,7 +95,7 @@ disposición de ayudar a otros investigadores. En ocasiones puedes sentir
 que tu trabajo en el proyecto no fluye, que cada vez son más los
 inconvenientes que se te presentan y que solo con leer libros y consultando
 la web, no sientes el avance. En estas situaciones te sería de gran
-ayuda contar con un mentor. 
+ayuda contar con un mentor.
 
 Un mentor en proyectos de ciencia abierta
 debe ser un embajador de la práctica, la formación y la educación de la
@@ -129,7 +129,7 @@ mentorías:
 - [Red de Mentores de Madrid](https://www.madrimasd.org/emprendedores/red-mentores-madrid)
 - [WINN Women in the news Networs](http://winnlatam.com/mentorias/)
 - [Programa de mentorías de la Universidad Complutense de Madrid](https://www.ucm.es/mentorias)
-- [Programa de mentorías de la Universidad de la Frontera](http://mentorias.ufro.cl/) 
+- [Programa de mentorías de la Universidad de la Frontera](http://mentorias.ufro.cl/)
 - [Open Life Science](https://openlifesci.org)
 - [Neoscientia](https://neoscientia.com/mentoring/)
 - [Encontrar mentores en ciencia de datos](https://mentorcruise.com/)
@@ -141,5 +141,5 @@ temas de ciencia abierta que puedes consutar en enlace.
 
 - [MENTOR-Sociedad Nacional de Mentoría](https://www.mentoring.org/)
 - [Neoscientia](https://neoscientia.com/mentoring/)
-- [El mentoring como herramienta de motivación y retención del talento](http://pdfs.wke.es/2/2/7/6/pd0000012276.pdf) 
+- [El mentoring como herramienta de motivación y retención del talento](http://pdfs.wke.es/2/2/7/6/pd0000012276.pdf)
 - [Mentoría en educación superior, la experiencia en un programa extracurricular](http://www.scielo.org.mx/pdf/redie/v20n4/1607-4041-redie-20-04-86.pdf)

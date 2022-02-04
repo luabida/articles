@@ -28,8 +28,8 @@ investigaciones.
 rOpenSci es un proyecto patrocinado fiscalmente por
 [NumFOCUS](https://numfocus.org) una organización que apoya y promueve
 la computación científica, innovadora y de código abierto. Consulta el
-siguiente post de su blog con la presentación del proyecto: [Cómo
-rOpenSci utiliza Code Review para promover la ciencia reproducible]
+siguiente post de su blog con la presentación del proyecto: \[Cómo
+rOpenSci utiliza Code Review para promover la ciencia reproducible\]
 (https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science).
 
 rOpenSci, gracias a su mecanismo de revisión por pares y el constante
@@ -46,7 +46,6 @@ La comunidad de rOpenSci acepta [Donaciones](https://ropensci.org/donate/) de
 individuos, instituciones y corporaciones que apoyen sus actividades. Si
 deseas hacer una donación al proyecto, [accede a este
 formulario](https://numfocus.salsalabs.org/donate-to-ropensci/index.html).
-
 
 ### Acerca de los [Paquetes de rOpenSci](https://ropensci.org/packages/)
 
@@ -76,7 +75,6 @@ ciudades](https://ropensci.org/usecases/rgbif_biodivcomp/), [Crear
 fácilmente un mapa interactivo en la web desde
 R](https://ropensci.org/usecases/spocc_gistmap/).
 
-
 ### Infórmate brevemente sobre la revisión por pares de software en rOpenSci
 
 #### Cómo enviar un paquete a rOpenSci y el proceso de revisión
@@ -97,7 +95,7 @@ proceso se lleva a cabo en el [repositorio de GitHub de Revisión de
 Software](https://github.com/ropensci/software-review/), allí notarás
 que se trata de una conversación continua hasta la aceptación del
 paquete, donde el autor recibe recomendaciones para la mejora del
-software.  
+software.
 
 Si tu colaboración es aceptada, seguirás recibiendo el apoyo de la comunidad
 en lo referente a temas de mantenimiento, como lo referente a las
@@ -147,7 +145,7 @@ un paquete, siendo editor o revisor, puedes:
 - Suscribirte a [**rOpenSci News**](https://news.ropensci.org/) el
   Boletín informativo de rOpenSci, y recibir actualizaciones semestrales
   de las actividades de la comunidad en tu correo.
-  
+
 - Asistir a las llamadas de la comunidad [**rOpenSci community
   calls**](https://ropensci.org/commcalls/), son llamadas trimestrales
   para aprender más sobre los desarrollos de rOpenSci y nuevos
@@ -175,7 +173,6 @@ oportunidad. Puedes darle un vistazo a nuestro post sobre pyOpenSci: un
 promotor de la ciencia abierta (enlace a artículo pyOpenSCi) si tu
 lenguaje de programación es Python; y tus aspiraciones son las de
 desarrollar un paquete, ser editor, revisor, o seguir a esta comunidad.
-
 
 #### Referencias
 

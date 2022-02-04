@@ -60,12 +60,12 @@ modelos Machine Learning, de conjuntos de datos, flujo de trabajo,
 facilitando la colaboración y la reproducibilidad. Como DVC hace que los
 proyectos sean reproducibles y compartibles; podemos saber cómo se
 construyeron y probaron los modelos y cómo han sido transformados los
-datos originales. DVC está basado en [Git](enlace a artículo
+datos originales. DVC está basado en \[Git\](enlace a artículo
 GitCeroACien); aunque puede funcionar de manera autónoma (pero sin
 capacidad de versionado). "Es como un Git para Datos".
 
 Esta herramienta se desarrolló en un 98% bajo el lenguaje de
-programación [Python](enlace a artículo 10razonesparausarpython).
+programación \[Python\](enlace a artículo 10razonesparausarpython).
 
 #### Características principales
 
@@ -83,7 +83,6 @@ programación [Python](enlace a artículo 10razonesparausarpython).
 - Es rápido de instalar, no depende de APIs o servicios externos.
 
 [Aquí puedes acceder al Repositorio de GitHub del proyecto DVC](https://github.com/iterative/dvc)
-
 
 ## Ventajas de implementar el control de versiones de datos
 

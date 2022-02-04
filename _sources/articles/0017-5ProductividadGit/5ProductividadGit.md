@@ -70,7 +70,7 @@ fijar alias para ellos mediante `git config`. Por ejemplo:
 `$ git config --global alias.st status`
 `$ git config --global alias.ci commit`
 
-De esta manera, de ahora en adelante escribes `git br` en lugar de 
+De esta manera, de ahora en adelante escribes `git br` en lugar de
 `git branch` y así para los demás del ejemplo. No existe un estándar para la
 creación de alias, todo dependerá de que te sientas a gusto con ellos. A
 medida que aumentes tu trabajo con Git, utilizarás frecuentemente otros

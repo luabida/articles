@@ -6,14 +6,14 @@ infección respiratoria que comienza con fiebre y tos seca y que, al cabo de
 cerca de una semana, puede provocar falta de aire. La vía principal de
 transmisión del virus es a través de pequeñas gotas que se
 producen cuando una persona infectada tose o estornuda
-[https://www.isglobal.org/coronavirus]. También se transmite al tocarse ojos,
+\[https://www.isglobal.org/coronavirus\]. También se transmite al tocarse ojos,
 nariz o boca tras tocar superficies contaminadas.  Este virus se ha extendido y
 el número de países en los que sus ciudadanos se han contagiado incrementó
 masivamente en los últimos días.
 
 Para el 11 de marzo de 2020 la Organización Mundial de la Salud ha declarado el
 brote del virus como una pandemia global. En un artículo de la revista Nature
-[https://www.nature.com/articles/d41586-020-00154-w] se tienen cifras
+\[https://www.nature.com/articles/d41586-020-00154-w\] se tienen cifras
 significativas que dan un panorama más claro de lo que está sucediendo, se
 menciona que el virus se encuentra en más de 100 países, ha infectado a unas
 120.000 personas, matando a más de 4.000 de ellas.
@@ -59,21 +59,17 @@ https://www.medrxiv.org/search/Coronavirus
   Está alojado en el Laboratorio Cold Spring Harbor. Fuente:Wikipedia
 
 Hay alrededor de 400 artículos disponibles en este repositorio sobre el
-coronavirus. https://www.biorxiv.org/search/Coronavirus 
-  
+coronavirus. https://www.biorxiv.org/search/Coronavirus
 
-
-También revistas como Nature [https://www.nature.com/search?q=coronavirus], Cell
-[https://www.cell.com/action/doSearch?searchType=quick&searchText=coronavirus&searchScope=fullSite&occurrences=all&code=cell-site]
+También revistas como Nature \[https://www.nature.com/search?q=coronavirus\], Cell
+\[https://www.cell.com/action/doSearch?searchType=quick&searchText=coronavirus&searchScope=fullSite&occurrences=all&code=cell-site\]
 o The Lancet
-[https://www.thelancet.com/action/doSearch?searchType=quick&searchText=coronavirus&searchScope=fullSite&occurrences=all&code=lancet-site]
+\[https://www.thelancet.com/action/doSearch?searchType=quick&searchText=coronavirus&searchScope=fullSite&occurrences=all&code=lancet-site\]
 e instituciones como la Academia de Ciencias Médicas británica o los Institutos
 Nacionales de Salud de EE UU han decidido publicar sus estudios y artículos de
 forma libre. Por ejemplo: National Center for Biotechnology Information, U.S.
 National Library of
-Medicine[https://pubmed.ncbi.nlm.nih.gov/?term=COVID19%20or%20SARSCov2&sort=date]
-
-
+Medicine\[https://pubmed.ncbi.nlm.nih.gov/?term=COVID19%20or%20SARSCov2&sort=date\]
 
 A continuación veamos unos datos sobre el Codvid-19 que nos pueden ser útiles.
 
@@ -81,7 +77,7 @@ A continuación veamos unos datos sobre el Codvid-19 que nos pueden ser útiles.
 
 - Mantener distancia de al menos un metro entre usted y cualquier persona con
   tos o que estornude.
-- Lavarse frecuentemente las manos con agua y jabón. 
+- Lavarse frecuentemente las manos con agua y jabón.
 - Evitar tocarse la cara, ojos y boca.
 - Al toser o estornudar cubre boca y nariz usando la parte inferior del codo o
   con un pañuelo.
@@ -91,8 +87,6 @@ A continuación veamos unos datos sobre el Codvid-19 que nos pueden ser útiles.
 - No es necesario el uso rutinario de mascarilla, se recomienda que las empleen
   aquellas personas con síntomas.
 
-
-
 ## Algunas estadísticas sobre el COVID-19 (16/03/2020)
 
 - El número de casos confirmados es 167.414
@@ -101,22 +95,20 @@ A continuación veamos unos datos sobre el Codvid-19 que nos pueden ser útiles.
 - LA cantidad de países infectados es de 139
 - El número de personas recuperadas es de 77.783
 
-Fuente: 
+Fuente:
+
 - https://www.isglobal.org/coronavirus
 - https://es.statista.com/temas/5901/el-coronavirus-de-wuhan/
-
 
 Hay otros artículos interesantes que puedes revisar tal como:
 https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca
 en el cual se expresan datos relevantes del virus. Y aplicaciones que muestran
 la distribución geográfica del virus https://arcg.is/918mf
 
-
 ## Referencias:
 
-
-[Periódico global: El país] (https://elpais.com/)
+\[Periódico global: El país\] (https://elpais.com/)
 
 Material informativo de la Universidad Central de Venezuela, Facultad de Medicina
 
-[Portal Regional de la BVS] (https://bvsalud.org/vitrinas/es/post_vitrines/nuevo_coronavirus/)
+\[Portal Regional de la BVS\] (https://bvsalud.org/vitrinas/es/post_vitrines/nuevo_coronavirus/)

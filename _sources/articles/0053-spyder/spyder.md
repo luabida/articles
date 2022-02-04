@@ -26,76 +26,75 @@ gracias al generoso apoyo de [NUMFOCUS](https://numfocus.org/) y
 
 ### Características y funcionalidades de Spyder
 
-* Multiplataforma y de código abierto.
+- Multiplataforma y de código abierto.
 
-* Multilenguaje.
+- Multilenguaje.
 
-* Cuenta con edición avanzada.
+- Cuenta con edición avanzada.
 
-* Depuración integrada y ejecución interactiva.
+- Depuración integrada y ejecución interactiva.
 
-* Ofrece capacidades de visualización.
+- Ofrece capacidades de visualización.
 
-* Provee de funcionalidades para análisis de código como coloreado de sintaxis.
+- Provee de funcionalidades para análisis de código como coloreado de sintaxis.
 
-* Multiconsola.
+- Multiconsola.
 
-* Incluye instrumentos para el control de calidad y el análisis de
-    códigos específicos de Python, como
-    [Pyflakes](https://pypi.org/project/pyflakes/),
-    [Pylint](https://www.pylint.org/) y
-    [Rope](https://github.com/python-rope/rope).
+- Incluye instrumentos para el control de calidad y el análisis de
+  códigos específicos de Python, como
+  [Pyflakes](https://pypi.org/project/pyflakes/),
+  [Pylint](https://www.pylint.org/) y
+  [Rope](https://github.com/python-rope/rope).
 
-* Contiene varios paneles que facilitan el trabajo: editor de código,
+- Contiene varios paneles que facilitan el trabajo: editor de código,
   explorador-editor de variables y la consola.
 
-* Pueden extenderse sus funcionalidades a traves de plugins. Entre ellos:
+- Pueden extenderse sus funcionalidades a traves de plugins. Entre ellos:
 
-    - [Spyder Notebook
-      plugin](https://github.com/spyder-ide/spyder-notebook). Para usar
-      los cuadernos Jupyter dentro de Spyder.
+  - [Spyder Notebook
+    plugin](https://github.com/spyder-ide/spyder-notebook). Para usar
+    los cuadernos Jupyter dentro de Spyder.
 
-    - [Spyder Terminal](https://github.com/spyder-ide/spyder-terminal).
-      Muestra una terminal virtual dentro de la ventana principal de
-      Spyder.
+  - [Spyder Terminal](https://github.com/spyder-ide/spyder-terminal).
+    Muestra una terminal virtual dentro de la ventana principal de
+    Spyder.
 
-    - [Spyder reports](https://github.com/spyder-ide/spyder-reports).
-      Permite generar informes de Markdown usando
-      [Pweave](http://mpastell.com/pweave/) como backend.
-      
-    - [Spyder-autopep8](https://github.com/spyder-ide/spyder-autopep8).
-      Complemento para ejecutar **autopep8** (el
-      [linter](https://es.wikipedia.org/wiki/Lint) de python) dentro de
-      Spyder.
+  - [Spyder reports](https://github.com/spyder-ide/spyder-reports).
+    Permite generar informes de Markdown usando
+    [Pweave](http://mpastell.com/pweave/) como backend.
 
-* Está en continua evolución y soporte gracias a una gran comunidad de
+  - [Spyder-autopep8](https://github.com/spyder-ide/spyder-autopep8).
+    Complemento para ejecutar **autopep8** (el
+    [linter](https://es.wikipedia.org/wiki/Lint) de python) dentro de
+    Spyder.
+
+- Está en continua evolución y soporte gracias a una gran comunidad de
   desarrolladores y usuarios.
 
-* Permite trabajar en varios proyectos simultáneamente.
+- Permite trabajar en varios proyectos simultáneamente.
 
-* Con Spyder puedes tomar atajos de teclado.
+- Con Spyder puedes tomar atajos de teclado.
 
-* Posee documentación en línea y tutoriales para que aprendas a utilizarlo.
+- Posee documentación en línea y tutoriales para que aprendas a utilizarlo.
 
 ## Instalación y primeros pasos
 
 Para trabajar con Spyder tienes algunas opciones, entre las más usadas están:
 
-* Puedes probar **Spyder online**, esto es posible gracias a
-  Binder[https://mybinder.org/]. Debes acceder a la [página de Spyder en
+- Puedes probar **Spyder online**, esto es posible gracias a
+  Binder\[https://mybinder.org/\]. Debes acceder a la [página de Spyder en
   Binder](https://mybinder.org/v2/gh/spyder-ide/spyder/4.x?urlpath=/desktop)
   donde trabajarás con una copia de Spyder que se ejecuta directamente
   en tu navegador web, es decir, no es necesaria su instalación.
 
-* Usando [Anaconda](https://www.anaconda.com/) o
+- Usando [Anaconda](https://www.anaconda.com/) o
   [Miniconda](https://docs.conda.io/en/latest/miniconda.html). Spyder
   viene incluido, por defecto, en estas distribuciones. Esta es la forma
   más fácil de instalarlo y lo recomendamos para evitar cualquier
   inconveniente.
 
-* Puedes instalarlo también usando pip o conda en tu entorno local
-  (enlace a artículo conda) con los siguientes comandos `conda install
-  spyder` o `pip install spyder`. La documentación oficial del proyecto
+- Puedes instalarlo también usando pip o conda en tu entorno local
+  (enlace a artículo conda) con los siguientes comandos `conda install spyder` o `pip install spyder`. La documentación oficial del proyecto
   te ofrece una [Guía de
   instalación](https://docs.spyder-ide.org/current/installation.html)
   que te será de gran ayuda si surgen dudas.
@@ -151,35 +150,34 @@ crear, abrir y guardar un archivo en spyder y como ejecutar un script:
 
 - Para **Crear un nuevo archivo** elige una de las siguientes opciones:
 
-    * Accede a la barra de Menú, haz clic en *Archivo* y luego en
-      *Nuevo*.
-    * Presiona las teclas Ctrl + N.
-    * Haz clic en el botón *Nuevo Archivo* de la barra de herramientas.
+  - Accede a la barra de Menú, haz clic en *Archivo* y luego en
+    *Nuevo*.
+  - Presiona las teclas Ctrl + N.
+  - Haz clic en el botón *Nuevo Archivo* de la barra de herramientas.
 
 - Si deseas **Guardar un archivo** elige entre:
 
-    * Hacer clic en *Archivo* y luego en *Guardar* en la barra de Menú.
-    * Presionar las teclas Ctrl + S.
-    * Dar clic en el botón *Guardar Archivo* de la barra de
-      herramientas.
+  - Hacer clic en *Archivo* y luego en *Guardar* en la barra de Menú.
+  - Presionar las teclas Ctrl + S.
+  - Dar clic en el botón *Guardar Archivo* de la barra de
+    herramientas.
 
 - Para **Abrir un archivo `.py` existente** tienes varias alternativas:
 
-    * Dirígete a la barra de Menú, haz clic en *Archivo*, luego en
-      *Abrir*, después busca el archivo que desees.
-    * Presiona Ctrl + O.
-    * En la barra de herramientas, haz clic en el botón *Abrir archivo*.
-      Luego se abre una ventana donde buscarás la ubicación, luego
-      selecciona el archivo deseado y haz clic en *Abrir*.
-      Posteriormente, se mostrará el archivo en el Editor de Código.
+  - Dirígete a la barra de Menú, haz clic en *Archivo*, luego en
+    *Abrir*, después busca el archivo que desees.
+  - Presiona Ctrl + O.
+  - En la barra de herramientas, haz clic en el botón *Abrir archivo*.
+    Luego se abre una ventana donde buscarás la ubicación, luego
+    selecciona el archivo deseado y haz clic en *Abrir*.
+    Posteriormente, se mostrará el archivo en el Editor de Código.
 
 Te hemos presentado lo que debes saber para iniciarte en Spyder,
 esperamos que te sea de provecho para tus proyectos. Anímate a usar este
 potente y popular Entorno de Desarrollo.
 
-
 ### Referencias
 
 - [Sitio web Spyder](https://www.spyder-ide.org/)
 
-- [Spyder Wikipedia](https://en.wikipedia.org/wiki/Spyder_(software))
+- [Spyder Wikipedia](<https://en.wikipedia.org/wiki/Spyder_(software)>)

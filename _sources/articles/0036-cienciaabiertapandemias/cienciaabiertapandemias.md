@@ -16,8 +16,8 @@ abierto, aunque en menor medida que el COVID-19. Se publicaron en
 abierto resultados de investigaciones, por ejemplo, la reseñada en
 [Proceedings of the National Academy of
 Sciences](https://www.eurekalert.org/pub_releases/2019-01/potn-anz010919.php),
-[este
-artículo](https://www.elsevier.es/es-revista-revista-colombiana-anestesiologia-341-articulo-zika-una-pandemia-progreso-un-S0120334716300235
+\[este
+artículo\](https://www.elsevier.es/es-revista-revista-colombiana-anestesiologia-341-articulo-zika-una-pandemia-progreso-un-S0120334716300235
 y otro [publicado en
 Elsevier](https://www.elsevier.es/es-revista-revista-colombiana-anestesiologia-341-articulo-virus-zika-se-expande-su-S0120334716000216).
 
@@ -168,7 +168,7 @@ dengue](https://idatosabiertos.org/wp-content/uploads/2015/10/7.Dengue-Pane-Ojed
 por parte de la Iniciativa Latinoamericana por los Datos Abiertos y el
 Open Data que presentan mapas de riesgo y de incidencia dinámicos para
 18 países de la región de las Américas de la OMS. También está
-["DengueNet"](http://ghdx.healthdata.org/record/who-denguenet], el
+\["DengueNet"\](http://ghdx.healthdata.org/record/who-denguenet\], el
 sistema central de gestión de datos de la OMS para la vigilancia
 epidemiológica y virológica mundial del dengue y la fiebre hemorrágica
 del dengue. Puedes visitar [en este
@@ -197,47 +197,46 @@ De todas las iniciativas de ciencia abierta que se han desarrollado en torno a l
 - [Fortaleciendo la respuesta ante el Zika mediante la colaboración
   abierta](https://blogs.iadb.org/conocimiento-abierto/es/fortaleciendo-la-respuesta-ante-el-zika-mediante-la-colaboracion-abierta/).
 
-
 **Algunas plataformas de acceso abierto sobre el COVID-19 y el SARS-COV2:**
 
-* [Base de Datos sobre investigación en COVID-19 de la Organización
+- [Base de Datos sobre investigación en COVID-19 de la Organización
   Mundial de la
   Salud (OMS)](https://search.bvsalud.org/global-literature-on-novel-coronavirus-2019-ncov/)
 
-* [Literatura mundial sobre la enfermedad COVID-19 de la
+- [Literatura mundial sobre la enfermedad COVID-19 de la
   OMS](https://search.bvsalud.org/global-literature-on-novel-coronavirus-2019-ncov/)
 
-* [Canal de noticias de la OMS](https://www.who.int/es)
+- [Canal de noticias de la OMS](https://www.who.int/es)
 
-* [Statista en Español](https://es.statista.com/temas/5901/el-coronavirus-de-wuhan/)
+- [Statista en Español](https://es.statista.com/temas/5901/el-coronavirus-de-wuhan/)
 
-* [Datos del Banco Mundial](https://datos.bancomundial.org/)
+- [Datos del Banco Mundial](https://datos.bancomundial.org/)
 
-* [Center for Control and Prevention of
+- [Center for Control and Prevention of
   Disease](https://espanol.cdc.gov/flu/index.htm)
 
-* [EBSCO Medical](https://covid-19.ebscomedical.com/research)
+- [EBSCO Medical](https://covid-19.ebscomedical.com/research)
 
-* [Repositorio de Investigación de
+- [Repositorio de Investigación de
   Elsevier](https://coronavirus.1science.com/search). En particular este
   repositorio contiene artículos sobre COVID-19, *SARS* y *MERS*, las
   dos últimas fueron pandemias desarrolladas en la primera década del
   siglo XXI.
 
-* [Centro de Información de Coronavirus de
+- [Centro de Información de Coronavirus de
   Elsevier](https://www.elsevier.com/connect/coronavirus-information-center)
 
-* [Centro de Recursos sobre el Coronavirus de The Lancet](https://www.thelancet.com/coronavirus)
+- [Centro de Recursos sobre el Coronavirus de The Lancet](https://www.thelancet.com/coronavirus)
 
-* [Página de Investigación de Coronavirus y Enfermedades Infecciosas de la SSRN](https://www.ssrn.com/index.cfm/en/coronavirus/)
+- [Página de Investigación de Coronavirus y Enfermedades Infecciosas de la SSRN](https://www.ssrn.com/index.cfm/en/coronavirus/)
 
-* [Nature Research](https://www.nature.com/collections/hajgidghjb?utm_source=sn&utm_medium=referral&utm_content=null&utm_campaign=BSLB_1_CA01_GL_BSLB_AWA_CA01_GL_LSGR_PubH_Coronovirus_LandingPage)
+- [Nature Research](https://www.nature.com/collections/hajgidghjb?utm_source=sn&utm_medium=referral&utm_content=null&utm_campaign=BSLB_1_CA01_GL_BSLB_AWA_CA01_GL_LSGR_PubH_Coronovirus_LandingPage)
 
-* [Taylor & Francis](https://taylorandfrancis.com/coronavirus/)
+- [Taylor & Francis](https://taylorandfrancis.com/coronavirus/)
 
-* [New England Journal of Medicine](https://www.nejm.org/coronavirus)
+- [New England Journal of Medicine](https://www.nejm.org/coronavirus)
 
-* La Universidad de Chile ofrece una web donde guarda enlaces a sitios
+- La Universidad de Chile ofrece una web donde guarda enlaces a sitios
   de acceso abierto sobre información e investigaciones acerca del
   COVID-19. Visítala en [este
   enlace](https://bibliotecas.uv.cl/recursos-acceso-abierto).

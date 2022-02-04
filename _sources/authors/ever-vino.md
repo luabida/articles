@@ -10,4 +10,3 @@ Bioprocesos, diseño de sistemas de tratamiento de aguas residuales. Actualmente
 
 [![twitter](../images/networks/twitter-mini.png)](https://twitter.com/EverVino)
 [![linkedin](../images/networks/linkedin-mini.png)](https://www.linkedin.com/in/ever-vino-86aa44224/)
-
