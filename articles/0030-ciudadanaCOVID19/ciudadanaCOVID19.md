@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 La enfermedad COVID-19 causada por el coronavirus SARS-CoV-2 actualmente
 es una pandemia mundial. Por tal motivo su prevención resulta sumamente
 importante, y para esto es indispensable nuestra participación activa

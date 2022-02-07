@@ -1,5 +1,7 @@
 # Cómo instalar y comenzar a utilizar Tensorflow
 
+![header](header.png)
+
 Hablar de Tensorflow, es hablar de Machine Learning porque es una plataforma que
 permite y facilita la creación de modelos asociados a algoritmos en los que se
 configura al equipo involucrado. Esto de manera tal que se obtengan sistemas capaces

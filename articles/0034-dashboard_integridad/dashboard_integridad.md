@@ -1,5 +1,7 @@
 # La importancia de la integridad en los datos manejados en los dashboards
 
+![header](header.png)
+
 Si trabajamos en una empresa o institución pública o simplemente queremos ver el comportamiento de nuestros datos, podemos pensar en realizar uno o varios gráficos. Los gráficos son representaciones visuales de los datos que nos permiten comprenderlos, compararlos, analizarlos y describirlos de forma tal que se tenga una noción más clara de lo que ocurre con ellos.
 
 En este artículo nos centraremos en los dashboards que son representaciones gráficas de los datos. Como representaciones de gráficos, pueden estar conformadas por una o varias visualizaciones con la particularidad de ser o no interactivos. Los dashboards son utilizados principalmente para ver y evaluar la calidad de un negocio o el cambio de algunos valores específicos a través del tiempo. También permite observar el comportamiento de alguna variable y sugerir estudios más profundos en relación a lo que sucede.

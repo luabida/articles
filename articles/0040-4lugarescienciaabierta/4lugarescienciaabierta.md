@@ -2,6 +2,8 @@
 
 **Por Rainer Palm**
 
+![header](header.png)
+
 ¿Qué es realmente la ciencia abierta? A pesar de que parece una idea simple, su implementación puede concurrir en todo tipo de preguntas y problemas posteriores sin una definición clara de los permisos de uso sobre resultados o metodologías, concedidos tanto a los investigadores como a los lectores y posteriores usuarios de la investigación, y de qué es lo que se busca lograr con este tipo de práctica de investigación.
 
 La ciencia abierta plantea cuestiones en el ámbito legal e institucional, por lo que deben declararse previamente de manera formal las normas de publicación o de uso, tanto de los datos utilizados como del artículo o conclusiones resultantes. Es por esto que tanto los miembros del equipo de investigación como las instituciones que financian y publican estas deben tener una idea clara de cuáles són los fundamentos en los cuales se basa la ciencia abierta y a qué principios se han de ajustar.

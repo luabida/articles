@@ -2,6 +2,8 @@
 
 **Por Rainer Palm**
 
+![header](header.png)
+
 Con mucha frecuencia, los proyectos de codigo abierto suelen prestar poca atención al tema de documentación. De hecho, es tan común que la encuesta Open Source Survey[1] (realizada por Github, involucrando tanto académicos, como a trabajadores en la industria de computación, como colaboradores independientes) reportó que al menos 93% de los encuestados, creían que la documentación incompleta o sin actualizar era uno de los problemas mas agravantes dentro de la esfera del software libre. En la misma encuesta, 60% de los participantes admitían también contribuir a la documentación de sus proyectos con muy poca frecuencia.
 
 Independientemente del tipo de proyecto en el que participes o de su objetivo, la documentación es un factor muy importante a la hora de crear proyectos accesibles y inclusivos, en el sentido de que facilita muchísimo tanto su uso como la colaboración entre personas que no estén activamente involucradas en su desarrollo. Establecer de forma clara términos de uso del código, manuales o guías permite a tus usuarios ser autosuficientes y dar sugerencias mucho más útiles y profundas, además de que puede ser el factor clave entre que alguien se vuelva un colaborador o que termine ignorando tu proyecto. Tal como dice WriteTheDocs[2]:

@@ -2,6 +2,8 @@
 
 **Por Rainer Palm**
 
+![header](header.png)
+
 ¿Estás interesado en integrar un poco de programación en tu rutina cotidiana?, ¿Necesitas aprovechar de la versatilidad y eficiencia que te otorga manejar con fluidez codigo?, ¿O simplemente quieres aprovechar de la utilidad de poder realizar análisis computacional?. Sea cual sea la razón, te podrías estar preguntando por donde empezar. Habiendo tantos lenguajes de programación disponibles, con una cantidad prácticamente infinita de usos, puede serte difícil decidir con cuál empezar a aprender o cuál aportará más a tu trabajo.
 
 Probablemente hayas escuchado de [Python](http://python.org) en algún momento, debido a que es un lenguaje con mucha difusión, que goza de una gran comunidad y patrocinio de grandes compañías (principalmente [Facebook](http://facebook.com), [Google](http://google.com), [Amazon](http://amazon.com) y [Capital One](https://www.capitalone.com/)). Se trata de un lenguaje interpretativo (no requiere ser compilado) y de alto nivel, lo cual lo hace perfecto para principiantes y cualquier tipo de persona que quiera entrar en el mundo de la programación. Si aún no te hemos convencido, aqui te damos mas excusas para aprender a usar Python en tu próóximo proyecto de investigación!

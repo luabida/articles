@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Al transcurrir los años se han presentado pandemias que han azotado y puesto en alerta al mundo. Por tal motivo, la manera como las personas, instituciones y gobiernos lo han manejado resulta de suma importancia ya sea para prevenir errores cometidos, tomar medidas similares o reinventarse acciones en el tema. Justo es aquí donde entra en juego la ciencia abierta. Tal vez te preguntarás ¿Cuál es el papel de la ciencia abierta en todo esto? Pues las distintas disciplinas que abarca, como el acceso y los datos abiertos, han permitido producir conocimiento científico para combatir estas pandemias, por ejemplo, para realizar un diagnóstico temprano, en la gestión de la producción de vacunas, o para predecir niveles de propagación de las enfermedades y generar soluciones tecnológicas.
 
 En este artículo te presentamos algunas iniciativas de ciencia abierta que han permitido reducir y controlar el impacto de estas enfermedades, la COVID-19, el Zika, la gripe, el dengue, el SARS (Síndrome respiratorio agudo grave) y el MERS (Síndrome respiratorio de Oriente Medio), dejando aprendizajes y avances en este ámbito.

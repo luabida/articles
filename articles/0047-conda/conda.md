@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Conda es un sistema de gestión de entornos y de paquetes que funciona en
 Windows, Linux y MacOs. Inicialmente se creó para programas Python y
 está escrito en python, pero puede implementarse para cualquier

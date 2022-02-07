@@ -1,6 +1,8 @@
 # Herramientas de visualización en Python
 
-Por **Anavelyz Perez**
+**Por Anavelyz Perez**
+
+![header](header.png)
 
 En uno de nuestros artículos, específicamente [10 razones para usar Python en tu proximo proyecto de investigación](http://opensciencelabs.org/2020/01/22/ocho/), se da un recorrido por las ventajas que brinda el lenguaje de programación Python, de allí podemos extraer algunas de sus características tales como:
 

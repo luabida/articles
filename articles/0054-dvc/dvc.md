@@ -1,8 +1,8 @@
 # Qué es el Data Version Control (DVC) y por qué es necesario que tu equipo sepa cómo utilizarlo
 
-![header](header.png)
-
 **Por Yurely Camacho**
+
+![header](header.png)
 
 Cuando colaboramos en proyectos que involucran un manejo y transformación
 constante de conjuntos de datos y/o modelos derivados de estos, nos vemos en la

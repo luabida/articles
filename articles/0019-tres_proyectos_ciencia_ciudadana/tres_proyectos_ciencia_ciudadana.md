@@ -1,6 +1,8 @@
 # Tres proyectos de ciencia ciudadana que te sorprenderán
 
-Por: Rainer Palm
+**Por Rainer Palm**
+
+![header](header.png)
 
 Alguna vez has querido saber como es realmente participar en una investigación científica, sin necesariamente tener el entrenamiento o la educación del area? Descubrir nuevas especies, identíficar cuerpos celestes, quizás simplemente hacer trabajo de campo en las fronteras de tu propia ciudad, catalogando los animales y plantas que coexisten en tu habitat local. Mediante proyectos y aplicaciones de ciencia ciudadana, esto es una posibilidad, y ya hay una diversidad de personas cotidianas que la han aprovechado, indirectamente volviendose científicos.
 

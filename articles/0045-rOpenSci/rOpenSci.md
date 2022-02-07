@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Para compartir, almacenar y divulgar de una manera fácil los datos y
 resultados de las investigaciones, los científicos deben contar con
 paquetes que lo garanticen. De esta manera, las investigaciones serán

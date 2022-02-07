@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Sin duda, los datos deben considerarse como la materia prima para
 cualquier proyecto de ciencia abierta, pues todos se basan en el manejo
 de datos de distintos tipos. Para *entender esos datos* debe realizarse

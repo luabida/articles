@@ -1,8 +1,8 @@
 # Primeros pasos con Spyder
 
-![header](header.png)
-
 **Por Yurely Camacho**
+
+![header](header.png)
 
 Si haz elegido programar en Python, luego de haberlo instalado quizás te
 preguntarás ¿Dónde voy a programar? Para esto necesitas un editor de

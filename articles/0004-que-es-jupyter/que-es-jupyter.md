@@ -2,6 +2,8 @@
 
 **Por Rainer Palm**
 
+![header](header.png)
+
 ¿Quieres llevar tus artículos a un formato mas intuitivo, legible y facíl de editar? [Jupyter Notebook](https://jupyter.org) es una aplicación web que te deja incorporar en tus documentos elementos de código abierto y de texto enriquecido de una forma sencilla y fluida, que además facilita que otras personas colaboren en tu investigación. Utilizar estos elementos permitirá que tanto tu como tus lectores puedan no solamente ver la descripción y resultados de tu analísis de una forma mas gráfica, sino hacerlo en tiempo real, algo especialmente útil para garantizar la reproducibilidad de tus resultados.
 
 El uso de Jupyter Notebook hoy día es bastante común en las comunidades científicas: por ejemplo, la creación de la foto de un agujero negro utilizo un cuaderno de Jupyter, con codigo en https://github.com/achael/eht-imaging), por lo que hay una gran variedad de ejemplos en todo tipo de areas, usualmente disponible en un repositorio publico de [GitHub](https://github.com), con los cuales podrás interactuar libremente. Estos documentos son producidos por la aplicación Jupyter Notebook, la cual te explicaremos con mas profundidad a continuación.

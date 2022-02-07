@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Frente a la pandemia ocasionada por la enfermedad COVID-19 se han
 desarrollado en todo el mundo, distintas prácticas de ciencia abierta
 para hacerle frente. Una de ellas son los **Laboratorios Sociales**

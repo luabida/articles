@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Si estas interesado en practicar la ciencia abierta o simplemente
 quieres o necesitas conocer más acerca del tema, resulta de suma
 importancia que descubras sobre los **datos abiertos**, es decir, datos

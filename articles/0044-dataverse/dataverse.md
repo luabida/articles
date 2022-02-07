@@ -2,6 +2,8 @@
 
 **Por Rainer Palm**
 
+![header](header.png)
+
 A lo largo de un proyecto de investigación suelen experimentarse dificultades en cualquiera de sus fases: desarrollo, su divulgación, promoción, en la publicación de los datos de forma abierta, en su catalogación o en su disposición de forma abierta para ser consultado en cualquier investigación. En cualquiera de estos casos, Dataverse[1] es una solución que promete no solamente incorporar al flujo de trabajo métodos rápidos para asegurar que los datos cumplan los principios FAIR[2], sino también ofrece un espacio donde alojarlos organizados en conjuntos, agrupando metadatos y codigo clasificados con su propio numero DOI, en repositorios llamados 'Dataversos'.
 
 Dataverse es un proyecto que ya cuenta con apoyo de una cantidad de universidades y instituciones prestigiosas alrededor del mundo. Por ejemplo, la universidad Harvard destaca por su repositorio Dataverse público[3] en el cual yace una enorme cantidad de conjuntos de datos (incluyendo metadatos, código y documentación) en todo tipo de áreas y, además está libre para el uso en investigaciones tanto dentro como fuera de la comunidad Harvard. Estos datos pueden ser accedidos bajo políticas de acceso abierto y términos de uso establecidos por cada equipo científico, permitiendo la réplica y reutilización del trabajo alojado en el sitio. Por lo tanto, es una iniciativa bastante atractiva cuando se desea difundir el trabajo realizado, ya que hace que tus datos sean visibles mediante el uso de motores de busqueda y manejadores de referencias.

@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Si posees algún conocimiento sobre conda o visitaste anteriormente
 nuestro artículo sobre Cómo instalar y comenzar a utilizar Conda (enlace
 a artículo) donde dimos una breve definición sobre este potente gestor

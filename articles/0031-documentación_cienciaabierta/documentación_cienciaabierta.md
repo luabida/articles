@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Para hacer reproducible una investigación y que ésta pueda ser verificada a largo plazo, debes contar con un registro donde tomes nota de todos los pasos realizados durante este proceso, lo cual servirá, al mismo tiempo, para que tu proyecto sea comprensible por personas ajenas a él y así puedan desarrollar algún interés sobre el mismo. A todo el proceso de registro de esa información se le conoce como **Documentación**.
 
 La documentación es una buena práctica de la investigación y es de suma importancia en cualquier proyecto de ciencia abierta. Si no documentamos, al pasar el tiempo las personas tendrán que comenzar de cero y terminarán sin entender el contenido de nuestro proyecto. Además, estando bajo los estándares de la ciencia abierta, el «no documentar» sería una falta grave a sus principios.

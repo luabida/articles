@@ -1,6 +1,8 @@
 # ¿Qué es el acceso abierto y por qué debes tenerlo en cuenta para tus investigaciones?
 
-Por Anavelyz Perez
+**Por Anavelyz Perez**
+
+![header](header.png)
 
 El acceso abierto es un término que se utiliza para definir aquellos proyectos
 que están disponibles para todo público de forma libre y gratuita, en Internet o

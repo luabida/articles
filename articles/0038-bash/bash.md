@@ -2,6 +2,8 @@
 
 **Por Anavelyz Perez**
 
+![header](header.png)
+
 ¿Qué es Bash?
 
 Es un shell, o intérprete de lenguaje de comandos, para el sistema operativo

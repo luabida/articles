@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Los avances en la ciencia están fuertemente relacionados con la
 reproducibilidad en las investigaciones. Resulta muy importante lograr
 que otras personas puedan reproducir nuestros trabajos. ¡Imagínate la aceptación que tendría una investigación si todos los intentos

@@ -2,6 +2,8 @@
 
 **Por Anavelyz Pérez**
 
+![header](header.png)
+
 La Investigación Colaborativa surge en el momento en el cual varias entidades
 que pueden estar especializadas en diferentes áreas, se establecen un mismo
 objetivo o proyecto. La finalidad de una investigación bajo este modelo es encontrar soluciones,

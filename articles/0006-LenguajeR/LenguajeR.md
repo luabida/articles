@@ -2,7 +2,7 @@
 
 **Por Yurely Camacho**
 
-![R](img/R.png)
+![header](header.png)
 
 Si eres una persona con deseos de desarrollar proyectos de código abierto que puedan ser compartidos, quieres replicar y /o mejorar proyectos existentes o convertirte en un científico de datos, realizando algunas búsquedas habrás leido u oido escuchar acerca del [Lenguaje R](https://www.r-project.org/). En este post daremos un paso breve sobre sobre sus características, las posibilidades de utilizarlo en tus proyectos y las oportunidades laborales que tendrás cuando lo manejes de forma fluida.
 

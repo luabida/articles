@@ -1,5 +1,7 @@
 # Todas las posibilidades que te ofrece utilizar figshare en tus proyectos
 
+![header](header.png)
+
 ¿Qué es figshare?
 
 Es un repositorio de acceso abierto en línea en el cual los usuarios pueden

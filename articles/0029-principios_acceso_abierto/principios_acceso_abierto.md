@@ -2,6 +2,8 @@
 
 **Por Anavelyz Perez**
 
+![header](header.png)
+
 Al realizar una investigación estamos sujetos a distintos panoramas en los
 cuales nuestro criterio tiene un papel muy importante porque de ello va a
 depender cosas tales como la difusión, edición y evaluación del proyecto. De

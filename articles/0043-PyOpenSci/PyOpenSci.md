@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 Las distintas disciplinas que abarca la ciencia abierta trabajan de manera
 conjunta; tal es el caso del código abierto, la investigación abierta y
 reproducible y los datos abiertos. En el presente artículo tratamos

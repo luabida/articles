@@ -2,6 +2,8 @@
 
 **Por Anavelyz Pérez**
 
+![header](header.png)
+
 La investigación colaborativa es un término que se le atribuye al hecho de
 realizar o llevar a cabo investigaciones y/o proyectos donde participan más de
 una persona, instituciones o empresas. La ventaja de este tipo de investigación

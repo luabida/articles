@@ -2,6 +2,8 @@
 
 **Por Anavelyz Perez**
 
+![header](header.png)
+
 Un proyecto de ciencia abierta así como cualquier otro requiere de una
 evaluación previa para determinar lo que se necesita hacer y cómo debe llevarse
 a cabo. En el caso de ciencia abierta, debemos tener en cuenta que por su

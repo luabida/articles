@@ -1,5 +1,7 @@
 # 10 Plataformas que te ayudarán en la gestión de tu grupo de trabajo.
 
+![header](header.png)
+
 El manejo de los equipos de trabajo es interés constante para Open Science Labs, porque tenemos la convicción de que un equipo de trabajo bien manejado puede crecer en conjunto y construir mejores resultados para la ciencia abierta.
 
 Ya en artículos anteriores hemos hablado de [las herramientas que pueden utilizarse en el manejo de investigación reproducible](http://opensciencelabs.org/2020/03/09/como-aplicar-la-investigacion-reproducible-a-proyectos-de-codigo-abierto/) en equipos de trabajo, o [cuáles son los aspectos clave a tener en cuenta en el manejo de equipos de trabajo de ciencia abierta](http://opensciencelabs.org/2020/01/20/aspectos-clave-en-el-manejo-de-equipos-de-ciencia-abierta/), y en este artículo hemos querido profundizar un poco más y avanzar en mostrarte nuestra perspectiva del propósito de examinar no sólo las herramientas utilizadas, sino también las prácticas de trabajo en equipo.

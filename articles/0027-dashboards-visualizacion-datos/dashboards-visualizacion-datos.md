@@ -1,6 +1,8 @@
 # Te hablamos del uso de dashboards para visualización de datos de tu próximo proyecto
 
-Por. Rainer Palm
+**Por Rainer Palm**
+
+![header](header.png)
 
 Muchas veces ocurre que, a pesar de que te has tomado el tiempo para analizar y modelar un problema, escribir código, depurarlo y asegurarte de que todo funcione bien, necesitas simplificar y compartimentar los datos y la salida de tu programa para que puedas presentar tu trabajo y que este sea entendido, usualmente mediante un informe y/o una visualización de lo realizado. Las herramientas comúnmente usadas para este propósito tienen varias dificultades: suelen ser estáticas (tal como las diapositivas o los informes escritos), ser diseñadas en mente solo para gente con conocimiento técnico, o permitir solo el uso de ciertos lenguajes de programación o librerías.
 

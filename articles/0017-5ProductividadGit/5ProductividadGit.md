@@ -2,6 +2,8 @@
 
 **Por Yurely Camacho**
 
+![header](header.png)
+
 En artículos anteriores publicados, te hablamos sobre Git de 0 a 100 e
 investigación colaborativa con Git. Allí hemos repasado sobre las
 bondades de este sistema de control de versiones y su uso actual en la

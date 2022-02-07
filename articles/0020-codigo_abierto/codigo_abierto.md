@@ -1,6 +1,8 @@
 # ¿Qué es el código abierto y cómo puede ayudarte?
 
-**Por: Anavelyz Pérez**
+**Por Anavelyz Pérez**
+
+![header](header.png)
 
 Cuando escuchamos la palabra *código* podríamos pensar que se trata de algo
 oculto y secreto, en una contraseña o simplemente algún identificador. Sin

@@ -2,6 +2,8 @@
 
 **Por Rainer Palm**
 
+![header](header.png)
+
 Alrededor del mundo, gracias a la importancia del sector tecnológico a nivel global, existe una gran cantidad de programadores, todos con sus destrezas, afinidades y aspiraciones particulares que hacen de sus proyectos colaborativos algo interesante y único, contribuyendo con su toque personal. Debido a la gran prevalencia de prácticas de código abierto en plataformas tales como Github, utilizadas por la mayoría de los desarrolladores de software existentes, se puede ver en ocasiones cómo el proceso mediante el cual proyecto se llevó a cabo y cómo pensaron respecto a ciertos problemas que se presentaron, cómo previeron cada mínimo detalle necesario para reproducir y crear de manera independiente el producto final, ya sea una pieza de software, un diseño de hardware, o inclusive algo tan común pero no menos importante como lo es una foto o un sonido, reproducibles en todo sentido de la palabra.
 
 Todo esto puede hacer el proceso de ver que tipos de proyectos la gente ha realizado, algo bastante interesante, inclusive más allá de la útilidad que el producto final te podría aportar. Ver como otros desarrolladores han pensado en torno a problemas específicos es algo que puede resultar increíblemente productivo a la larga, ya que te permite reconfigurar tu mente y encontrar métodos de resolución de problemas en los cuales quizás no hayas pensado, y quizás te des cuenta de que existen otros problemas en la forma en la que comunmente planteas tu flujo de trabajo.

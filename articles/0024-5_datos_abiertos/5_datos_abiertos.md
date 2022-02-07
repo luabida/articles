@@ -1,6 +1,8 @@
 # Cinco cosas que no debes olvidar al trabajar con datos abiertos
 
-Por Anavelyz Perez
+**Por Anavelyz Perez**
+
+![header](header.png)
 
 Cada vez es más común leer o escuchar sobre datos abiertos pero puede que no
 sepamos del todo lo que esto significa. Por ello, vamos a revisar inicialmente

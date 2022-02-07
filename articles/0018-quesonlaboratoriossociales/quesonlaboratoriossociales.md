@@ -1,6 +1,8 @@
 # ¿Qué son los laboratorios sociales y cómo pueden ayudar a los equipos de investigación?
 
-Por: Rainer Palm
+**Por Rainer Palm**
+
+![header](header.png)
 
 Recientemente se ha vuelto popular la creación de espacios tales como MediaLabs y otras formas de laboratorios sociales. Estas organizaciones de innovación sugieren el uso del modelo abierto del laboratorio, donde se hacen disponibles tanto utensilios como instrumentos (ya sean de trabajo o de medición), como un entorno en el cual se puede experimentar con este material, y donde se ponen en contacto personas que, quizás, nunca hayan estado relacionadas con el mundo académico o emprendedor de ninguna forma, permitiéndoles *cocrear* investigaciones y productos de forma independiente.
 

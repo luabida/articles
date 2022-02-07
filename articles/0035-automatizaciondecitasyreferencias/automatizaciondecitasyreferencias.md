@@ -2,6 +2,8 @@
 
 **Rainer Palm**
 
+![header](header.png)
+
 En el proceso de escritura de un artículo científico, o documentación de un proyecto, siempre se busca optimizar el uso del tiempo dedicado a la transcripción y elaboración de los documentos y presentaciones del trabajo, así como en tareas como la elaboración de citas y referencias para artículos entre otros. Aunque el uso de herramientas de procesamiento de texto facilita bastante la tarea de compartir y escribir el trabajo, aun así se suele tener que configurar manualmente cosas tales como indices, código insertado dentro del texto, formulas matemáticas… y citas. Esto se complica un poco más pues, dependiendo de la forma en la que estés publicando tu artículo, todas estas tareas pueden tener formatos muy distintos.
 
 En el caso de las citas y referencias, existe una variedad nada despreciable de estándares dependiendo, entre otras cosas de si se deben colocar al final de la página, al final del documento o después del texto citado y, además, en que formato escogido para presentarlas, en que orden se deben introducir cada uno de sus elementos, entre otros. Esto se puede tornar bastante tedioso, en especial si tienes un gran numero de citas y referencias que colocar, si provienen de una variedad de formatos y lugares diferentes, si la información es incompleta, por ejemplo en año o nombres completos de autores, si cuentan o no con metadatos adecuados, entre otros. Simplemente esta tarea de buscar, ordenar y insertar estos datos puede tomar bastante tiempo si no se utilizan las herramientas o programas adecuados.
