@@ -26,7 +26,7 @@ jobs:
         mamba-version: "*"
         environment-file: conda/dev.yaml
         channels: conda-forge,nodefaults
-        activate-environment: inlyse-dashboard
+        activate-environment: osl-article
         use-mamba: true
         miniforge-variant: Mambaforge
 
