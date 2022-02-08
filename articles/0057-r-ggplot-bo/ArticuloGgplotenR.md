@@ -1,6 +1,6 @@
 # Visualiza tus datos en R con ggplot2 y gganimate
 
-<img src="header.png" alt="header" width="1600"/>
+![header](header.png)
 
 **Autor**: [Ever Vino](../../authors/ever-vino.md)
 
